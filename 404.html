@@ -10,7 +10,7 @@
 <meta property='og:description' content="演示说明">
 <meta property='og:url' content='https://2332ly.github.io/404.html'>
 <meta property='og:site_name' content='2332ly'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2025-05-21T17:30:57&#43;08:00 '/>
+<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2025-05-21T20:30:22&#43;08:00 '/>
 <meta name="twitter:title" content="404 Page not found">
 <meta name="twitter:description" content="演示说明">
     <link rel="shortcut icon" href="/favicon.ico" />
@@ -357,50 +357,92 @@
     }());
 </script>
 <style>
-    #TableOfContents > ul, ol {
-        ul, ol {
-            display: none;
-        }
-        .open {
-            display: block;
-        }
-    }
+   
+  #TableOfContents ul,
+  #TableOfContents ol {
+    list-style: none;  
+    padding-left: 1em;  
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;  
+    overflow: hidden;  
+    max-height: 0;  
+    opacity: 0;  
+  }
+
+   
+  #TableOfContents > ul,
+  #TableOfContents > ol {
+    padding-left: 0;  
+    max-height: fit-content;  
+    opacity: 1;  
+  }
+
+   
+  #TableOfContents ul.open,
+  #TableOfContents ol.open {
+    max-height: 500px;  
+    opacity: 1;
+  }
+
+   
+  .active-class {
+    font-weight: bold;  
+    color: #007bff;  
+  }
 </style>
 
 <script>
-    function initTocHide() {
-        
-        let toc = document.querySelector(".widget--toc");
-        if (!toc) {
-            return;
-        }
-        
-        window.addEventListener('scroll', function() {
-            
-            let openUl = document.querySelectorAll(".open");
-            if (openUl.length > 0) {
-              openUl.forEach((ul) => {
-                ul.classList.remove("open")
-              })
-            }
-            
-            let currentLi = document.querySelector(".active-class");
-            if (!currentLi) {
-                return
-            }
-            
-            if (currentLi.children.length > 1) {
-                currentLi.children[1].classList.add("open")
-            }
-            
-            let ul = currentLi.parentElement;
-            do {
-                ul.classList.add("open");
-                ul = ul.parentElement.parentElement
-            } while (ul !== undefined && (ul.localName === 'ul' || ul.localName === 'ol'))
-        });
+  function initTocFolding() {
+    const toc = document.querySelector(".widget--toc");
+    if (!toc) {
+      return; 
     }
-    initTocHide()
+
+    
+    toc.classList.add("toc-enabled");
+
+    let lastActiveLi = null; 
+
+    function updateTocVisibility() {
+      
+      document.querySelectorAll("#TableOfContents .open").forEach((ul) => {
+        ul.classList.remove("open");
+      });
+
+      const currentLi = document.querySelector(".active-class");
+
+      if (!currentLi || currentLi === lastActiveLi) {
+        
+        return;
+      }
+
+      lastActiveLi = currentLi; 
+
+      
+      const directChildUl = currentLi.querySelector("ul, ol");
+      if (directChildUl) {
+        directChildUl.classList.add("open");
+      }
+
+      
+      let parentUl = currentLi.parentElement;
+      while (parentUl && (parentUl.localName === "ul" || parentUl.localName === "ol") && parentUl.id !== "TableOfContents") {
+        parentUl.classList.add("open");
+        parentUl = parentUl.parentElement.parentElement; 
+      }
+    }
+
+    
+    let scrollTimeout;
+    window.addEventListener("scroll", () => {
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(updateTocVisibility, 100); 
+    });
+
+    
+    updateTocVisibility();
+  }
+
+  document.addEventListener("DOMContentLoaded", initTocFolding);
 </script>
 
 <style>
@@ -531,251 +573,86 @@
 </script>
 
 <style>
-     
     .highlight {
-        border-radius: var(--card-border-radius, 8px);
-        max-width: 100%;
-        margin: 20px 0 !important;
-        box-shadow: var(--shadow-l1, 0 4px 12px rgba(0, 0, 0, 0.1));
-        overflow: hidden;  
-        background-color: var(--code-block-background, #282c34);
-        position: relative;  
-
          
-        max-height: var(--code-fold-height, 400px);
-         
-        transition: max-height 0.5s ease-in-out;  
+        max-height: 400px;
+        overflow: hidden;
     }
 
-     
-    .highlight.is-expanded {
-        max-height: none !important;  
+    .code-show {
+        max-height: none !important;
     }
 
-     
-
-     
     .code-more-box {
+        width: 100%;
+        padding-top: 78px;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#fff));
         position: absolute;
-        bottom: 0;
         left: 0;
         right: 0;
-        width: 100%;
-        height: 100px;  
-         
-        background: linear-gradient(to bottom,
-                                    rgba(var(--code-block-background-rgb, 40, 44, 52), 0) 0%,
-                                    rgba(var(--code-block-background-rgb, 40, 44, 52), 0.8) 50%,
-                                    var(--code-block-background, #282c34) 100%);
-        pointer-events: none;  
-         
-        transition: opacity 0.3s ease-out;
-        opacity: 1;  
-        z-index: 1;  
+        bottom: 0;
+        z-index: 1;
     }
 
-     
-    .highlight.is-expanded .code-more-box {
-        opacity: 0;
-        pointer-events: none;  
-    }
-
-     
-    .code-toggle-wrapper {
-        position: absolute;
-        bottom: 10px;  
-        left: 50%;
-        transform: translateX(-50%);  
-        z-index: 2;  
-        pointer-events: all;  
-         
-        transition: opacity 0.3s ease-out;
-        opacity: 1;  
-    }
-
-     
-    .highlight.is-expanded .code-toggle-wrapper {
-        opacity: 0;
-        pointer-events: none;  
-    }
-
-     
-    .code-toggle-btn {
-        display: flex;  
-        align-items: center;
-        justify-content: center;
-        width: 100px;  
-        height: 36px;  
-        background-color: var(--button-background, #007bff);  
-        color: var(--button-text-color, #ffffff);  
-        border: none;
-        border-radius: 18px;  
+    .code-more-btn {
+        display: block;
+        margin: auto;
+        width: 44px;
+        height: 22px;
+        background: #f0f0f5;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding-top: 6px;
         cursor: pointer;
-        font-size: 14px;
-        font-weight: 500;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);  
-        transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
-        text-decoration: none;  
     }
 
-    .code-toggle-btn:hover {
-        background-color: var(--button-background-hover, #0056b3);  
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-        transform: translateY(-2px);  
-    }
-
-    .code-toggle-btn:focus {
-        outline: none;
-        box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.4);  
-    }
-
-     
-    .code-toggle-btn .icon {
-        margin-left: 5px;  
-        width: 16px;  
+    .code-more-img {
+        cursor: pointer !important;
+        display: block;
+        margin: auto;
+        width: 22px;
         height: 16px;
-         
-         
-    }
-
-     
-    @media (max-width: 768px) {
-        .highlight {
-            max-height: var(--code-fold-height-mobile, 300px);  
-        }
-        .code-more-box {
-            height: 80px;  
-        }
-        .code-toggle-wrapper {
-            bottom: 8px;
-        }
-        .code-toggle-btn {
-            width: 90px;
-            height: 32px;
-            font-size: 13px;
-        }
     }
 </style>
 
 <script>
-    
-
-    function getContentScrollHeight(element) {
-        
-        const tempDiv = document.createElement('div');
-        tempDiv.style.visibility = 'hidden';
-        tempDiv.style.position = 'absolute';
-        tempDiv.style.top = '-9999px';
-        tempDiv.style.width = element.offsetWidth + 'px'; 
-        tempDiv.style.maxHeight = 'none'; 
-
-        
-        Array.from(element.children).forEach(child => {
-            tempDiv.appendChild(child.cloneNode(true));
-        });
-
-        document.body.appendChild(tempDiv);
-        const scrollHeight = tempDiv.scrollHeight;
-        document.body.removeChild(tempDiv);
-        return scrollHeight;
+  function initCodeMoreBox() {
+    let codeBlocks = document.querySelectorAll(".highlight");
+    if (!codeBlocks) {
+      return;
     }
-
-    
-
-    function initCodeFolding() {
-        const codeBlocks = document.querySelectorAll(".highlight");
-
-        if (!codeBlocks.length) {
-            return;
-        }
-
-        codeBlocks.forEach(codeBlock => {
-            
-            const codeContent = codeBlock.querySelector('pre');
-            if (!codeContent) {
-                console.warn('Code block does not contain a <pre> element. Skipping folding for this block.', codeBlock);
-                return;
-            }
-
-            
-            
-            
-            const computedStyle = window.getComputedStyle(codeBlock);
-            const currentMaxHeight = parseInt(computedStyle.maxHeight, 10);
-
-            
-            if (codeContent.scrollHeight <= currentMaxHeight) {
-                 
-                const existingToggle = codeBlock.querySelector('.code-toggle-wrapper');
-                const existingGradient = codeBlock.querySelector('.code-more-box');
-                if (existingToggle) existingToggle.remove();
-                if (existingGradient) existingGradient.remove();
-                return;
-            }
-
-            
-
-            
-            const codeMoreBox = document.createElement('div');
-            codeMoreBox.classList.add('code-more-box');
-
-            
-            const codeToggleWrapper = document.createElement('div');
-            codeToggleWrapper.classList.add('code-toggle-wrapper');
-
-            
-            const codeToggleButton = document.createElement('button'); 
-            codeToggleButton.classList.add('code-toggle-btn');
-            codeToggleButton.textContent = '展开代码'; 
-            codeToggleButton.setAttribute('aria-expanded', 'false'); 
-            codeToggleButton.setAttribute('aria-controls', `code-content-${Math.random().toString(36).substr(2, 9)}`); 
-
-            
-            if (!codeContent.id) {
-                codeContent.id = codeToggleButton.getAttribute('aria-controls');
-            }
-
-
-            
-
-            codeToggleButton.addEventListener('click', () => {
-                const isExpanded = codeBlock.classList.toggle('is-expanded'); 
-                codeToggleButton.setAttribute('aria-expanded', isExpanded); 
-
-                if (isExpanded) {
-                    codeToggleButton.textContent = '收起代码'; 
-                    
-                } else {
-                    codeToggleButton.textContent = '展开代码'; 
-                    
-                }
-
-                
-                window.dispatchEvent(new Event('resize'));
-            });
-
-            
-
-            codeToggleWrapper.appendChild(codeToggleButton);
-            codeBlock.appendChild(codeMoreBox); 
-            codeBlock.appendChild(codeToggleWrapper); 
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-        });
-    }
-
-    
-    document.addEventListener("DOMContentLoaded", initCodeFolding);
+    codeBlocks.forEach(codeBlock => {
+      
+      if (codeBlock.scrollHeight <= codeBlock.clientHeight) {
+        return;
+      }
+      
+      
+      let codeMoreBox = document.createElement('div');
+      codeMoreBox.classList.add('code-more-box');
+      
+      let codeMoreBtn = document.createElement('span');
+      codeMoreBtn.classList.add('code-more-btn');
+      codeMoreBtn.addEventListener('click', () => {
+        codeBlock.classList.add('code-show');
+        codeMoreBox.style.display = 'none';
+        
+        window.dispatchEvent(new Event('resize'))
+      })
+      
+      let img = document.createElement('img');
+      img.classList.add('code-more-img');
+      img.src = "https://2332ly.github.io/icons/codeMore.png"
+      
+      codeMoreBtn.appendChild(img);
+      codeMoreBox.appendChild(codeMoreBtn);
+      codeBlock.appendChild(codeMoreBox)
+    })
+  }
+  
+  initCodeMoreBox();
 </script>
+
 
 <script defer src="https://cn.vercount.one/js"></script>
 
