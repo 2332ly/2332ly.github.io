@@ -7,6 +7,597 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Example Person</copyright><atom:link href="https://2332ly.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>计算机网络_实验1</title>
+        <link>https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/</link>
+        <pubDate>Wed, 21 May 2025 21:18:07 +0800</pubDate>
+        
+        <guid>https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/</guid>
+        <description>&lt;img src="https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/imagetop-1.png" alt="Featured image of post 计算机网络_实验1" /&gt;&lt;h1 id=&#34;实验&#34;&gt;实验
+&lt;/h1&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;2025%e6%98%a5%e8%ae%a1%e7%ae%97%e6%9c%ba%e7%bd%91%e7%bb%9c%e5%ae%9e%e9%aa%8c%e6%8c%87%e5%af%bc%e4%b9%a6-1.doc&#34; &gt;下载-2025春计算机网络实验指导书-1&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;boson-netsim-10-本地安装&#34;&gt;Boson NetSim 10 本地安装
+&lt;/h2&gt;&lt;p&gt;下载地址&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;particles.js-master.zip&#34; &gt;网页下载&lt;/a&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://1drv.ms/u/c/593e1d304d704f08/EbT--0l08c1Kl2RnIvtAApoB5k2WExaakjPI67gN75iu6g?e=rJEAzG&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;onedrive&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;解压&#34;&gt;解压
+&lt;/h3&gt;&lt;p&gt;得到三个文件&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image.png&#34;
+	width=&#34;1150&#34;
+	height=&#34;165&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image_hu_fef399f96f52c42a.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image_hu_4daf0c33de015aa5.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;文件&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;696&#34;
+		data-flex-basis=&#34;1672px&#34;
+	
+&gt;
+Setup为主程序安装文件&lt;br&gt;
+&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-1.png&#34;
+	width=&#34;1446&#34;
+	height=&#34;1050&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-1_hu_69de1f72d624efc2.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-1_hu_1825d73b8b6ad4e0.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;137&#34;
+		data-flex-basis=&#34;330px&#34;
+	
+&gt;
+Patched
+&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-5.png&#34;
+	width=&#34;1133&#34;
+	height=&#34;165&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-5_hu_d2b7df4304892dd8.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-5_hu_b3b722d2822989c1.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;686&#34;
+		data-flex-basis=&#34;1648px&#34;
+	
+&gt;
+Mscon43demo.zip为修改破解文件&lt;/p&gt;
+&lt;h3 id=&#34;安装&#34;&gt;安装
+&lt;/h3&gt;&lt;p&gt;点击netsim10.exe 进行安装&lt;br&gt;
+&lt;strong&gt;推荐安装到C:\Boson目录中 不然会出现%Incomplete command问题&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;二次解压&#34;&gt;二次解压
+&lt;/h3&gt;&lt;p&gt;解压Mscon43demo.zip&lt;br&gt;
+得到mscon43demo.dll文件
+&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-4.png&#34;
+	width=&#34;1013&#34;
+	height=&#34;37&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-4_hu_5fdf320580ee9dcf.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-4_hu_3d947384c29cf4e6.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;2737&#34;
+		data-flex-basis=&#34;6570px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;修改破解&#34;&gt;修改破解
+&lt;/h3&gt;&lt;p&gt;把mscon43demo.dll复制到C:\Boson,
+C:\ProgramData\Boson Software\Boson Netsim10\mscon43demo.dll，两个位置，进行替换与粘贴&lt;br&gt;
+&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-2.png&#34;
+	width=&#34;426&#34;
+	height=&#34;49&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-2_hu_a1b202f52cd87a67.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-2_hu_4b82d3438eae0bbd.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;869&#34;
+		data-flex-basis=&#34;2086px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;把Patch目录下的三个文件复制到C:\Boson中，进行替换。
+&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-3.png&#34;
+	width=&#34;375&#34;
+	height=&#34;103&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-3_hu_af65ee0372135f81.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-3_hu_3ac9a6782a0c2ac8.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;364&#34;
+		data-flex-basis=&#34;873px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;运行&#34;&gt;运行
+&lt;/h3&gt;&lt;p&gt;进入C盘C:\Boson 右键图标发送快捷方式至桌面
+&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-7.png&#34;
+	width=&#34;1844&#34;
+	height=&#34;1266&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-7_hu_509f0411cddfbf3.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-7_hu_2df2e23247e29078.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;145&#34;
+		data-flex-basis=&#34;349px&#34;
+	
+&gt;
+点击桌面图标运行Boson NetSim 10&lt;br&gt;
+&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-6.png&#34;
+	width=&#34;114&#34;
+	height=&#34;127&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-6_hu_738cfd24ec4f1116.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-6_hu_c5df3bdd53974ccd.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;89&#34;
+		data-flex-basis=&#34;215px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;实验1&#34;&gt;实验1
+&lt;/h2&gt;&lt;h3 id=&#34;模型组建&#34;&gt;模型组建
+&lt;/h3&gt;&lt;p&gt;局域网组建&lt;br&gt;
+&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-8.png&#34;
+	width=&#34;480&#34;
+	height=&#34;480&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-8_hu_9663986403850bd6.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-8_hu_3215ebe5b7372836.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;100&#34;
+		data-flex-basis=&#34;240px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;点击左下角Network Designer进行配置
+&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-9.png&#34;
+	width=&#34;1653&#34;
+	height=&#34;1141&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-9_hu_f5a67456b7cb76b0.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-9_hu_b6140646a59ab3bc.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;144&#34;
+		data-flex-basis=&#34;347px&#34;
+	
+&gt;
+在左侧拖拽一台switch交换机两台pc
+&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-10.png&#34;
+	width=&#34;1653&#34;
+	height=&#34;1141&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-10_hu_33952c8e00788e9e.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-10_hu_503313a183b92963.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;144&#34;
+		data-flex-basis=&#34;347px&#34;
+	
+&gt;
+右键交换机 点击New Connection配置线路
+&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-11.png&#34;
+	width=&#34;1653&#34;
+	height=&#34;1141&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-11_hu_c50086b41bb0ef8d.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-11_hu_1326db8b6d9cb49e.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;144&#34;
+		data-flex-basis=&#34;347px&#34;
+	
+&gt;
+分别连接两个pc至不同接口
+&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-12.png&#34;
+	width=&#34;823&#34;
+	height=&#34;562&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-12_hu_5fd6f027c3e0a82.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-12_hu_a172f4103cf35055.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;146&#34;
+		data-flex-basis=&#34;351px&#34;
+	
+&gt;
+&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-13.png&#34;
+	width=&#34;823&#34;
+	height=&#34;562&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-13_hu_3266db3fd8446e41.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-13_hu_e43c885b571b9cf1.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;146&#34;
+		data-flex-basis=&#34;351px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;实验配置&#34;&gt;实验配置
+&lt;/h3&gt;&lt;p&gt;点击按键 进入实验配置
+&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-14.png&#34;
+	width=&#34;1653&#34;
+	height=&#34;1141&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-14_hu_7512f8f2c2a1212c.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-14_hu_fe1bdfe8f49e9a93.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;144&#34;
+		data-flex-basis=&#34;347px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;开启switchy1s1其实不开启也能ping通&#34;&gt;开启switch(y1s1其实不开启也能ping通)
+&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;不需要&lt;/strong&gt;(&lt;br&gt;
+在switch1配置界面分别输入&lt;br&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;enable //进入特权模式   
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;configure terminal //进入配置模式
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-15.png&#34;
+	width=&#34;1608&#34;
+	height=&#34;1141&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-15_hu_1ab262ec42cd1456.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-15_hu_ab6509a131ccd0b2.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;140&#34;
+		data-flex-basis=&#34;338px&#34;
+	
+&gt;
+根据连接接口开启工作状态&lt;br&gt;
+pc1-&amp;gt;fe1
+pc2-&amp;gt;fe2
+&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-16.png&#34;
+	width=&#34;1188&#34;
+	height=&#34;960&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-16_hu_839a77e0f8077b60.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-16_hu_ad4f94b6d049298e.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;123&#34;
+		data-flex-basis=&#34;297px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;interface f0/1 //进入f0/1端口配置模式
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;no shutdown //开启端口
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;exit //退出f0/1端口配置模式
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-17.png&#34;
+	width=&#34;1188&#34;
+	height=&#34;960&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-17_hu_96a342be9f45fb15.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-17_hu_fa55073e79f8f0cc.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;123&#34;
+		data-flex-basis=&#34;297px&#34;
+	
+&gt;
+f0/2同理&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;interface f0/2 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;no shutdown
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;exit
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;)&lt;/p&gt;
+&lt;h3 id=&#34;pc配置&#34;&gt;pc配置
+&lt;/h3&gt;&lt;p&gt;配置IP地址
+选择pc1进行配置
+&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-18.png&#34;
+	width=&#34;1188&#34;
+	height=&#34;960&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-18_hu_13dac5d0434073f2.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-18_hu_4f2be419d6c65951.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;123&#34;
+		data-flex-basis=&#34;297px&#34;
+	
+&gt;
+输入配置IP地址和子网掩码&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ipconfig /ip 192.168.1.1 255.255.255.0 //事例
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;pc2同理ip地址主机位需变更&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ipconfig /ip 192.168.1.2 255.255.255.0 //事例
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-20.png&#34;
+	width=&#34;1231&#34;
+	height=&#34;960&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-20_hu_976bc16fcbaa2483.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-20_hu_861548d9c0892ce6.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;128&#34;
+		data-flex-basis=&#34;307px&#34;
+	
+&gt;
+返回pc1&lt;br&gt;
+ping pc2测试连接&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ping 192.168.1.2
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;返回成功确认联通
+&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-19.png&#34;
+	width=&#34;1188&#34;
+	height=&#34;960&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-19_hu_4716a36945086009.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-19_hu_7878b61ab173a651.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;123&#34;
+		data-flex-basis=&#34;297px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;实验2&#34;&gt;实验2
+&lt;/h2&gt;&lt;h3 id=&#34;模型组建-1&#34;&gt;模型组建
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-21.png&#34;
+	width=&#34;480&#34;
+	height=&#34;480&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-21_hu_dae232ceabfb9008.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-21_hu_7f1a01fdeedb00cd.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;100&#34;
+		data-flex-basis=&#34;240px&#34;
+	
+&gt;&lt;br&gt;
+在1基础上添加一组交换机和两组pc
+PS:想偷懒可以不加交换机只加pc
+&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-23.png&#34;
+	width=&#34;1231&#34;
+	height=&#34;960&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-23_hu_72af5313c347bfca.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-23_hu_79424ad2c64cd6c9.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;128&#34;
+		data-flex-basis=&#34;307px&#34;
+	
+&gt;
+switch2  f0/1-&amp;gt;pc1&lt;br&gt;
+f0/2-&amp;gt;pc2
+&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-22.png&#34;
+	width=&#34;823&#34;
+	height=&#34;562&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-22_hu_cf4b7e3e7b607f77.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-22_hu_7f27d8140f2a6cf5.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;146&#34;
+		data-flex-basis=&#34;351px&#34;
+	
+&gt;
+&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-24.png&#34;
+	width=&#34;823&#34;
+	height=&#34;562&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-24_hu_51a14bc697991e06.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-24_hu_e1eba4167b8ea138.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;146&#34;
+		data-flex-basis=&#34;351px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;交换机连接&lt;br&gt;
+&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-25.png&#34;
+	width=&#34;823&#34;
+	height=&#34;562&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-25_hu_93795c5036e2fe96.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-25_hu_69d07d893b2b2514.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;146&#34;
+		data-flex-basis=&#34;351px&#34;
+	
+&gt;
+我这里选择将两台交换机f0/12相连&lt;br&gt;
+现实中如果有高速吉比特网口优先接高速&lt;br&gt;
+&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-26.png&#34;
+	width=&#34;1231&#34;
+	height=&#34;960&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-26_hu_bd9420be0fe8f4e8.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-26_hu_2029022c88ec84b1.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;128&#34;
+		data-flex-basis=&#34;307px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;实验配置-1&#34;&gt;实验配置
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;不需要&lt;/strong&gt;(&lt;br&gt;
+交换机 pc 开启端口略过&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;switch1:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    interface f0/1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    no shutdown
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    exit
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    interface f0/2
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    no shutdown
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    exit
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;switch2:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    interface f0/1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    no shutdown
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    exit
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    interface f0/2
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    no shutdown
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    exit
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;)&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pc1:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    ipconfig /ip 192.168.1.1 255.255.255.0
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pc3:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    ipconfig /ip 192.168.1.3 255.255.255.0 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pc1:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    ping 192.168.1.3
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-27.png&#34;
+	width=&#34;1231&#34;
+	height=&#34;960&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-27_hu_5be421691e004d8b.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-27_hu_42dd03730706d8e4.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;128&#34;
+		data-flex-basis=&#34;307px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;实验3&#34;&gt;实验3
+&lt;/h2&gt;&lt;h3 id=&#34;模型组件不变&#34;&gt;模型组件不变
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-28.png&#34;
+	width=&#34;778&#34;
+	height=&#34;1064&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-28_hu_e468f8edf3174904.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-28_hu_61c9e7c9155f5c52.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;73&#34;
+		data-flex-basis=&#34;175px&#34;
+	
+&gt;
+略&amp;hellip;&amp;hellip;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h3 id=&#34;实验配置-2&#34;&gt;实验配置
+&lt;/h3&gt;&lt;h4 id=&#34;配置虚拟vlan&#34;&gt;配置虚拟VLAN
+&lt;/h4&gt;</description>
+        </item>
+        <item>
         <title>Web4 块与行内元素</title>
         <link>https://2332ly.github.io/p/web4-%E5%9D%97%E4%B8%8E%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0/</link>
         <pubDate>Wed, 21 May 2025 18:45:10 +0800</pubDate>
@@ -176,10 +767,10 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;href&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;www.bilibili.com&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;bilibili&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;href&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;https://www.bilibili.com&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;bilibili&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;www.bilibili.com&#34;&gt;bilibili&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;htts://www.bilibili.com&#34;&gt;bilibili&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;属性target-打开方式&#34;&gt;属性target 打开方式
 &lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://2332ly.github.io/p/web3-%E6%A0%87%E7%AD%BE%E5%B1%9E%E6%80%A7/image.png&#34;
 	width=&#34;626&#34;
