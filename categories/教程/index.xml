@@ -7,13 +7,113 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Example Person</copyright>
-        <lastBuildDate>Wed, 21 May 2025 16:43:24 +0800</lastBuildDate><atom:link href="https://2332ly.github.io/categories/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Web2</title>
-        <link>https://2332ly.github.io/p/web2/</link>
+        <lastBuildDate>Wed, 21 May 2025 17:30:57 +0800</lastBuildDate><atom:link href="https://2332ly.github.io/categories/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Web3 标签属性</title>
+        <link>https://2332ly.github.io/p/web3-%E6%A0%87%E7%AD%BE%E5%B1%9E%E6%80%A7/</link>
+        <pubDate>Wed, 21 May 2025 16:48:54 +0800</pubDate>
+        
+        <guid>https://2332ly.github.io/p/web3-%E6%A0%87%E7%AD%BE%E5%B1%9E%E6%80%A7/</guid>
+        <description>&lt;img src="https://2332ly.github.io/p/web3-%E6%A0%87%E7%AD%BE%E5%B1%9E%E6%80%A7/PixPin_2025-05-21_16-04-10-1.png" alt="Featured image of post Web3 标签属性" /&gt;&lt;h1 id=&#34;标签属性&#34;&gt;标签属性
+&lt;/h1&gt;&lt;h2 id=&#34;介绍&#34;&gt;介绍
+&lt;/h2&gt;&lt;p&gt;&amp;lt;标签 属性名 = &amp;ldquo;属性值&amp;rdquo;&amp;gt;&lt;/p&gt;
+&lt;body&gt;
+    &lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;属性&lt;/th&gt;
+        &lt;th&gt;描述/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;class&lt;/td&gt;
+        &lt;td&gt;类名 可以一个或多个&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;id&lt;/td&gt;
+        &lt;td&gt;id值 唯一&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;style&lt;/td&gt;
+        &lt;td&gt;元素行内样式&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;超链接&#34;&gt;超链接
+&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;Web3/PixPin_2025-05-21_16-04-10-1.png&#34; target=&#34;_parent&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;属性herf-可定义路径-网页url-电子邮箱地址-手机号&#34;&gt;属性herf 可定义路径 网页URL 电子邮箱地址 手机号
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;href&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;www.bilibili.com&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;bilibili&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;www.bilibili.com&#34;&gt;bilibili&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;属性target-打开方式&#34;&gt;属性target 打开方式
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://2332ly.github.io/p/web3-%E6%A0%87%E7%AD%BE%E5%B1%9E%E6%80%A7/image.png&#34;
+	width=&#34;626&#34;
+	height=&#34;166&#34;
+	srcset=&#34;https://2332ly.github.io/p/web3-%E6%A0%87%E7%AD%BE%E5%B1%9E%E6%80%A7/image_hu_12369759de65af8a.png 480w, https://2332ly.github.io/p/web3-%E6%A0%87%E7%AD%BE%E5%B1%9E%E6%80%A7/image_hu_53e9ff0291c20841.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;377&#34;
+		data-flex-basis=&#34;905px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;href&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Web3/PixPin_2025-05-21_16-04-10-1.png&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;target&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;_parent&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;路径文件&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;   
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;href&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;#&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;target&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;_blank&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;空&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;Web3/PixPin_2025-05-21_16-04-10-1.png&#34; target=&#34;_parent&#34;&gt;路径文件&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;#&#34; target=&#34;_blank&#34;&gt;空&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;图片&#34;&gt;图片
+&lt;/h2&gt;&lt;h3 id=&#34;src图片路径相对绝对路径url&#34;&gt;src图片路径(相对/绝对路径)/URL
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;img&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;img1.webp&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;alt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;br&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;img1.webp&#34; alt=&#34;&#34;&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h3 id=&#34;alt替代文本&#34;&gt;alt替代文本
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;img&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;img2.webp&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;alt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;该图片无法显示&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;&amp;lt;!--img2不存在--&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;img2.webp&#34; alt=&#34;该图片无法显示&#34;&gt;&lt;!--img2不存在--&gt;&lt;/p&gt;
+&lt;h3 id=&#34;width宽度-height高度&#34;&gt;width宽度 height高度
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;img&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;img1.webp&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;alt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;width&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;100&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;height&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;100&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;img src=&#34;img1.webp&#34; alt=&#34;&#34; width=&#34;100&#34; height=&#34;100&#34;&gt;
+</description>
+        </item>
+        <item>
+        <title>Web2 文本标签</title>
+        <link>https://2332ly.github.io/p/web2-%E6%96%87%E6%9C%AC%E6%A0%87%E7%AD%BE/</link>
         <pubDate>Wed, 21 May 2025 15:55:18 +0800</pubDate>
         
-        <guid>https://2332ly.github.io/p/web2/</guid>
-        <description>&lt;img src="https://2332ly.github.io/p/web2/PixPin_2025-05-21_16-04-10-1.png" alt="Featured image of post Web2" /&gt;&lt;h1 id=&#34;常用文本标签&#34;&gt;常用文本标签
+        <guid>https://2332ly.github.io/p/web2-%E6%96%87%E6%9C%AC%E6%A0%87%E7%AD%BE/</guid>
+        <description>&lt;img src="https://2332ly.github.io/p/web2-%E6%96%87%E6%9C%AC%E6%A0%87%E7%AD%BE/PixPin_2025-05-21_16-04-10-1.png" alt="Featured image of post Web2 文本标签" /&gt;&lt;h1 id=&#34;常用文本标签&#34;&gt;常用文本标签
 &lt;/h1&gt;&lt;h2 id=&#34;body标签框内&#34;&gt;body标签框内
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -205,19 +305,19 @@
 </description>
         </item>
         <item>
-        <title>Web</title>
-        <link>https://2332ly.github.io/p/web/</link>
+        <title>Web1 环境搭建</title>
+        <link>https://2332ly.github.io/p/web1-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
         <pubDate>Tue, 20 May 2025 23:15:45 +0800</pubDate>
         
-        <guid>https://2332ly.github.io/p/web/</guid>
-        <description>&lt;img src="https://2332ly.github.io/p/web/PixPin_2025-05-21_16-04-10-1.png" alt="Featured image of post Web" /&gt;&lt;h1 id=&#34;html&#34;&gt;HTML
+        <guid>https://2332ly.github.io/p/web1-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
+        <description>&lt;img src="https://2332ly.github.io/p/web1-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/PixPin_2025-05-21_16-04-10-1.png" alt="Featured image of post Web1 环境搭建" /&gt;&lt;h1 id=&#34;html&#34;&gt;HTML
 &lt;/h1&gt;&lt;h2 id=&#34;基础配置&#34;&gt;基础配置
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://code.visualstudio.com/download&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;vscode下载地址&lt;/a&gt;
-&lt;img src=&#34;https://2332ly.github.io/p/web/image.png&#34;
+&lt;img src=&#34;https://2332ly.github.io/p/web1-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/image.png&#34;
 	width=&#34;2560&#34;
 	height=&#34;1347&#34;
-	srcset=&#34;https://2332ly.github.io/p/web/image_hu_11987619c57485c.png 480w, https://2332ly.github.io/p/web/image_hu_55b04813e0bd1f4f.png 1024w&#34;
+	srcset=&#34;https://2332ly.github.io/p/web1-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/image_hu_11987619c57485c.png 480w, https://2332ly.github.io/p/web1-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/image_hu_55b04813e0bd1f4f.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;演示&#34;
@@ -230,10 +330,10 @@
 &gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;插件下载&lt;/em&gt;&lt;br&gt;
 1.Chinese (Simplified) 汉化插件
-&lt;img src=&#34;https://2332ly.github.io/p/web/image-1.png&#34;
+&lt;img src=&#34;https://2332ly.github.io/p/web1-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/image-1.png&#34;
 	width=&#34;2560&#34;
 	height=&#34;1528&#34;
-	srcset=&#34;https://2332ly.github.io/p/web/image-1_hu_aa8c14fad2596875.png 480w, https://2332ly.github.io/p/web/image-1_hu_bda1ea3dd817b0a9.png 1024w&#34;
+	srcset=&#34;https://2332ly.github.io/p/web1-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/image-1_hu_aa8c14fad2596875.png 480w, https://2332ly.github.io/p/web1-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/image-1_hu_bda1ea3dd817b0a9.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -245,10 +345,10 @@
 	
 &gt;
 2.livesever(实时查看修改)&lt;br&gt;
-&lt;img src=&#34;https://2332ly.github.io/p/web/image-2.png&#34;
+&lt;img src=&#34;https://2332ly.github.io/p/web1-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/image-2.png&#34;
 	width=&#34;2560&#34;
 	height=&#34;1528&#34;
-	srcset=&#34;https://2332ly.github.io/p/web/image-2_hu_d70dfec0a2ba5338.png 480w, https://2332ly.github.io/p/web/image-2_hu_cb5ff809b17ef542.png 1024w&#34;
+	srcset=&#34;https://2332ly.github.io/p/web1-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/image-2_hu_d70dfec0a2ba5338.png 480w, https://2332ly.github.io/p/web1-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/image-2_hu_cb5ff809b17ef542.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -260,10 +360,10 @@
 	
 &gt;
 3.Auto Rename Tag(自动补齐后标签)
-&lt;img src=&#34;https://2332ly.github.io/p/web/image-4.png&#34;
+&lt;img src=&#34;https://2332ly.github.io/p/web1-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/image-4.png&#34;
 	width=&#34;2560&#34;
 	height=&#34;1528&#34;
-	srcset=&#34;https://2332ly.github.io/p/web/image-4_hu_985974752d7f964.png 480w, https://2332ly.github.io/p/web/image-4_hu_8e0c2830f141da17.png 1024w&#34;
+	srcset=&#34;https://2332ly.github.io/p/web1-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/image-4_hu_985974752d7f964.png 480w, https://2332ly.github.io/p/web1-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/image-4_hu_8e0c2830f141da17.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -275,10 +375,10 @@
 	
 &gt;
 4.HTML CSS Support   css优化&lt;br&gt;
-&lt;img src=&#34;https://2332ly.github.io/p/web/image-5.png&#34;
+&lt;img src=&#34;https://2332ly.github.io/p/web1-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/image-5.png&#34;
 	width=&#34;2560&#34;
 	height=&#34;1528&#34;
-	srcset=&#34;https://2332ly.github.io/p/web/image-5_hu_2492a864905eda95.png 480w, https://2332ly.github.io/p/web/image-5_hu_53a06cb4664030a5.png 1024w&#34;
+	srcset=&#34;https://2332ly.github.io/p/web1-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/image-5_hu_2492a864905eda95.png 480w, https://2332ly.github.io/p/web1-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/image-5_hu_53a06cb4664030a5.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -292,10 +392,10 @@
 &lt;h2 id=&#34;创建html文件&#34;&gt;创建html文件
 &lt;/h2&gt;&lt;p&gt;选择文件夹&lt;br&gt;
 在vscode选择文件夹内新建.html后缀文件点击进入
-&lt;img src=&#34;https://2332ly.github.io/p/web/image-6.png&#34;
+&lt;img src=&#34;https://2332ly.github.io/p/web1-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/image-6.png&#34;
 	width=&#34;1633&#34;
 	height=&#34;1196&#34;
-	srcset=&#34;https://2332ly.github.io/p/web/image-6_hu_cadc4ec68b7a7bfc.png 480w, https://2332ly.github.io/p/web/image-6_hu_8034fa68eadeef65.png 1024w&#34;
+	srcset=&#34;https://2332ly.github.io/p/web1-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/image-6_hu_cadc4ec68b7a7bfc.png 480w, https://2332ly.github.io/p/web1-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/image-6_hu_8034fa68eadeef65.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -344,10 +444,10 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;网页&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://2332ly.github.io/p/web/image-7.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://2332ly.github.io/p/web1-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/image-7.png&#34;
 	width=&#34;337&#34;
 	height=&#34;52&#34;
-	srcset=&#34;https://2332ly.github.io/p/web/image-7_hu_df55cbc78dc3f75e.png 480w, https://2332ly.github.io/p/web/image-7_hu_9546c8d1c94bde8a.png 1024w&#34;
+	srcset=&#34;https://2332ly.github.io/p/web1-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/image-7_hu_df55cbc78dc3f75e.png 480w, https://2332ly.github.io/p/web1-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/image-7_hu_9546c8d1c94bde8a.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
