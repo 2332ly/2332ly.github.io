@@ -10,7 +10,7 @@
 <meta property='og:description' content="实验 下载-2025春计算机网络实验指导书-1\nBoson NetSim 10 本地安装 下载地址\n百度网盘\nonedrive\n解压 得到三个文件 Setup为主程序安装文件\nPatched Mscon43demo.zip为修改破解文件\n">
 <meta property='og:url' content='https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/'>
 <meta property='og:site_name' content='2332ly'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-05-21T21:18:07&#43;08:00'/><meta property='article:modified_time' content='2025-05-21T23:07:38&#43;08:00'/><meta property='og:image' content='https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/imagetop-1.png' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-05-21T21:18:07&#43;08:00'/><meta property='article:modified_time' content='2025-05-22T15:57:01&#43;08:00'/><meta property='og:image' content='https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/imagetop-1.png' />
 <meta name="twitter:title" content="计算机网络_实验1">
 <meta name="twitter:description" content="实验 下载-2025春计算机网络实验指导书-1\nBoson NetSim 10 本地安装 下载地址\n百度网盘\nonedrive\n解压 得到三个文件 Setup为主程序安装文件\nPatched Mscon43demo.zip为修改破解文件\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/imagetop-1.png' />
@@ -340,7 +340,14 @@
         <li><a href="#模型组件不变">模型组件不变</a></li>
         <li><a href="#实验配置-2">实验配置</a>
           <ol>
-            <li><a href="#配置虚拟vlan">配置虚拟VLAN</a></li>
+            <li><a href="#创建虚拟vlan">创建虚拟VLAN</a></li>
+            <li><a href="#switch1分配vlan">switch1分配VLAN</a></li>
+            <li><a href="#switch2分配vlan">switch2分配VLAN</a></li>
+            <li><a href="#保存配置">保存配置</a></li>
+            <li><a href="#查看配置">查看配置</a></li>
+            <li><a href="#配置pc-ip地址">配置pc IP地址</a></li>
+            <li><a href="#相同vlan测试联通">相同vlan测试联通</a></li>
+            <li><a href="#不同vlan测试联通">不同vlan测试联通</a></li>
           </ol>
         </li>
       </ol>
@@ -521,7 +528,7 @@ C:\ProgramData\Boson Software\Boson Netsim10\mscon43demo.dll，两个位置，�
 		data-flex-basis="2086px"
 	
 ></p>
-<p>把Patch目录下的三个文件复制到C:\Boson中，进行替换。
+<p>把Patch目录下的三个文件复制到C:\Boson中，进行替换。<br>
 <img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-3.png"
 	width="375"
 	height="103"
@@ -1013,8 +1020,346 @@ f0/2-&gt;pc2
 >
 略&hellip;&hellip;<br><br><br><br></p>
 <h3 id="实验配置-2">实验配置
-</h3><h4 id="配置虚拟vlan">配置虚拟VLAN
-</h4>
+</h3><h4 id="创建虚拟vlan">创建虚拟VLAN
+</h4><p>进入switch1</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">enable
+</span></span><span class="line"><span class="cl">configure terminal
+</span></span><span class="line"><span class="cl">vlan 10 
+</span></span><span class="line"><span class="cl">exit
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-29.png"
+	width="1231"
+	height="960"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-29_hu_6822a131d7dffc0d.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-29_hu_6857cba396e0e6f4.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="128"
+		data-flex-basis="307px"
+	
+>
+vlan 20同理</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">enable
+</span></span><span class="line"><span class="cl">configure terminal
+</span></span><span class="line"><span class="cl">vlan 20 
+</span></span><span class="line"><span class="cl">exit
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-30.png"
+	width="1172"
+	height="960"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-30_hu_e2685a8da03f76d2.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-30_hu_a109a2141a7fa730.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="122"
+		data-flex-basis="293px"
+	
+></p>
+<h4 id="switch1分配vlan">switch1分配VLAN
+</h4><p>分配vlan 10</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">interface f0/1
+</span></span><span class="line"><span class="cl">switchport mode access
+</span></span><span class="line"><span class="cl">switchport access vlan 10
+</span></span><span class="line"><span class="cl">exit
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">interface f0/2
+</span></span><span class="line"><span class="cl">switchport mode access
+</span></span><span class="line"><span class="cl">switchport access vlan 10
+</span></span><span class="line"><span class="cl">exit
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">interface f0/12
+</span></span><span class="line"><span class="cl">switchport mode trunk
+</span></span><span class="line"><span class="cl">switchport trunk encapsulation dot1q
+</span></span><span class="line"><span class="cl">switchport trunk allowed vlan 10,20
+</span></span><span class="line"><span class="cl">exit
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-31.png"
+	width="1172"
+	height="960"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-31_hu_5fd8d51c5a2f3195.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-31_hu_3d04d0e1225ed1ad.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="122"
+		data-flex-basis="293px"
+	
+></p>
+<h4 id="switch2分配vlan">switch2分配VLAN
+</h4><p>分配vlan 20</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">interface f0/1
+</span></span><span class="line"><span class="cl">switchport mode access
+</span></span><span class="line"><span class="cl">switchport access vlan 20
+</span></span><span class="line"><span class="cl">exit
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">interface f0/2
+</span></span><span class="line"><span class="cl">switchport mode access
+</span></span><span class="line"><span class="cl">switchport access vlan 20
+</span></span><span class="line"><span class="cl">exit
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">interface f0/12
+</span></span><span class="line"><span class="cl">switchport mode trunk
+</span></span><span class="line"><span class="cl">switchport trunk encapsulation dot1q
+</span></span><span class="line"><span class="cl">switchport trunk allowed vlan 10,20
+</span></span><span class="line"><span class="cl">exit
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-32.png"
+	width="1172"
+	height="960"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-32_hu_e3acf148ea799541.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-32_hu_bfe621bf2ffe7372.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="122"
+		data-flex-basis="293px"
+	
+></p>
+<h4 id="保存配置">保存配置
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Switch1# write memory
+</span></span><span class="line"><span class="cl">Switch2# write memory
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-33.png"
+	width="1172"
+	height="960"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-33_hu_13fdf3a14be10289.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-33_hu_25597cf71f8db1e.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="122"
+		data-flex-basis="293px"
+	
+>
+<img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-34.png"
+	width="1172"
+	height="960"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-34_hu_e0494f2252d7e1e8.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-34_hu_6edecacad9758367.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="122"
+		data-flex-basis="293px"
+	
+></p>
+<h4 id="查看配置">查看配置
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Switch1# show running-config
+</span></span><span class="line"><span class="cl">Switch1# show vlan brief
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-35.png"
+	width="1172"
+	height="960"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-35_hu_17cfe5814c572b7d.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-35_hu_9dd481b5629f0c6.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="122"
+		data-flex-basis="293px"
+	
+>
+<img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-36.png"
+	width="1172"
+	height="960"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-36_hu_8720912d1a4cb94f.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-36_hu_c1dccd51e80d73eb.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="122"
+		data-flex-basis="293px"
+	
+></p>
+<h4 id="配置pc-ip地址">配置pc IP地址
+</h4><p>不同vlan间网络位不能相同<br>
+相同vlan间网络位相同,主机位不同</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">PC1:
+</span></span><span class="line"><span class="cl">IP 地址: 192.168.1.1
+</span></span><span class="line"><span class="cl">子网掩码: 255.255.255.0
+</span></span><span class="line"><span class="cl">PC2:
+</span></span><span class="line"><span class="cl">IP 地址: 192.168.1.2
+</span></span><span class="line"><span class="cl">子网掩码: 255.255.255.0
+</span></span><span class="line"><span class="cl">PC3:
+</span></span><span class="line"><span class="cl">IP 地址: 192.168.2.1
+</span></span><span class="line"><span class="cl">子网掩码: 255.255.255.0
+</span></span><span class="line"><span class="cl">PC4:
+</span></span><span class="line"><span class="cl">IP 地址: 192.168.2.2
+</span></span><span class="line"><span class="cl">子网掩码: 255.255.255.0
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="相同vlan测试联通">相同vlan测试联通
+</h4><p>进入pc1</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ping 192.168.1.2
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-37.png"
+	width="1172"
+	height="960"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-37_hu_4ea967a6d27c4cc7.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-37_hu_6f92f2573ff5eda4.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="122"
+		data-flex-basis="293px"
+	
+></p>
+<h4 id="不同vlan测试联通">不同vlan测试联通
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ping 192.168.2.1
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>应显示失败
+因为默认情况下 VLAN 之间通信域是隔离的
+<img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-38.png"
+	width="1172"
+	height="960"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-38_hu_7603ec3693e29895.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-38_hu_1a9ac4e5e7799a1.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="122"
+		data-flex-basis="293px"
+	
+></p>
+
 </section>
 
 
@@ -1043,7 +1388,7 @@ f0/2-&gt;pc2
 
 
         <span>
-             May 21, 2025 23:07 &#43;0800
+             May 22, 2025 15:57 &#43;0800
         </span>
     </section></footer>
 
