@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Example Person</copyright>
-        <lastBuildDate>Thu, 22 May 2025 21:35:10 +0800</lastBuildDate><atom:link href="https://2332ly.github.io/categories/%E5%AE%9E%E9%AA%8C/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 22 May 2025 21:39:21 +0800</lastBuildDate><atom:link href="https://2332ly.github.io/categories/%E5%AE%9E%E9%AA%8C/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>计算机网络_实验3</title>
         <link>https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/</link>
         <pubDate>Thu, 22 May 2025 20:17:43 +0800</pubDate>
@@ -220,7 +220,7 @@ ipv4或6随意 建议4&lt;br&gt;
 	
 &gt;&lt;/p&gt;
 &lt;h4 id=&#34;备选-boson-netsim-10模拟&#34;&gt;(备选) Boson NetSim 10模拟
-&lt;/h4&gt;&lt;p&gt;建立
+&lt;/h4&gt;&lt;p&gt;建立&lt;br&gt;
 &lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-6.png&#34;
 	width=&#34;518&#34;
 	height=&#34;336&#34;
@@ -234,7 +234,7 @@ ipv4或6随意 建议4&lt;br&gt;
 		data-flex-grow=&#34;154&#34;
 		data-flex-basis=&#34;370px&#34;
 	
-&gt;
+&gt;&lt;br&gt;
 设置ip略&lt;br&gt;
 pc1 192.168.1.1 255.255.255.0&lt;br&gt;
 pc1 192.168.1.2 255.255.255.0&lt;br&gt;
@@ -941,7 +941,7 @@ ctrl+c强制停止&lt;br&gt;
 		data-flex-grow=&#34;866&#34;
 		data-flex-basis=&#34;2078px&#34;
 	
-&gt;
+&gt;&lt;br&gt;
 当前计算机没有连接任何网络共享资源，也没有映射网络驱动器&lt;/p&gt;
 </description>
         </item>
