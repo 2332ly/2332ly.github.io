@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Example Person</copyright>
-        <lastBuildDate>Thu, 22 May 2025 15:57:01 +0800</lastBuildDate><atom:link href="https://2332ly.github.io/categories/%E5%AE%9E%E9%AA%8C/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 22 May 2025 16:00:20 +0800</lastBuildDate><atom:link href="https://2332ly.github.io/categories/%E5%AE%9E%E9%AA%8C/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>计算机网络_实验1</title>
         <link>https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/</link>
         <pubDate>Wed, 21 May 2025 21:18:07 +0800</pubDate>
@@ -546,7 +546,8 @@ f0/2-&amp;gt;pc2
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;)&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;h3 id=&#34;pc配置通信&#34;&gt;pc配置通信
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
@@ -853,7 +854,8 @@ vlan 20同理&lt;/p&gt;
 		data-flex-basis=&#34;293px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h4 id=&#34;配置pc-ip地址&#34;&gt;配置pc IP地址
+&lt;h3 id=&#34;pc配置通信-1&#34;&gt;pc配置通信
+&lt;/h3&gt;&lt;h4 id=&#34;配置pc-ip地址&#34;&gt;配置pc IP地址
 &lt;/h4&gt;&lt;p&gt;不同vlan间网络位不能相同&lt;br&gt;
 相同vlan间网络位相同,主机位不同&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
