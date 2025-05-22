@@ -7,7 +7,945 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Example Person</copyright>
-        <lastBuildDate>Thu, 22 May 2025 16:00:20 +0800</lastBuildDate><atom:link href="https://2332ly.github.io/categories/%E5%AE%9E%E9%AA%8C/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 22 May 2025 21:35:10 +0800</lastBuildDate><atom:link href="https://2332ly.github.io/categories/%E5%AE%9E%E9%AA%8C/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>计算机网络_实验3</title>
+        <link>https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/</link>
+        <pubDate>Thu, 22 May 2025 20:17:43 +0800</pubDate>
+        
+        <guid>https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/</guid>
+        <description>&lt;img src="https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/imagetop-1.png" alt="Featured image of post 计算机网络_实验3" /&gt;&lt;h1 id=&#34;实验&#34;&gt;实验
+&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;本地电脑命令行即可&lt;/strong&gt;&lt;br&gt;
+win+r 输入cmd或powershell&lt;br&gt;
+推荐powershell&lt;/p&gt;
+&lt;h2 id=&#34;ipconfig命令&#34;&gt;ipconfig命令
+&lt;/h2&gt;&lt;h3 id=&#34;ipconfig&#34;&gt;ipconfig
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ipconfig
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image.png&#34;
+	width=&#34;1730&#34;
+	height=&#34;1428&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image_hu_2009fc64b6281eb8.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image_hu_fc0643e2bae68d1d.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;121&#34;
+		data-flex-basis=&#34;290px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;ipconfig-all&#34;&gt;ipconfig /all
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ipconfig /all 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-1.png&#34;
+	width=&#34;1730&#34;
+	height=&#34;2220&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-1_hu_87e6b1addbb99608.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-1_hu_43b2555d645f959a.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;77&#34;
+		data-flex-basis=&#34;187px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;ipconfig-all-返回信息详解&#34;&gt;&lt;code&gt;ipconfig /all&lt;/code&gt; 返回信息详解
+&lt;/h3&gt;&lt;h4 id=&#34;windows-ip-configuration&#34;&gt;Windows IP Configuration
+&lt;/h4&gt;&lt;p&gt;显示主机网络的总体配置信息：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Host Name&lt;/strong&gt;：计算机名称，例如 &lt;code&gt;LAPTOP-0INSFLG6&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Primary DNS Suffix&lt;/strong&gt;：主 DNS 后缀，通常为空，表示未加入域。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Node Type&lt;/strong&gt;：节点类型（如 Hybrid 表示混合类型）。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IP Routing Enabled&lt;/strong&gt;：是否启用 IP 路由（一般为 No）。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;WINS Proxy Enabled&lt;/strong&gt;：是否启用 WINS 代理，较少使用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;ethernet-adapter-以太网&#34;&gt;Ethernet adapter 以太网
+&lt;/h4&gt;&lt;p&gt;本地有线网卡的信息：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Media State&lt;/strong&gt;：媒体状态，如 &lt;code&gt;Media disconnected&lt;/code&gt; 表示未连接。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Description&lt;/strong&gt;：网卡说明，例如 &lt;code&gt;Realtek PCIe GBE Family Controller&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Physical Address&lt;/strong&gt;：物理地址（MAC地址）。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DHCP Enabled&lt;/strong&gt;：是否启用 DHCP 自动获取IP。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Autoconfiguration Enabled&lt;/strong&gt;：是否启用自动配置。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;wireless-lan-adapter-本地连接-1--2&#34;&gt;Wireless LAN adapter 本地连接* 1 / 2
+&lt;/h4&gt;&lt;p&gt;Wi-Fi Direct 虚拟适配器，系统自动生成：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Media State&lt;/strong&gt;：媒体状态，通常未连接。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Description&lt;/strong&gt;：设备说明，如 &lt;code&gt;Microsoft Wi-Fi Direct Virtual Adapter&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Physical Address&lt;/strong&gt;：MAC地址。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DHCP/Autoconfiguration Enabled&lt;/strong&gt;：是否启用 DHCP / 自动配置。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;ethernet-adapter-以太网-2--3&#34;&gt;Ethernet adapter 以太网 2 / 3
+&lt;/h4&gt;&lt;p&gt;由 VPN、游戏加速器等软件创建的虚拟网卡：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Description&lt;/strong&gt;：设备名称，例如 &lt;code&gt;TAP-Windows Adapter V9&lt;/code&gt;、&lt;code&gt;Netease UU TAP-Win32 Adapter&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Media State&lt;/strong&gt;：未连接。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Physical Address&lt;/strong&gt;：MAC地址。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DHCP/Autoconfiguration Enabled&lt;/strong&gt;：一般启用，但未连接。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;wireless-lan-adapter-wlan&#34;&gt;Wireless LAN adapter WLAN
+&lt;/h4&gt;&lt;p&gt;当前正在使用的无线网络适配器：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Description&lt;/strong&gt;：无线网卡名称，例如 &lt;code&gt;Realtek 8852CE WiFi&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Physical Address&lt;/strong&gt;：MAC地址。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DHCP Enabled&lt;/strong&gt;：启用 DHCP，动态获取 IP。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Autoconfiguration Enabled&lt;/strong&gt;：启用自动配置。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IPv6 Address&lt;/strong&gt;：当前分配的 IPv6 地址。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Temporary IPv6 Address&lt;/strong&gt;：用于隐私保护的临时 IPv6。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Link-local IPv6 Address&lt;/strong&gt;：局域网内部通信用的地址。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IPv4 Address&lt;/strong&gt;：分配到的 IPv4 地址，例如 &lt;code&gt;192.153.75.70&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Subnet Mask&lt;/strong&gt;：子网掩码，定义子网范围。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Lease Obtained / Expires&lt;/strong&gt;：IP 地址租约的获取和到期时间。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Default Gateway&lt;/strong&gt;：默认网关，通常是路由器地址。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DHCP Server&lt;/strong&gt;：为设备分配 IP 的 DHCP 服务器地址。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DHCPv6 IAID / DUID&lt;/strong&gt;：IPv6 配置的唯一标识符。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DNS Servers&lt;/strong&gt;：用于域名解析的服务器列表。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;NetBIOS over Tcpip&lt;/strong&gt;：是否启用了 NetBIOS（局域网名称识别协议）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;ping命令&#34;&gt;ping命令
+&lt;/h2&gt;&lt;h3 id=&#34;ping-127001&#34;&gt;ping 127.0.0.1
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ping 127.0.0.1
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;127.0.0.1 是回环地址&lt;br&gt;
+作用是测试本机网络协议栈是否正常工作
+&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-2.png&#34;
+	width=&#34;786&#34;
+	height=&#34;338&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-2_hu_32061c976561c98e.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-2_hu_81f184ba3b51fee3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;232&#34;
+		data-flex-basis=&#34;558px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;ping-本机ip&#34;&gt;ping 本机IP
+&lt;/h3&gt;&lt;p&gt;ipconfig命令中的本机地址&lt;br&gt;
+ipv4或6随意 建议4&lt;br&gt;
+&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-3.png&#34;
+	width=&#34;989&#34;
+	height=&#34;1098&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-3_hu_ceaa27cbfd161d08.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-3_hu_96a2bf2a8712cfb4.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;90&#34;
+		data-flex-basis=&#34;216px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ping 本机ip
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-4.png&#34;
+	width=&#34;820&#34;
+	height=&#34;334&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-4_hu_9b5a5b7a7d544e18.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-4_hu_722596af8e888c5f.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;245&#34;
+		data-flex-basis=&#34;589px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;ping-局域网内其他ip&#34;&gt;ping 局域网内其他ip
+&lt;/h3&gt;&lt;h4 id=&#34;ping-手机ip由于防火墙可能ping不通&#34;&gt;ping 手机ip(由于防火墙可能ping不通)
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/e1fe559af273efd0f39b2c626c7fb044.jpg&#34;
+	width=&#34;1220&#34;
+	height=&#34;2700&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/e1fe559af273efd0f39b2c626c7fb044_hu_3af39ad3639b4dd5.jpg 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/e1fe559af273efd0f39b2c626c7fb044_hu_41c9419f6ea5528.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;45&#34;
+		data-flex-basis=&#34;108px&#34;
+	
+&gt;
+手机地址有防火墙ping不通
+&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-5.png&#34;
+	width=&#34;815&#34;
+	height=&#34;290&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-5_hu_af6da67b98df5375.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-5_hu_a34ceb82e429eeb.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;281&#34;
+		data-flex-basis=&#34;674px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;备选-boson-netsim-10模拟&#34;&gt;(备选) Boson NetSim 10模拟
+&lt;/h4&gt;&lt;p&gt;建立
+&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-6.png&#34;
+	width=&#34;518&#34;
+	height=&#34;336&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-6_hu_3fc98566004554be.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-6_hu_6b9fe111afd97a14.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;154&#34;
+		data-flex-basis=&#34;370px&#34;
+	
+&gt;
+设置ip略&lt;br&gt;
+pc1 192.168.1.1 255.255.255.0&lt;br&gt;
+pc1 192.168.1.2 255.255.255.0&lt;br&gt;
+&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-7.png&#34;
+	width=&#34;1231&#34;
+	height=&#34;960&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-7_hu_a8b4ade6945590a9.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-7_hu_a972fafc374b832b.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;128&#34;
+		data-flex-basis=&#34;307px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;ping-网关ip&#34;&gt;ping 网关ip
+&lt;/h3&gt;&lt;p&gt;网关ip位置&lt;br&gt;
+&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-9.png&#34;
+	width=&#34;976&#34;
+	height=&#34;1090&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-9_hu_5ade4db7c9fab293.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-9_hu_f3d364502b5e9a7.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;89&#34;
+		data-flex-basis=&#34;214px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ping 网关ip
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-10.png&#34;
+	width=&#34;824&#34;
+	height=&#34;337&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-10_hu_3dc8a35a6a564e3a.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-10_hu_30dc1870a72928ee.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;244&#34;
+		data-flex-basis=&#34;586px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;ping-远程ip&#34;&gt;ping 远程ip
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ping 1.1.1.1
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;1.1.1.1 是CloudflareDNS 服务器IP 随便ping&lt;/strong&gt;
+&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-8.png&#34;
+	width=&#34;788&#34;
+	height=&#34;335&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-8_hu_b7340b95a12c13e9.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-8_hu_7beb4908bbd9c7f0.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;235&#34;
+		data-flex-basis=&#34;564px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;ping-localhost&#34;&gt;ping localhost
+&lt;/h3&gt;&lt;p&gt;localhost：是一个特殊的主机名，代表“本机”&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ping localhost
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-11.png&#34;
+	width=&#34;833&#34;
+	height=&#34;333&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-11_hu_28d9959f48e05e54.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-11_hu_59e316c5913ce378.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;250&#34;
+		data-flex-basis=&#34;600px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;ping-互联网上服务器&#34;&gt;ping 互联网上服务器
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ping www.bilibili.com
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-12.png&#34;
+	width=&#34;1051&#34;
+	height=&#34;338&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-12_hu_b5c1d0ed31187006.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-12_hu_e95edf2dc4a83785.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;310&#34;
+		data-flex-basis=&#34;746px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;tracert&#34;&gt;tracert
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tracert www.bilibili.com
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-14.png&#34;
+	width=&#34;866&#34;
+	height=&#34;570&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-14_hu_f3e6346ad0b34481.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-14_hu_3d9d392b8687fef1.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;151&#34;
+		data-flex-basis=&#34;364px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tracert www.github.com
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-15.png&#34;
+	width=&#34;1157&#34;
+	height=&#34;775&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-15_hu_d0b08bd71071abd0.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-15_hu_de249048056765ce.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;149&#34;
+		data-flex-basis=&#34;358px&#34;
+	
+&gt;
+跳数   时间1   时间2   时间3   主机名/IP地址&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;选项&lt;/th&gt;
+          &lt;th&gt;含义&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;-d&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;不解析主机名，仅显示 IP 地址&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;-h &amp;lt;最大跃点&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;设置最大跳数（默认 30）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;-w &amp;lt;超时&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;每跳等待回应的时间（单位：毫秒）&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;发送 ICMP 回显请求（Echo Request）或 UDP 数据包；&lt;/li&gt;
+&lt;li&gt;设置每个数据包的 TTL（Time To Live）值从 1 开始递增；&lt;/li&gt;
+&lt;li&gt;每当数据包到达一个路由器，TTL 减 1；&lt;/li&gt;
+&lt;li&gt;当 TTL 减到 0，路由器丢弃该包并返回一个 “超时”（Time Exceeded）的 ICMP 报文；&lt;/li&gt;
+&lt;li&gt;tracert 接收到这个超时响应，就知道这是一跳；&lt;/li&gt;
+&lt;li&gt;重复此过程直到到达目标主机或达到最大跳数（默认 30）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;netstat&#34;&gt;netstat
+&lt;/h2&gt;&lt;p&gt;有网络上下行就可以进行
+打开浏览器访问 &lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;哔哩哔哩&lt;/a&gt;放个视频&lt;/p&gt;
+&lt;h3 id=&#34;netstat-1&#34;&gt;netstat
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;netstat
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;适可而止就行统计数据太多了 太慢了  &lt;br&gt;
+ctrl+c强制停止&lt;br&gt;
+&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-16.png&#34;
+	width=&#34;990&#34;
+	height=&#34;823&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-16_hu_8561d0d4148867e5.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-16_hu_d606580a967931bf.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;120&#34;
+		data-flex-basis=&#34;288px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;netstat--s&#34;&gt;netstat -s
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;netstat –s
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-18.png&#34;
+	width=&#34;1115&#34;
+	height=&#34;3313&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-18_hu_873b69fffbaac592.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-18_hu_cb49bad19c19433.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;33&#34;
+		data-flex-basis=&#34;80px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;netstat--e&#34;&gt;netstat -e
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;netstat –e
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-19.png&#34;
+	width=&#34;774&#34;
+	height=&#34;304&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-19_hu_cf37bd6c7be0037d.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-19_hu_e8501f5e9162cdc3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;254&#34;
+		data-flex-basis=&#34;611px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;netstat--r&#34;&gt;netstat -r
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;netstat -r
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-20.png&#34;
+	width=&#34;1133&#34;
+	height=&#34;1346&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-20_hu_ad3b8021df398d26.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-20_hu_148f2c7f5a07aa6a.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;84&#34;
+		data-flex-basis=&#34;202px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;netstat--a&#34;&gt;netstat -a
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;netstat -a
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;连接太多了&lt;br&gt;
+&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-22.png&#34;
+	width=&#34;989&#34;
+	height=&#34;1121&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-22_hu_f99b6d1c8a949142.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-22_hu_bf1afe50b7e958b3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;88&#34;
+		data-flex-basis=&#34;211px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;netstat--n&#34;&gt;netstat -n
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;netstat -n
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-23.png&#34;
+	width=&#34;997&#34;
+	height=&#34;7498&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-23_hu_13606f252088326f.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-23_hu_2880f4c0620b0038.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;13&#34;
+		data-flex-basis=&#34;31px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;命令&lt;/th&gt;
+          &lt;th&gt;核心用途&lt;/th&gt;
+          &lt;th&gt;分析重点&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;netstat&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;查看连接状态&lt;/td&gt;
+          &lt;td&gt;是否成功访问外部网络&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;netstat -s&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;协议层统计数据&lt;/td&gt;
+          &lt;td&gt;检查 TCP/UDP 错误和传输情况&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;netstat -e&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;网卡接口统计信息&lt;/td&gt;
+          &lt;td&gt;流量分析、是否有异常错误&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;netstat -r&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;路由信息&lt;/td&gt;
+          &lt;td&gt;是否正确配置默认网关&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;netstat -a&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;所有监听与连接端口&lt;/td&gt;
+          &lt;td&gt;有无监听服务/端口暴露风险&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;netstat -n&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;纯 IP 连接信息&lt;/td&gt;
+          &lt;td&gt;快速定位目标地址&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;arp&#34;&gt;arp
+&lt;/h2&gt;&lt;p&gt;记得管理员权限运行
+&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-26.png&#34;
+	width=&#34;1157&#34;
+	height=&#34;1061&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-26_hu_ae37d2912c288e95.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-26_hu_c586325cfd9cfe2.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;109&#34;
+		data-flex-basis=&#34;261px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;arp--a&#34;&gt;arp -a
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;arp -a
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-24.png&#34;
+	width=&#34;755&#34;
+	height=&#34;310&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-24_hu_9bb33c304895dfda.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-24_hu_610505fe8fda9903.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;243&#34;
+		data-flex-basis=&#34;584px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;arp--s&#34;&gt;arp -s
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;arp -s ip地址
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;arp -s 192.168.1.200 00-aa-bb-cc-dd-ee
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;//例子 记得删除
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;arp -a
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-27.png&#34;
+	width=&#34;1200&#34;
+	height=&#34;540&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-27_hu_856010663c813d42.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-27_hu_300f336b3c0fde34.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;222&#34;
+		data-flex-basis=&#34;533px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;arp--d&#34;&gt;arp -d
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;arp -d 192.168.1.200
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;//删除ip
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;arp -a
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-28.png&#34;
+	width=&#34;1200&#34;
+	height=&#34;540&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-28_hu_28c4a2c697756104.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-28_hu_7534ede17bba1e56.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;222&#34;
+		data-flex-basis=&#34;533px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;命令&lt;/th&gt;
+          &lt;th&gt;主要功能&lt;/th&gt;
+          &lt;th&gt;备注&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;arp -a&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;查看所有缓存的 ARP 项&lt;/td&gt;
+          &lt;td&gt;包括动态学习与静态设置&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;arp -s IP MAC&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;添加静态 ARP 条目&lt;/td&gt;
+          &lt;td&gt;永久有效，需管理员权限&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;arp -d IP&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;删除指定静态 ARP 项&lt;/td&gt;
+          &lt;td&gt;动态项无法手动删除&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;route&#34;&gt;route
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;需要管理员权限&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;route-print&#34;&gt;route print
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;route print
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-29.png&#34;
+	width=&#34;1106&#34;
+	height=&#34;1348&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-29_hu_71a620c3dee58222.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-29_hu_5051a8f426f60110.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;82&#34;
+		data-flex-basis=&#34;196px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;route-add&#34;&gt;route add
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;route add 10.10.10.0 mask 255.255.255.0 192.168.1.1 metric 1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;route print
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-30.png&#34;
+	width=&#34;1200&#34;
+	height=&#34;1134&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-30_hu_f758c0573b0672cf.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-30_hu_a0631ca591bee3c8.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;105&#34;
+		data-flex-basis=&#34;253px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;route-change&#34;&gt;route change
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;route change 10.10.10.0 mask 255.255.255.0 192.168.1.254
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;route print
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-32.png&#34;
+	width=&#34;952&#34;
+	height=&#34;897&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-32_hu_5fe2602db3cbe263.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-32_hu_f78cc4d8216372ad.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;106&#34;
+		data-flex-basis=&#34;254px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;route-delete&#34;&gt;route delete
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;route delete 10.10.10.0
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;route print
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-33.png&#34;
+	width=&#34;877&#34;
+	height=&#34;911&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-33_hu_8e2b689fb34c4827.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-33_hu_8587c1d7da9cba0f.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;96&#34;
+		data-flex-basis=&#34;231px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;命令&lt;/th&gt;
+          &lt;th&gt;示例&lt;/th&gt;
+          &lt;th&gt;功能&lt;/th&gt;
+          &lt;th&gt;备注&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;route print&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;—&lt;/td&gt;
+          &lt;td&gt;显示完整路由表&lt;/td&gt;
+          &lt;td&gt;可用于排查连接问题&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;route add&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;route add 10.10.10.0 mask 255.255.255.0 192.168.1.1&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;添加静态路由&lt;/td&gt;
+          &lt;td&gt;需管理员权限&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;route change&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;route change 10.10.10.0 mask 255.255.255.0 192.168.1.254&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;修改路由路径&lt;/td&gt;
+          &lt;td&gt;要先存在&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;route delete&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;route delete 10.10.10.0&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;删除指定路由&lt;/td&gt;
+          &lt;td&gt;删除自定义路由防止冲突&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;net-user&#34;&gt;net user
+&lt;/h2&gt;&lt;h3 id=&#34;net-user-1&#34;&gt;net user
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;net user
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-34.png&#34;
+	width=&#34;815&#34;
+	height=&#34;185&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-34_hu_5e9b873956cc11b.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-34_hu_f91d64a80eef3f4d.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;440&#34;
+		data-flex-basis=&#34;1057px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;net-user-id&#34;&gt;net user id
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;net user 用户id
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-35.png&#34;
+	width=&#34;592&#34;
+	height=&#34;495&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-35_hu_a69293703ba0a6f8.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-35_hu_258453dc98f9886f.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;119&#34;
+		data-flex-basis=&#34;287px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;net-use&#34;&gt;net use
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-36.png&#34;
+	width=&#34;433&#34;
+	height=&#34;50&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-36_hu_f2bf8e3041cde7b9.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-36_hu_5cf15b47d4ae8993.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;866&#34;
+		data-flex-basis=&#34;2078px&#34;
+	
+&gt;
+当前计算机没有连接任何网络共享资源，也没有映射网络驱动器&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>计算机网络_实验1</title>
         <link>https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/</link>
         <pubDate>Wed, 21 May 2025 21:18:07 +0800</pubDate>

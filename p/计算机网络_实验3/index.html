@@ -1,0 +1,2043 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="实验 本地电脑命令行即可\nwin+r 输入cmd或powershell\n推荐powershell\nipconfig命令 ipconfig 1 ipconfig ipconfig /all 1 ipconfig /all ipconfig /all 返回信息详解 Windows IP Configuration 显示主机网络的总体配置信息：\n">
+<title>计算机网络_实验3</title>
+
+<link rel='canonical' href='https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/'>
+
+<link rel="stylesheet" href="/scss/style.min.5dced6304520b81d0552d4a1b0e8f495eb4bf52326b6af25851dfd2cf5fc0ddc.css"><meta property='og:title' content="计算机网络_实验3">
+<meta property='og:description' content="实验 本地电脑命令行即可\nwin+r 输入cmd或powershell\n推荐powershell\nipconfig命令 ipconfig 1 ipconfig ipconfig /all 1 ipconfig /all ipconfig /all 返回信息详解 Windows IP Configuration 显示主机网络的总体配置信息：\n">
+<meta property='og:url' content='https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/'>
+<meta property='og:site_name' content='2332ly'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-05-22T20:17:43&#43;08:00'/><meta property='article:modified_time' content='2025-05-22T21:35:10&#43;08:00'/><meta property='og:image' content='https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/imagetop-1.png' />
+<meta name="twitter:title" content="计算机网络_实验3">
+<meta name="twitter:description" content="实验 本地电脑命令行即可\nwin+r 输入cmd或powershell\n推荐powershell\nipconfig命令 ipconfig 1 ipconfig ipconfig /all 1 ipconfig /all ipconfig /all 返回信息详解 Windows IP Configuration 显示主机网络的总体配置信息：\n"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/imagetop-1.png' />
+    <link rel="shortcut icon" href="/favicon.ico" />
+<style>
+    :root {
+        --article-font-family: "Noto Serif SC", var(--base-font-family);
+    }
+</style>
+
+<script>
+		(function () {
+		    const customFont = document.createElement('link');
+		    customFont.href = "https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap";
+		
+		    customFont.type = "text/css";
+		    customFont.rel = "stylesheet";
+		
+		    document.head.appendChild(customFont);
+		}());
+</script>
+
+<div id="particles-js"></div>
+
+<script src=https://2332ly.github.io/background/particles.min.js></script>
+<script>
+  particlesJS.load('particles-js', "https://2332ly.github.io/background/particlesjs-config.json", function() {
+    console.log('particles.js loaded - callback');
+  });
+</script>
+
+<style>
+  #particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+  }
+</style>
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/08_hu_b6524cc092652a8b.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🦌</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">2332ly</a></h1>
+            <h2 class="site-description">演示说明</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/2332ly'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友情链接</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+                    
+                        <li id="i18n-switch">  
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                            <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
+                                
+                                    <option value="https://2332ly.github.io/en/" >English</option>
+                                
+                                    <option value="https://2332ly.github.io/" selected>简体中文</option>
+                                
+                                    <option value="https://2332ly.github.io/ar/" >عربي</option>
+                                
+                            </select>
+                        </li>
+                    
+                
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span></span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title"></h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#ipconfig命令">ipconfig命令</a>
+      <ol>
+        <li><a href="#ipconfig">ipconfig</a></li>
+        <li><a href="#ipconfig-all">ipconfig /all</a></li>
+        <li><a href="#ipconfig-all-返回信息详解"><code>ipconfig /all</code> 返回信息详解</a>
+          <ol>
+            <li><a href="#windows-ip-configuration">Windows IP Configuration</a></li>
+            <li><a href="#ethernet-adapter-以太网">Ethernet adapter 以太网</a></li>
+            <li><a href="#wireless-lan-adapter-本地连接-1--2">Wireless LAN adapter 本地连接* 1 / 2</a></li>
+            <li><a href="#ethernet-adapter-以太网-2--3">Ethernet adapter 以太网 2 / 3</a></li>
+            <li><a href="#wireless-lan-adapter-wlan">Wireless LAN adapter WLAN</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#ping命令">ping命令</a>
+      <ol>
+        <li><a href="#ping-127001">ping 127.0.0.1</a></li>
+        <li><a href="#ping-本机ip">ping 本机IP</a></li>
+        <li><a href="#ping-局域网内其他ip">ping 局域网内其他ip</a>
+          <ol>
+            <li><a href="#ping-手机ip由于防火墙可能ping不通">ping 手机ip(由于防火墙可能ping不通)</a></li>
+            <li><a href="#备选-boson-netsim-10模拟">(备选) Boson NetSim 10模拟</a></li>
+          </ol>
+        </li>
+        <li><a href="#ping-网关ip">ping 网关ip</a></li>
+        <li><a href="#ping-远程ip">ping 远程ip</a></li>
+        <li><a href="#ping-localhost">ping localhost</a></li>
+        <li><a href="#ping-互联网上服务器">ping 互联网上服务器</a></li>
+        <li><a href="#tracert">tracert</a></li>
+      </ol>
+    </li>
+    <li><a href="#netstat">netstat</a>
+      <ol>
+        <li><a href="#netstat-1">netstat</a></li>
+        <li><a href="#netstat--s">netstat -s</a></li>
+        <li><a href="#netstat--e">netstat -e</a></li>
+        <li><a href="#netstat--r">netstat -r</a></li>
+        <li><a href="#netstat--a">netstat -a</a></li>
+        <li><a href="#netstat--n">netstat -n</a></li>
+      </ol>
+    </li>
+    <li><a href="#arp">arp</a>
+      <ol>
+        <li><a href="#arp--a">arp -a</a></li>
+        <li><a href="#arp--s">arp -s</a></li>
+        <li><a href="#arp--d">arp -d</a></li>
+      </ol>
+    </li>
+    <li><a href="#route">route</a>
+      <ol>
+        <li><a href="#route-print">route print</a></li>
+        <li><a href="#route-add">route add</a></li>
+        <li><a href="#route-change">route change</a></li>
+        <li><a href="#route-delete">route delete</a></li>
+      </ol>
+    </li>
+    <li><a href="#net-user">net user</a>
+      <ol>
+        <li><a href="#net-user-1">net user</a></li>
+        <li><a href="#net-user-id">net user id</a></li>
+      </ol>
+    </li>
+    <li><a href="#net-use">net use</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/">
+                <img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/imagetop-1_hu_8afda48eefdd33f8.png"
+                        srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/imagetop-1_hu_8afda48eefdd33f8.png 800w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/imagetop-1_hu_e6cd8947a859ded1.png 1600w"
+                        width="800" 
+                        height="624" 
+                        loading="lazy"
+                        alt="Featured image of post 计算机网络_实验3" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" >
+                计算机网络
+            </a>
+        
+            <a href="/categories/%E5%AE%9E%E9%AA%8C/" >
+                实验
+            </a>
+        
+            <a href="/categories/%E6%95%99%E7%A8%8B/" >
+                教程
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/">计算机网络_实验3</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2025-05-22</time>
+            </div>
+        
+
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="实验">实验
+</h1><p><strong>本地电脑命令行即可</strong><br>
+win+r 输入cmd或powershell<br>
+推荐powershell</p>
+<h2 id="ipconfig命令">ipconfig命令
+</h2><h3 id="ipconfig">ipconfig
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ipconfig
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image.png"
+	width="1730"
+	height="1428"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image_hu_2009fc64b6281eb8.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image_hu_fc0643e2bae68d1d.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="121"
+		data-flex-basis="290px"
+	
+></p>
+<h3 id="ipconfig-all">ipconfig /all
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ipconfig /all 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-1.png"
+	width="1730"
+	height="2220"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-1_hu_87e6b1addbb99608.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-1_hu_43b2555d645f959a.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="77"
+		data-flex-basis="187px"
+	
+></p>
+<h3 id="ipconfig-all-返回信息详解"><code>ipconfig /all</code> 返回信息详解
+</h3><h4 id="windows-ip-configuration">Windows IP Configuration
+</h4><p>显示主机网络的总体配置信息：</p>
+<ul>
+<li><strong>Host Name</strong>：计算机名称，例如 <code>LAPTOP-0INSFLG6</code>。</li>
+<li><strong>Primary DNS Suffix</strong>：主 DNS 后缀，通常为空，表示未加入域。</li>
+<li><strong>Node Type</strong>：节点类型（如 Hybrid 表示混合类型）。</li>
+<li><strong>IP Routing Enabled</strong>：是否启用 IP 路由（一般为 No）。</li>
+<li><strong>WINS Proxy Enabled</strong>：是否启用 WINS 代理，较少使用。</li>
+</ul>
+<hr>
+<h4 id="ethernet-adapter-以太网">Ethernet adapter 以太网
+</h4><p>本地有线网卡的信息：</p>
+<ul>
+<li><strong>Media State</strong>：媒体状态，如 <code>Media disconnected</code> 表示未连接。</li>
+<li><strong>Description</strong>：网卡说明，例如 <code>Realtek PCIe GBE Family Controller</code>。</li>
+<li><strong>Physical Address</strong>：物理地址（MAC地址）。</li>
+<li><strong>DHCP Enabled</strong>：是否启用 DHCP 自动获取IP。</li>
+<li><strong>Autoconfiguration Enabled</strong>：是否启用自动配置。</li>
+</ul>
+<hr>
+<h4 id="wireless-lan-adapter-本地连接-1--2">Wireless LAN adapter 本地连接* 1 / 2
+</h4><p>Wi-Fi Direct 虚拟适配器，系统自动生成：</p>
+<ul>
+<li><strong>Media State</strong>：媒体状态，通常未连接。</li>
+<li><strong>Description</strong>：设备说明，如 <code>Microsoft Wi-Fi Direct Virtual Adapter</code>。</li>
+<li><strong>Physical Address</strong>：MAC地址。</li>
+<li><strong>DHCP/Autoconfiguration Enabled</strong>：是否启用 DHCP / 自动配置。</li>
+</ul>
+<hr>
+<h4 id="ethernet-adapter-以太网-2--3">Ethernet adapter 以太网 2 / 3
+</h4><p>由 VPN、游戏加速器等软件创建的虚拟网卡：</p>
+<ul>
+<li><strong>Description</strong>：设备名称，例如 <code>TAP-Windows Adapter V9</code>、<code>Netease UU TAP-Win32 Adapter</code>。</li>
+<li><strong>Media State</strong>：未连接。</li>
+<li><strong>Physical Address</strong>：MAC地址。</li>
+<li><strong>DHCP/Autoconfiguration Enabled</strong>：一般启用，但未连接。</li>
+</ul>
+<hr>
+<h4 id="wireless-lan-adapter-wlan">Wireless LAN adapter WLAN
+</h4><p>当前正在使用的无线网络适配器：</p>
+<ul>
+<li><strong>Description</strong>：无线网卡名称，例如 <code>Realtek 8852CE WiFi</code>。</li>
+<li><strong>Physical Address</strong>：MAC地址。</li>
+<li><strong>DHCP Enabled</strong>：启用 DHCP，动态获取 IP。</li>
+<li><strong>Autoconfiguration Enabled</strong>：启用自动配置。</li>
+<li><strong>IPv6 Address</strong>：当前分配的 IPv6 地址。</li>
+<li><strong>Temporary IPv6 Address</strong>：用于隐私保护的临时 IPv6。</li>
+<li><strong>Link-local IPv6 Address</strong>：局域网内部通信用的地址。</li>
+<li><strong>IPv4 Address</strong>：分配到的 IPv4 地址，例如 <code>192.153.75.70</code>。</li>
+<li><strong>Subnet Mask</strong>：子网掩码，定义子网范围。</li>
+<li><strong>Lease Obtained / Expires</strong>：IP 地址租约的获取和到期时间。</li>
+<li><strong>Default Gateway</strong>：默认网关，通常是路由器地址。</li>
+<li><strong>DHCP Server</strong>：为设备分配 IP 的 DHCP 服务器地址。</li>
+<li><strong>DHCPv6 IAID / DUID</strong>：IPv6 配置的唯一标识符。</li>
+<li><strong>DNS Servers</strong>：用于域名解析的服务器列表。</li>
+<li><strong>NetBIOS over Tcpip</strong>：是否启用了 NetBIOS（局域网名称识别协议）。</li>
+</ul>
+<hr>
+<h2 id="ping命令">ping命令
+</h2><h3 id="ping-127001">ping 127.0.0.1
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ping 127.0.0.1
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>127.0.0.1 是回环地址<br>
+作用是测试本机网络协议栈是否正常工作
+<img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-2.png"
+	width="786"
+	height="338"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-2_hu_32061c976561c98e.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-2_hu_81f184ba3b51fee3.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="232"
+		data-flex-basis="558px"
+	
+></p>
+<h3 id="ping-本机ip">ping 本机IP
+</h3><p>ipconfig命令中的本机地址<br>
+ipv4或6随意 建议4<br>
+<img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-3.png"
+	width="989"
+	height="1098"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-3_hu_ceaa27cbfd161d08.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-3_hu_96a2bf2a8712cfb4.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="90"
+		data-flex-basis="216px"
+	
+></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ping 本机ip
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-4.png"
+	width="820"
+	height="334"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-4_hu_9b5a5b7a7d544e18.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-4_hu_722596af8e888c5f.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="245"
+		data-flex-basis="589px"
+	
+></p>
+<h3 id="ping-局域网内其他ip">ping 局域网内其他ip
+</h3><h4 id="ping-手机ip由于防火墙可能ping不通">ping 手机ip(由于防火墙可能ping不通)
+</h4><p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/e1fe559af273efd0f39b2c626c7fb044.jpg"
+	width="1220"
+	height="2700"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/e1fe559af273efd0f39b2c626c7fb044_hu_3af39ad3639b4dd5.jpg 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/e1fe559af273efd0f39b2c626c7fb044_hu_41c9419f6ea5528.jpg 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="45"
+		data-flex-basis="108px"
+	
+>
+手机地址有防火墙ping不通
+<img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-5.png"
+	width="815"
+	height="290"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-5_hu_af6da67b98df5375.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-5_hu_a34ceb82e429eeb.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="281"
+		data-flex-basis="674px"
+	
+></p>
+<h4 id="备选-boson-netsim-10模拟">(备选) Boson NetSim 10模拟
+</h4><p>建立
+<img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-6.png"
+	width="518"
+	height="336"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-6_hu_3fc98566004554be.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-6_hu_6b9fe111afd97a14.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="154"
+		data-flex-basis="370px"
+	
+>
+设置ip略<br>
+pc1 192.168.1.1 255.255.255.0<br>
+pc1 192.168.1.2 255.255.255.0<br>
+<img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-7.png"
+	width="1231"
+	height="960"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-7_hu_a8b4ade6945590a9.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-7_hu_a972fafc374b832b.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="128"
+		data-flex-basis="307px"
+	
+></p>
+<h3 id="ping-网关ip">ping 网关ip
+</h3><p>网关ip位置<br>
+<img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-9.png"
+	width="976"
+	height="1090"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-9_hu_5ade4db7c9fab293.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-9_hu_f3d364502b5e9a7.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="89"
+		data-flex-basis="214px"
+	
+></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ping 网关ip
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-10.png"
+	width="824"
+	height="337"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-10_hu_3dc8a35a6a564e3a.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-10_hu_30dc1870a72928ee.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="244"
+		data-flex-basis="586px"
+	
+></p>
+<h3 id="ping-远程ip">ping 远程ip
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ping 1.1.1.1
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>1.1.1.1 是CloudflareDNS 服务器IP 随便ping</strong>
+<img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-8.png"
+	width="788"
+	height="335"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-8_hu_b7340b95a12c13e9.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-8_hu_7beb4908bbd9c7f0.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="235"
+		data-flex-basis="564px"
+	
+></p>
+<h3 id="ping-localhost">ping localhost
+</h3><p>localhost：是一个特殊的主机名，代表“本机”</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ping localhost
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-11.png"
+	width="833"
+	height="333"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-11_hu_28d9959f48e05e54.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-11_hu_59e316c5913ce378.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="250"
+		data-flex-basis="600px"
+	
+></p>
+<h3 id="ping-互联网上服务器">ping 互联网上服务器
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ping www.bilibili.com
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-12.png"
+	width="1051"
+	height="338"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-12_hu_b5c1d0ed31187006.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-12_hu_e95edf2dc4a83785.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="310"
+		data-flex-basis="746px"
+	
+></p>
+<h3 id="tracert">tracert
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">tracert www.bilibili.com
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-14.png"
+	width="866"
+	height="570"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-14_hu_f3e6346ad0b34481.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-14_hu_3d9d392b8687fef1.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="151"
+		data-flex-basis="364px"
+	
+></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">tracert www.github.com
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-15.png"
+	width="1157"
+	height="775"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-15_hu_d0b08bd71071abd0.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-15_hu_de249048056765ce.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="149"
+		data-flex-basis="358px"
+	
+>
+跳数   时间1   时间2   时间3   主机名/IP地址</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>选项</th>
+          <th>含义</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>-d</code></td>
+          <td>不解析主机名，仅显示 IP 地址</td>
+      </tr>
+      <tr>
+          <td><code>-h &lt;最大跃点&gt;</code></td>
+          <td>设置最大跳数（默认 30）</td>
+      </tr>
+      <tr>
+          <td><code>-w &lt;超时&gt;</code></td>
+          <td>每跳等待回应的时间（单位：毫秒）</td>
+      </tr>
+  </tbody>
+</table></div>
+<ul>
+<li>发送 ICMP 回显请求（Echo Request）或 UDP 数据包；</li>
+<li>设置每个数据包的 TTL（Time To Live）值从 1 开始递增；</li>
+<li>每当数据包到达一个路由器，TTL 减 1；</li>
+<li>当 TTL 减到 0，路由器丢弃该包并返回一个 “超时”（Time Exceeded）的 ICMP 报文；</li>
+<li>tracert 接收到这个超时响应，就知道这是一跳；</li>
+<li>重复此过程直到到达目标主机或达到最大跳数（默认 30）</li>
+</ul>
+<h2 id="netstat">netstat
+</h2><p>有网络上下行就可以进行
+打开浏览器访问 <a class="link" href="https://www.bilibili.com"  target="_blank" rel="noopener"
+    >哔哩哔哩</a>放个视频</p>
+<h3 id="netstat-1">netstat
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">netstat
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>适可而止就行统计数据太多了 太慢了  <br>
+ctrl+c强制停止<br>
+<img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-16.png"
+	width="990"
+	height="823"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-16_hu_8561d0d4148867e5.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-16_hu_d606580a967931bf.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="120"
+		data-flex-basis="288px"
+	
+></p>
+<h3 id="netstat--s">netstat -s
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">netstat –s
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-18.png"
+	width="1115"
+	height="3313"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-18_hu_873b69fffbaac592.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-18_hu_cb49bad19c19433.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="33"
+		data-flex-basis="80px"
+	
+></p>
+<h3 id="netstat--e">netstat -e
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">netstat –e
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-19.png"
+	width="774"
+	height="304"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-19_hu_cf37bd6c7be0037d.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-19_hu_e8501f5e9162cdc3.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="254"
+		data-flex-basis="611px"
+	
+></p>
+<h3 id="netstat--r">netstat -r
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">netstat -r
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-20.png"
+	width="1133"
+	height="1346"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-20_hu_ad3b8021df398d26.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-20_hu_148f2c7f5a07aa6a.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="84"
+		data-flex-basis="202px"
+	
+></p>
+<h3 id="netstat--a">netstat -a
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">netstat -a
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>连接太多了<br>
+<img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-22.png"
+	width="989"
+	height="1121"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-22_hu_f99b6d1c8a949142.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-22_hu_bf1afe50b7e958b3.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="88"
+		data-flex-basis="211px"
+	
+></p>
+<h3 id="netstat--n">netstat -n
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">netstat -n
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-23.png"
+	width="997"
+	height="7498"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-23_hu_13606f252088326f.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-23_hu_2880f4c0620b0038.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="13"
+		data-flex-basis="31px"
+	
+></p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>命令</th>
+          <th>核心用途</th>
+          <th>分析重点</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>netstat</code></td>
+          <td>查看连接状态</td>
+          <td>是否成功访问外部网络</td>
+      </tr>
+      <tr>
+          <td><code>netstat -s</code></td>
+          <td>协议层统计数据</td>
+          <td>检查 TCP/UDP 错误和传输情况</td>
+      </tr>
+      <tr>
+          <td><code>netstat -e</code></td>
+          <td>网卡接口统计信息</td>
+          <td>流量分析、是否有异常错误</td>
+      </tr>
+      <tr>
+          <td><code>netstat -r</code></td>
+          <td>路由信息</td>
+          <td>是否正确配置默认网关</td>
+      </tr>
+      <tr>
+          <td><code>netstat -a</code></td>
+          <td>所有监听与连接端口</td>
+          <td>有无监听服务/端口暴露风险</td>
+      </tr>
+      <tr>
+          <td><code>netstat -n</code></td>
+          <td>纯 IP 连接信息</td>
+          <td>快速定位目标地址</td>
+      </tr>
+  </tbody>
+</table></div>
+<h2 id="arp">arp
+</h2><p>记得管理员权限运行
+<img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-26.png"
+	width="1157"
+	height="1061"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-26_hu_ae37d2912c288e95.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-26_hu_c586325cfd9cfe2.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="109"
+		data-flex-basis="261px"
+	
+></p>
+<h3 id="arp--a">arp -a
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">arp -a
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-24.png"
+	width="755"
+	height="310"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-24_hu_9bb33c304895dfda.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-24_hu_610505fe8fda9903.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="243"
+		data-flex-basis="584px"
+	
+></p>
+<h3 id="arp--s">arp -s
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">arp -s ip地址
+</span></span><span class="line"><span class="cl">arp -s 192.168.1.200 00-aa-bb-cc-dd-ee
+</span></span><span class="line"><span class="cl">//例子 记得删除
+</span></span><span class="line"><span class="cl">arp -a
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-27.png"
+	width="1200"
+	height="540"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-27_hu_856010663c813d42.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-27_hu_300f336b3c0fde34.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="222"
+		data-flex-basis="533px"
+	
+></p>
+<h3 id="arp--d">arp -d
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">arp -d 192.168.1.200
+</span></span><span class="line"><span class="cl">//删除ip
+</span></span><span class="line"><span class="cl">arp -a
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-28.png"
+	width="1200"
+	height="540"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-28_hu_28c4a2c697756104.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-28_hu_7534ede17bba1e56.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="222"
+		data-flex-basis="533px"
+	
+></p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>命令</th>
+          <th>主要功能</th>
+          <th>备注</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>arp -a</code></td>
+          <td>查看所有缓存的 ARP 项</td>
+          <td>包括动态学习与静态设置</td>
+      </tr>
+      <tr>
+          <td><code>arp -s IP MAC</code></td>
+          <td>添加静态 ARP 条目</td>
+          <td>永久有效，需管理员权限</td>
+      </tr>
+      <tr>
+          <td><code>arp -d IP</code></td>
+          <td>删除指定静态 ARP 项</td>
+          <td>动态项无法手动删除</td>
+      </tr>
+  </tbody>
+</table></div>
+<h2 id="route">route
+</h2><p><strong>需要管理员权限</strong></p>
+<h3 id="route-print">route print
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">route print
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-29.png"
+	width="1106"
+	height="1348"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-29_hu_71a620c3dee58222.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-29_hu_5051a8f426f60110.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="82"
+		data-flex-basis="196px"
+	
+></p>
+<h3 id="route-add">route add
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">route add 10.10.10.0 mask 255.255.255.0 192.168.1.1 metric 1
+</span></span><span class="line"><span class="cl">route print
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-30.png"
+	width="1200"
+	height="1134"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-30_hu_f758c0573b0672cf.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-30_hu_a0631ca591bee3c8.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="105"
+		data-flex-basis="253px"
+	
+></p>
+<h3 id="route-change">route change
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">route change 10.10.10.0 mask 255.255.255.0 192.168.1.254
+</span></span><span class="line"><span class="cl">route print
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-32.png"
+	width="952"
+	height="897"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-32_hu_5fe2602db3cbe263.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-32_hu_f78cc4d8216372ad.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="106"
+		data-flex-basis="254px"
+	
+></p>
+<h3 id="route-delete">route delete
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">route delete 10.10.10.0
+</span></span><span class="line"><span class="cl">route print
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-33.png"
+	width="877"
+	height="911"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-33_hu_8e2b689fb34c4827.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-33_hu_8587c1d7da9cba0f.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="96"
+		data-flex-basis="231px"
+	
+></p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>命令</th>
+          <th>示例</th>
+          <th>功能</th>
+          <th>备注</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>route print</code></td>
+          <td>—</td>
+          <td>显示完整路由表</td>
+          <td>可用于排查连接问题</td>
+      </tr>
+      <tr>
+          <td><code>route add</code></td>
+          <td><code>route add 10.10.10.0 mask 255.255.255.0 192.168.1.1</code></td>
+          <td>添加静态路由</td>
+          <td>需管理员权限</td>
+      </tr>
+      <tr>
+          <td><code>route change</code></td>
+          <td><code>route change 10.10.10.0 mask 255.255.255.0 192.168.1.254</code></td>
+          <td>修改路由路径</td>
+          <td>要先存在</td>
+      </tr>
+      <tr>
+          <td><code>route delete</code></td>
+          <td><code>route delete 10.10.10.0</code></td>
+          <td>删除指定路由</td>
+          <td>删除自定义路由防止冲突</td>
+      </tr>
+  </tbody>
+</table></div>
+<h2 id="net-user">net user
+</h2><h3 id="net-user-1">net user
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">net user
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-34.png"
+	width="815"
+	height="185"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-34_hu_5e9b873956cc11b.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-34_hu_f91d64a80eef3f4d.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="440"
+		data-flex-basis="1057px"
+	
+></p>
+<h3 id="net-user-id">net user id
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">net user 用户id
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-35.png"
+	width="592"
+	height="495"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-35_hu_a69293703ba0a6f8.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-35_hu_258453dc98f9886f.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="119"
+		data-flex-basis="287px"
+	
+></p>
+<h2 id="net-use">net use
+</h2><p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-36.png"
+	width="433"
+	height="50"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-36_hu_f2bf8e3041cde7b9.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/image-36_hu_5cf15b47d4ae8993.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="866"
+		data-flex-basis="2078px"
+	
+>
+当前计算机没有连接任何网络共享资源，也没有映射网络驱动器</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>本文采用 CC BY-NC-SA 4.0 协议授权，转载请注明出处。</span>
+    </section>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+             May 22, 2025 21:35 &#43;0800
+        </span>
+    </section></footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title"></h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/">
+        
+        
+            <div class="article-image">
+                <img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/imagetop-1.42f93d4685c20b95b3a27ab240531eac_hu_7e00985351aa1a4e.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 计算机网络_实验1"
+                        
+                        data-hash="md5-Qvk9RoXCC5WzonqyQFMerA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">计算机网络_实验1</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/web4-%E5%9D%97%E4%B8%8E%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0/">
+        
+        
+            <div class="article-image">
+                <img src="/p/web4-%E5%9D%97%E4%B8%8E%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0/PixPin_2025-05-21_16-04-10-1.7aacfeb5006dd1b9eee0e85b7877a56d_hu_f09b6be3db439dae.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Web4 块与行内元素"
+                        
+                        data-hash="md5-eqz&#43;tQBt0bnu4OhbeHelbQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Web4 块与行内元素</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/web3-%E6%A0%87%E7%AD%BE%E5%B1%9E%E6%80%A7/">
+        
+        
+            <div class="article-image">
+                <img src="/p/web3-%E6%A0%87%E7%AD%BE%E5%B1%9E%E6%80%A7/PixPin_2025-05-21_16-04-10-1.7aacfeb5006dd1b9eee0e85b7877a56d_hu_f09b6be3db439dae.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Web3 标签属性"
+                        
+                        data-hash="md5-eqz&#43;tQBt0bnu4OhbeHelbQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Web3 标签属性</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/web2-%E6%96%87%E6%9C%AC%E6%A0%87%E7%AD%BE/">
+        
+        
+            <div class="article-image">
+                <img src="/p/web2-%E6%96%87%E6%9C%AC%E6%A0%87%E7%AD%BE/PixPin_2025-05-21_16-04-10-1.7aacfeb5006dd1b9eee0e85b7877a56d_hu_f09b6be3db439dae.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Web2 文本标签"
+                        
+                        data-hash="md5-eqz&#43;tQBt0bnu4OhbeHelbQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Web2 文本标签</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/web1-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+        
+        
+            <div class="article-image">
+                <img src="/p/web1-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/PixPin_2025-05-21_16-04-10-1.7aacfeb5006dd1b9eee0e85b7877a56d_hu_f09b6be3db439dae.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Web1 环境搭建"
+                        
+                        data-hash="md5-eqz&#43;tQBt0bnu4OhbeHelbQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Web1 环境搭建</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script src="https://utteranc.es/client.js" 
+        repo="2332ly/2332ly.github.io"
+        issue-term="pathname"
+        
+        crossorigin="anonymous"
+        async
+        >
+</script>
+
+<style>
+    .utterances {
+        max-width: unset;
+    }
+</style>
+
+<script>
+    let utterancesLoaded = false;
+
+    function setUtterancesTheme(theme) {
+        let utterances = document.querySelector('.utterances iframe');
+        if (utterances) {
+            utterances.contentWindow.postMessage(
+                {
+                    type: 'set-theme',
+                    theme: `github-${theme}`
+                },
+                'https://utteranc.es'
+            );
+        }
+    }
+
+    addEventListener('message', event => {
+        if (event.origin !== 'https://utteranc.es') return;
+
+        
+        utterancesLoaded = true;
+        setUtterancesTheme(document.documentElement.dataset.scheme)
+    });
+
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (!utterancesLoaded) return;
+        setUtterancesTheme(e.detail)
+    })
+</script>
+
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2025 Example Person
+    </section>
+    
+    <section class="powerby">
+        
+            2332ly <br/>
+         <br />
+        
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+<style>
+   
+  #TableOfContents ul,
+  #TableOfContents ol {
+    list-style: none;  
+    padding-left: 1em;  
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;  
+    overflow: hidden;  
+    max-height: 0;  
+    opacity: 0;  
+  }
+
+   
+  #TableOfContents > ul,
+  #TableOfContents > ol {
+    padding-left: 0;  
+    max-height: fit-content;  
+    opacity: 1;  
+  }
+
+   
+  #TableOfContents ul.open,
+  #TableOfContents ol.open {
+    max-height: 500px;  
+    opacity: 1;
+  }
+
+   
+  .active-class {
+    font-weight: bold;  
+    color: #007bff;  
+  }
+</style>
+
+<script>
+  function initTocFolding() {
+    const toc = document.querySelector(".widget--toc");
+    if (!toc) {
+      return; 
+    }
+
+    
+    toc.classList.add("toc-enabled");
+
+    let lastActiveLi = null; 
+
+    function updateTocVisibility() {
+      
+      document.querySelectorAll("#TableOfContents .open").forEach((ul) => {
+        ul.classList.remove("open");
+      });
+
+      const currentLi = document.querySelector(".active-class");
+
+      if (!currentLi || currentLi === lastActiveLi) {
+        
+        return;
+      }
+
+      lastActiveLi = currentLi; 
+
+      
+      const directChildUl = currentLi.querySelector("ul, ol");
+      if (directChildUl) {
+        directChildUl.classList.add("open");
+      }
+
+      
+      let parentUl = currentLi.parentElement;
+      while (parentUl && (parentUl.localName === "ul" || parentUl.localName === "ol") && parentUl.id !== "TableOfContents") {
+        parentUl.classList.add("open");
+        parentUl = parentUl.parentElement.parentElement; 
+      }
+    }
+
+    
+    let scrollTimeout;
+    window.addEventListener("scroll", () => {
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(updateTocVisibility, 100); 
+    });
+
+    
+    updateTocVisibility();
+  }
+
+  document.addEventListener("DOMContentLoaded", initTocFolding);
+</script>
+
+<style>
+    #backTopBtn {
+         
+        opacity: 0;
+        visibility: hidden;
+         
+        position: fixed;
+        bottom: 30px;  
+        right: 30px;  
+        z-index: 99;  
+        cursor: pointer;  
+
+         
+        width: 55px;  
+        height: 55px;  
+        border-radius: 50%;  
+        border: none;  
+
+         
+        background-color: #ffffff;  
+        background-image: url(https://2332ly.github.io/icons/backTop.svg); 
+        background-size: 60%;  
+        background-repeat: no-repeat;
+        background-position: center;  
+
+         
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);  
+
+         
+        transition: opacity 0.3s ease-in-out,  
+                    visibility 0.3s ease-in-out,  
+                    transform 0.3s ease-in-out,  
+                    box-shadow 0.3s ease-in-out;  
+         
+        will-change: opacity, transform;
+    }
+
+     
+    #backTopBtn.show {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);  
+    }
+
+     
+    #backTopBtn:hover {
+        background-color: rgba(0, 0, 0, 0.7);  
+        transform: translateY(-5px);  
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);  
+    }
+
+    #backTopBtn:focus {
+        outline: none;  
+        box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5);  
+        transform: translateY(-5px);  
+    }
+
+     
+    @media (max-width: 768px) {
+        #backTopBtn {
+            bottom: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            background-size: 55%;
+        }
+    }
+</style>
+
+<script>
+    
+
+    function debounce(func, delay) {
+        let timeout;
+        return function() {
+            const context = this;
+            const args = arguments;
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func.apply(context, args), delay);
+        };
+    }
+
+    
+
+    function initScrollTop() {
+        
+        let btn = document.createElement("button");
+        btn.id = "backTopBtn";
+        btn.onclick = backToTop;
+        
+        btn.setAttribute("aria-label", "返回顶部");
+        
+        btn.setAttribute("tabindex", "-1");
+
+        
+        document.body.appendChild(btn);
+
+        
+        window.onscroll = debounce(function() {
+            
+            const scrollThreshold = 200;
+
+            if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+                
+                btn.classList.add("show");
+                
+                btn.removeAttribute("tabindex");
+            } else {
+                
+                btn.classList.remove("show");
+                
+                btn.setAttribute("tabindex", "-1");
+            }
+        }, 100); 
+    }
+
+    
+
+    function backToTop(){
+        
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    
+    document.addEventListener("DOMContentLoaded", initScrollTop);
+</script>
+
+<style>
+    .highlight {
+         
+        max-height: 400px;
+        overflow: hidden;
+    }
+
+    .code-show {
+        max-height: none !important;
+    }
+
+    .code-more-box {
+        width: 100%;
+        padding-top: 78px;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#fff));
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    .code-more-btn {
+        display: block;
+        margin: auto;
+        width: 44px;
+        height: 22px;
+        background: #f0f0f5;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding-top: 6px;
+        cursor: pointer;
+    }
+
+    .code-more-img {
+        cursor: pointer !important;
+        display: block;
+        margin: auto;
+        width: 22px;
+        height: 16px;
+    }
+</style>
+
+<script>
+  function initCodeMoreBox() {
+    let codeBlocks = document.querySelectorAll(".highlight");
+    if (!codeBlocks) {
+      return;
+    }
+    codeBlocks.forEach(codeBlock => {
+      
+      if (codeBlock.scrollHeight <= codeBlock.clientHeight) {
+        return;
+      }
+      
+      
+      let codeMoreBox = document.createElement('div');
+      codeMoreBox.classList.add('code-more-box');
+      
+      let codeMoreBtn = document.createElement('span');
+      codeMoreBtn.classList.add('code-more-btn');
+      codeMoreBtn.addEventListener('click', () => {
+        codeBlock.classList.add('code-show');
+        codeMoreBox.style.display = 'none';
+        
+        window.dispatchEvent(new Event('resize'))
+      })
+      
+      let img = document.createElement('img');
+      img.classList.add('code-more-img');
+      img.src = "https://2332ly.github.io/icons/codeMore.png"
+      
+      codeMoreBtn.appendChild(img);
+      codeMoreBox.appendChild(codeMoreBtn);
+      codeBlock.appendChild(codeMoreBox)
+    })
+  }
+  
+  initCodeMoreBox();
+</script>
+
+
+<script defer src="https://cn.vercount.one/js"></script>
+
+<script>
+    function showHideView() {
+        
+        let viewCounts = document.querySelectorAll("#viewCount");
+        if (viewCounts) {
+            
+            let article =  document.querySelector(".article-page");
+            if (!article) {
+                viewCounts.forEach(ele => {
+                    ele.style.display = 'none';
+                });
+            }
+        }
+    }
+    
+    showHideView();
+</script>
+
+    </body>
+</html>
