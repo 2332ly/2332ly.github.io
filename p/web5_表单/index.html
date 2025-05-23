@@ -1,0 +1,1510 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="表单 form标签 所有表单标签包含在form内\n1 2 3 &lt;form&gt; &lt;/form&gt; input标签 type属性 决定input属性类型\n点击展开：input 标签 type 类型说明 type 类型 描述/功能 示例 HTML text 单行文本输入框 &lt;input type=&quot;text&quot;&gt; password 密码输入框，输入内容隐藏 &lt;input type=&quot;password&quot;&gt; email 邮箱地址输入框，自动校验格式 &lt;input type=&quot;email&quot;&gt; number 数字输入框，带上下箭头控制 &lt;input type=&quot;number&quot;&gt; checkbox 复选框，可以多选 &lt;input type=&quot;checkbox&quot;&gt; radio 单选框，同组只能选一个 &lt;input type=&quot;radio&quot;&gt; date 日期选择器 &lt;input type=&quot;date&quot;&gt; file 文件上传按钮 &lt;input type=&quot;file&quot;&gt; submit 提交按钮 &lt;input type=&quot;submit&quot;&gt; 1 2 3 &lt;form&gt; &lt;input type=&#34;text&#34;&gt; &lt;/form&gt; placeholder属性 1 2 3 &lt;form&gt; &lt;input type=&#34;text&#34; placeholder=&#34;请输入文本&#34;&gt; &lt;/form&gt; vaule属性 1 2 3 &lt;form&gt; &lt;input type=&#34;text&#34; value=&#34;请输入文本&#34;&gt; &lt;/form&gt; span|label框选 1 2 3 4 5 6 7 8 9 &lt;form&gt; &lt;span&gt;用户名: &lt;input type=&#34;text&#34; value=&#34;请输入用户名&#34;&gt; &lt;/span&gt; &lt;br&gt; &lt;span&gt;密码: &lt;input type=&#34;password&#34; value=&#34;请输入密码&#34;&gt; &lt;/span&gt; &lt;/form&gt; 用户名: 密码: 想要整洁可以放置在表格中\n">
+<title>Web5_表单</title>
+
+<link rel='canonical' href='https://2332ly.github.io/p/web5_%E8%A1%A8%E5%8D%95/'>
+
+<link rel="stylesheet" href="/scss/style.min.8352ba6de6830b3001742b054d4c6286e0f4a75496f72e0abe89c6f36b3beb7c.css"><meta property='og:title' content="Web5_表单">
+<meta property='og:description' content="表单 form标签 所有表单标签包含在form内\n1 2 3 &lt;form&gt; &lt;/form&gt; input标签 type属性 决定input属性类型\n点击展开：input 标签 type 类型说明 type 类型 描述/功能 示例 HTML text 单行文本输入框 &lt;input type=&quot;text&quot;&gt; password 密码输入框，输入内容隐藏 &lt;input type=&quot;password&quot;&gt; email 邮箱地址输入框，自动校验格式 &lt;input type=&quot;email&quot;&gt; number 数字输入框，带上下箭头控制 &lt;input type=&quot;number&quot;&gt; checkbox 复选框，可以多选 &lt;input type=&quot;checkbox&quot;&gt; radio 单选框，同组只能选一个 &lt;input type=&quot;radio&quot;&gt; date 日期选择器 &lt;input type=&quot;date&quot;&gt; file 文件上传按钮 &lt;input type=&quot;file&quot;&gt; submit 提交按钮 &lt;input type=&quot;submit&quot;&gt; 1 2 3 &lt;form&gt; &lt;input type=&#34;text&#34;&gt; &lt;/form&gt; placeholder属性 1 2 3 &lt;form&gt; &lt;input type=&#34;text&#34; placeholder=&#34;请输入文本&#34;&gt; &lt;/form&gt; vaule属性 1 2 3 &lt;form&gt; &lt;input type=&#34;text&#34; value=&#34;请输入文本&#34;&gt; &lt;/form&gt; span|label框选 1 2 3 4 5 6 7 8 9 &lt;form&gt; &lt;span&gt;用户名: &lt;input type=&#34;text&#34; value=&#34;请输入用户名&#34;&gt; &lt;/span&gt; &lt;br&gt; &lt;span&gt;密码: &lt;input type=&#34;password&#34; value=&#34;请输入密码&#34;&gt; &lt;/span&gt; &lt;/form&gt; 用户名: 密码: 想要整洁可以放置在表格中\n">
+<meta property='og:url' content='https://2332ly.github.io/p/web5_%E8%A1%A8%E5%8D%95/'>
+<meta property='og:site_name' content='2332ly'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-05-23T12:02:20&#43;08:00'/><meta property='article:modified_time' content='2025-05-23T13:08:21&#43;08:00'/><meta property='og:image' content='https://2332ly.github.io/p/web5_%E8%A1%A8%E5%8D%95/PixPin_2025-05-21_16-04-10-1-1.png' />
+<meta name="twitter:title" content="Web5_表单">
+<meta name="twitter:description" content="表单 form标签 所有表单标签包含在form内\n1 2 3 &lt;form&gt; &lt;/form&gt; input标签 type属性 决定input属性类型\n点击展开：input 标签 type 类型说明 type 类型 描述/功能 示例 HTML text 单行文本输入框 &lt;input type=&quot;text&quot;&gt; password 密码输入框，输入内容隐藏 &lt;input type=&quot;password&quot;&gt; email 邮箱地址输入框，自动校验格式 &lt;input type=&quot;email&quot;&gt; number 数字输入框，带上下箭头控制 &lt;input type=&quot;number&quot;&gt; checkbox 复选框，可以多选 &lt;input type=&quot;checkbox&quot;&gt; radio 单选框，同组只能选一个 &lt;input type=&quot;radio&quot;&gt; date 日期选择器 &lt;input type=&quot;date&quot;&gt; file 文件上传按钮 &lt;input type=&quot;file&quot;&gt; submit 提交按钮 &lt;input type=&quot;submit&quot;&gt; 1 2 3 &lt;form&gt; &lt;input type=&#34;text&#34;&gt; &lt;/form&gt; placeholder属性 1 2 3 &lt;form&gt; &lt;input type=&#34;text&#34; placeholder=&#34;请输入文本&#34;&gt; &lt;/form&gt; vaule属性 1 2 3 &lt;form&gt; &lt;input type=&#34;text&#34; value=&#34;请输入文本&#34;&gt; &lt;/form&gt; span|label框选 1 2 3 4 5 6 7 8 9 &lt;form&gt; &lt;span&gt;用户名: &lt;input type=&#34;text&#34; value=&#34;请输入用户名&#34;&gt; &lt;/span&gt; &lt;br&gt; &lt;span&gt;密码: &lt;input type=&#34;password&#34; value=&#34;请输入密码&#34;&gt; &lt;/span&gt; &lt;/form&gt; 用户名: 密码: 想要整洁可以放置在表格中\n"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://2332ly.github.io/p/web5_%E8%A1%A8%E5%8D%95/PixPin_2025-05-21_16-04-10-1-1.png' />
+    <link rel="shortcut icon" href="/favicon.ico" />
+<style>
+    :root {
+        --article-font-family: "Noto Serif SC", var(--base-font-family);
+    }
+</style>
+
+<script>
+		(function () {
+		    const customFont = document.createElement('link');
+		    customFont.href = "https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap";
+		
+		    customFont.type = "text/css";
+		    customFont.rel = "stylesheet";
+		
+		    document.head.appendChild(customFont);
+		}());
+</script>
+
+<div id="particles-js"></div>
+
+<script src=https://2332ly.github.io/background/particles.min.js></script>
+<script>
+  particlesJS.load('particles-js', "https://2332ly.github.io/background/particlesjs-config.json", function() {
+    console.log('particles.js loaded - callback');
+  });
+</script>
+
+<style>
+  #particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+  }
+</style>
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/08_hu_b6524cc092652a8b.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🦌</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">2332ly</a></h1>
+            <h2 class="site-description">演示说明</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/2332ly'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友情链接</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+                    
+                        <li id="i18n-switch">  
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                            <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
+                                
+                                    <option value="https://2332ly.github.io/en/" >English</option>
+                                
+                                    <option value="https://2332ly.github.io/" selected>简体中文</option>
+                                
+                                    <option value="https://2332ly.github.io/ar/" >عربي</option>
+                                
+                            </select>
+                        </li>
+                    
+                
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span></span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title"></h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#form标签">form标签</a></li>
+    <li><a href="#input标签">input标签</a>
+      <ol>
+        <li><a href="#type属性">type属性</a></li>
+        <li><a href="#placeholder属性">placeholder属性</a></li>
+        <li><a href="#vaule属性">vaule属性</a></li>
+        <li><a href="#spanlabel框选">span|label框选</a></li>
+      </ol>
+    </li>
+    <li><a href="#单选radio">单选radio</a>
+      <ol>
+        <li><a href="#name属性">name属性</a></li>
+        <li><a href="#for属性">for属性</a></li>
+      </ol>
+    </li>
+    <li><a href="#多选-checkbox">多选 checkbox</a></li>
+    <li><a href="#action属性提交按键-submit">action属性&amp;提交按键 submit</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/web5_%E8%A1%A8%E5%8D%95/">
+                <img src="/p/web5_%E8%A1%A8%E5%8D%95/PixPin_2025-05-21_16-04-10-1-1_hu_e8d7daff601ab0ce.png"
+                        srcset="/p/web5_%E8%A1%A8%E5%8D%95/PixPin_2025-05-21_16-04-10-1-1_hu_e8d7daff601ab0ce.png 800w, /p/web5_%E8%A1%A8%E5%8D%95/PixPin_2025-05-21_16-04-10-1-1_hu_9ea9f8ee3fda1ff3.png 1600w"
+                        width="800" 
+                        height="286" 
+                        loading="lazy"
+                        alt="Featured image of post Web5_表单" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/web/" >
+                Web
+            </a>
+        
+            <a href="/categories/%E6%95%99%E7%A8%8B/" >
+                教程
+            </a>
+        
+            <a href="/categories/html/" >
+                HTML
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/web5_%E8%A1%A8%E5%8D%95/">Web5_表单</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2025-05-23</time>
+            </div>
+        
+
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="表单">表单
+</h1><h2 id="form标签">form标签
+</h2><p>所有表单标签包含在form内</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">form</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="input标签">input标签
+</h2><h3 id="type属性">type属性
+</h3><p>决定input属性类型</p>
+<details>
+  <summary><u>点击展开：</u>input 标签 type 类型说明</summary>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th><code>type</code> 类型</th>
+          <th>描述/功能</th>
+          <th>示例 HTML</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>text</code></td>
+          <td>单行文本输入框</td>
+          <td><code>&lt;input type=&quot;text&quot;&gt;</code></td>
+      </tr>
+      <tr>
+          <td><code>password</code></td>
+          <td>密码输入框，输入内容隐藏</td>
+          <td><code>&lt;input type=&quot;password&quot;&gt;</code></td>
+      </tr>
+      <tr>
+          <td><code>email</code></td>
+          <td>邮箱地址输入框，自动校验格式</td>
+          <td><code>&lt;input type=&quot;email&quot;&gt;</code></td>
+      </tr>
+      <tr>
+          <td><code>number</code></td>
+          <td>数字输入框，带上下箭头控制</td>
+          <td><code>&lt;input type=&quot;number&quot;&gt;</code></td>
+      </tr>
+      <tr>
+          <td><code>checkbox</code></td>
+          <td>复选框，可以多选</td>
+          <td><code>&lt;input type=&quot;checkbox&quot;&gt;</code></td>
+      </tr>
+      <tr>
+          <td><code>radio</code></td>
+          <td>单选框，同组只能选一个</td>
+          <td><code>&lt;input type=&quot;radio&quot;&gt;</code></td>
+      </tr>
+      <tr>
+          <td><code>date</code></td>
+          <td>日期选择器</td>
+          <td><code>&lt;input type=&quot;date&quot;&gt;</code></td>
+      </tr>
+      <tr>
+          <td><code>file</code></td>
+          <td>文件上传按钮</td>
+          <td><code>&lt;input type=&quot;file&quot;&gt;</code></td>
+      </tr>
+      <tr>
+          <td><code>submit</code></td>
+          <td>提交按钮</td>
+          <td><code>&lt;input type=&quot;submit&quot;&gt;</code></td>
+      </tr>
+  </tbody>
+</table></div>
+</details>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;form&gt;
+</span></span><span class="line"><span class="cl">    &lt;input type=&#34;text&#34;&gt;
+</span></span><span class="line"><span class="cl">&lt;/form&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><form>
+    <input type="text">
+ </form>
+<h3 id="placeholder属性">placeholder属性
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;form&gt;
+</span></span><span class="line"><span class="cl">    &lt;input type=&#34;text&#34; placeholder=&#34;请输入文本&#34;&gt;
+</span></span><span class="line"><span class="cl">&lt;/form&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><form>
+    <input type="text" placeholder="请输入文本">
+</form>
+<h3 id="vaule属性">vaule属性
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;form&gt;
+</span></span><span class="line"><span class="cl">    &lt;input type=&#34;text&#34; value=&#34;请输入文本&#34;&gt;
+</span></span><span class="line"><span class="cl">&lt;/form&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><form>
+    <input type="text" value="请输入文本">
+</form>
+<h3 id="spanlabel框选">span|label框选
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;form&gt;
+</span></span><span class="line"><span class="cl">    &lt;span&gt;用户名:
+</span></span><span class="line"><span class="cl">        &lt;input type=&#34;text&#34; value=&#34;请输入用户名&#34;&gt;
+</span></span><span class="line"><span class="cl">    &lt;/span&gt;
+</span></span><span class="line"><span class="cl">    &lt;br&gt;
+</span></span><span class="line"><span class="cl">    &lt;span&gt;密码:
+</span></span><span class="line"><span class="cl">        &lt;input type=&#34;password&#34; value=&#34;请输入密码&#34;&gt;
+</span></span><span class="line"><span class="cl">    &lt;/span&gt;
+</span></span><span class="line"><span class="cl">&lt;/form&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><form>
+    <span>用户名:
+        <input type="text" value="请输入用户名">
+    </span>
+    <br>
+    <span>密码:
+        <input type="password" value="请输入密码">
+    </span>
+</form>
+<p>想要整洁可以放置在表格中</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;form&gt;
+</span></span><span class="line"><span class="cl">    &lt;table border=&#34;0&#34;&gt;
+</span></span><span class="line"><span class="cl">        &lt;tr&gt;
+</span></span><span class="line"><span class="cl">            &lt;td&gt;&lt;label&gt;用户名：&lt;/label&gt;&lt;/td&gt;
+</span></span><span class="line"><span class="cl">            &lt;td&gt;&lt;input type=&#34;text&#34; placeholder=&#34;请输入用户名&#34;&gt;&lt;/td&gt;
+</span></span><span class="line"><span class="cl">        &lt;/tr&gt;
+</span></span><span class="line"><span class="cl">        &lt;tr&gt;
+</span></span><span class="line"><span class="cl">            &lt;td&gt;&lt;label&gt;密码：&lt;/label&gt;&lt;/td&gt;
+</span></span><span class="line"><span class="cl">            &lt;td&gt;&lt;input type=&#34;password&#34; placeholder=&#34;请输入密码&#34;&gt;&lt;/td&gt;
+</span></span><span class="line"><span class="cl">        &lt;/tr&gt;
+</span></span><span class="line"><span class="cl">    &lt;/table&gt;
+</span></span><span class="line"><span class="cl">&lt;/form&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><form>
+    <table border="0">
+        <tr>
+            <td><label>用户名：</label></td>
+            <td><input type="text" placeholder="请输入用户名"></td>
+        </tr>
+        <tr>
+            <td><label>密码：</label></td>
+            <td><input type="password" placeholder="请输入密码"></td>
+        </tr>
+    </table>
+</form>
+<h2 id="单选radio">单选radio
+</h2><h3 id="name属性">name属性
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;form&gt;
+</span></span><span class="line"><span class="cl">    &lt;table&gt;
+</span></span><span class="line"><span class="cl">        &lt;tr&gt;
+</span></span><span class="line"><span class="cl">            &lt;td&gt;&lt;label&gt;性别:&lt;/label&gt;&lt;/td&gt;
+</span></span><span class="line"><span class="cl">            &lt;td&gt;&lt;input type=&#34;radio&#34; name=&#34;gendar&#34;&gt;男&lt;/td&gt;
+</span></span><span class="line"><span class="cl">            &lt;td&gt;&lt;input type=&#34;radio&#34; name=&#34;gendar&#34;&gt;女&lt;/td&gt;
+</span></span><span class="line"><span class="cl">            &lt;td&gt;&lt;input type=&#34;radio&#34; name=&#34;gendar&#34;&gt;其他&lt;/td&gt;
+</span></span><span class="line"><span class="cl">            &lt;/tr&gt;
+</span></span><span class="line"><span class="cl">    &lt;/table&gt;
+</span></span><span class="line"><span class="cl">&lt;/form&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><form>
+    <table border="0">
+        <tr>
+            <td><label>性别:</label></td>
+            <td><input type="radio" name="gendar">男</td>
+            <td><input type="radio" name="gendar">女</td>
+            <td><input type="radio" name="gendar">其他</td>
+            </tr>
+    </table>
+</form>
+<h3 id="for属性">for属性
+</h3><p>label for属性一般与input id属性对应<br>
+用户点击label时，光标能自动聚焦到文本框<br>
+<img src="/p/web5_%E8%A1%A8%E5%8D%95/PixPin_2025-05-23_12-52-45.gif"
+	width="1269"
+	height="118"
+	srcset="/p/web5_%E8%A1%A8%E5%8D%95/PixPin_2025-05-23_12-52-45_hu_adab0e2ace32cd19.gif 480w, /p/web5_%E8%A1%A8%E5%8D%95/PixPin_2025-05-23_12-52-45_hu_8f98088ce657b6e0.gif 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="1075"
+		data-flex-basis="2581px"
+	
+></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;form&gt;
+</span></span><span class="line"><span class="cl">    &lt;table border=&#34;0&#34;&gt;
+</span></span><span class="line"><span class="cl">        &lt;tr&gt;
+</span></span><span class="line"><span class="cl">            &lt;td&gt;&lt;label for=&#34;username&#34;&gt;用户名：&lt;/label&gt;&lt;/td&gt;
+</span></span><span class="line"><span class="cl">            &lt;td&gt;&lt;input type=&#34;text&#34; id=&#34;username&#34; placeholder=&#34;请输入用户名&#34;&gt;&lt;/td&gt;
+</span></span><span class="line"><span class="cl">        &lt;/tr&gt;
+</span></span><span class="line"><span class="cl">        &lt;tr&gt;
+</span></span><span class="line"><span class="cl">            &lt;td&gt;&lt;label for=&#34;password&#34;&gt;密码：&lt;/label&gt;&lt;/td&gt;
+</span></span><span class="line"><span class="cl">            &lt;td&gt;&lt;input type=&#34;password&#34; id=&#34;password&#34; placeholder=&#34;请输入密码&#34;&gt;&lt;/td&gt;
+</span></span><span class="line"><span class="cl">        &lt;/tr&gt;
+</span></span><span class="line"><span class="cl">    &lt;/table&gt;
+</span></span><span class="line"><span class="cl">&lt;/form&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><form>
+    <table border="0">
+        <tr>
+            <td><label for="username">用户名：</label></td>
+            <td><input type="text" id="username" placeholder="请输入用户名"></td>
+        </tr>
+        <tr>
+            <td><label for="password">密码：</label></td>
+            <td><input type="password" id="password" placeholder="请输入密码"></td>
+        </tr>
+    </table>
+</form>
+<h2 id="多选-checkbox">多选 checkbox
+</h2><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;form&gt;
+</span></span><span class="line"><span class="cl">    &lt;table border=&#34;0&#34;&gt;
+</span></span><span class="line"><span class="cl">        &lt;tr&gt;
+</span></span><span class="line"><span class="cl">            &lt;td&gt;&lt;label for=&#34;hobby&#34;&gt;爱好:&lt;/label&gt;&lt;/td&gt;
+</span></span><span class="line"><span class="cl">            &lt;td&gt;&lt;input type=&#34;checkbox&#34; name=&#34;hobby&#34;&gt;篮球&lt;/td&gt;
+</span></span><span class="line"><span class="cl">            &lt;td&gt;&lt;input type=&#34;checkbox&#34; name=&#34;hobby&#34;&gt;足球&lt;/td&gt;
+</span></span><span class="line"><span class="cl">            &lt;td&gt;&lt;input type=&#34;checkbox&#34; name=&#34;hobby&#34;&gt;乒乓球&lt;/td&gt;
+</span></span><span class="line"><span class="cl">        &lt;/tr&gt;
+</span></span><span class="line"><span class="cl">    &lt;/table&gt;
+</span></span><span class="line"><span class="cl">&lt;/form&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><form>
+    <table border="0">
+        <tr>
+            <td><label for="hobby">爱好:</label></td>
+            <td><input type="checkbox" name="hobby">篮球</td>
+            <td><input type="checkbox" name="hobby">足球</td>
+            <td><input type="checkbox" name="hobby">乒乓球</td>
+        </tr>
+    </table>
+</form>
+<h2 id="action属性提交按键-submit">action属性&amp;提交按键 submit
+</h2><p>action 提交后发送到向后端的服务器URL地址<br>
+可用<code>action=&quot;#&quot;</code>表示不跳转</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;form action=&#34;#&#34;&gt;
+</span></span><span class="line"><span class="cl">    &lt;table border=&#34;0&#34;&gt;
+</span></span><span class="line"><span class="cl">        &lt;tr&gt;
+</span></span><span class="line"><span class="cl">            &lt;td&gt;&lt;label for=&#34;username&#34;&gt;用户名：&lt;/label&gt;&lt;/td&gt;
+</span></span><span class="line"><span class="cl">            &lt;td&gt;&lt;input type=&#34;text&#34; id=&#34;username&#34; placeholder=&#34;请输入用户名&#34;&gt;&lt;/td&gt;
+</span></span><span class="line"><span class="cl">        &lt;/tr&gt;
+</span></span><span class="line"><span class="cl">        &lt;tr&gt;
+</span></span><span class="line"><span class="cl">            &lt;td&gt;&lt;label for=&#34;password&#34;&gt;密码：&lt;/label&gt;&lt;/td&gt;
+</span></span><span class="line"><span class="cl">            &lt;td&gt;&lt;input type=&#34;password&#34; id=&#34;password&#34; placeholder=&#34;请输入密码&#34;&gt;&lt;/td&gt;
+</span></span><span class="line"><span class="cl">        &lt;/tr&gt;
+</span></span><span class="line"><span class="cl">        &lt;tr&gt;
+</span></span><span class="line"><span class="cl">            &lt;td&gt;&lt;label for=&#34;hobby&#34;&gt;爱好:&lt;/label&gt;&lt;/td&gt;
+</span></span><span class="line"><span class="cl">            &lt;td&gt;&lt;input type=&#34;checkbox&#34; name=&#34;hobby&#34;&gt;篮球&lt;/td&gt;
+</span></span><span class="line"><span class="cl">            &lt;td&gt;&lt;input type=&#34;checkbox&#34; name=&#34;hobby&#34;&gt;足球&lt;/td&gt;
+</span></span><span class="line"><span class="cl">            &lt;td&gt;&lt;input type=&#34;checkbox&#34; name=&#34;hobby&#34;&gt;乒乓球&lt;/td&gt;
+</span></span><span class="line"><span class="cl">        &lt;/tr&gt;
+</span></span><span class="line"><span class="cl">        &lt;tr&gt;
+</span></span><span class="line"><span class="cl">            &lt;td&gt;&lt;label for=&#34;gendar&#34;&gt;性别:&lt;/label&gt;&lt;/td&gt;
+</span></span><span class="line"><span class="cl">            &lt;td&gt;&lt;input type=&#34;radio&#34; name=&#34;gendar&#34;&gt;男&lt;/td&gt;
+</span></span><span class="line"><span class="cl">            &lt;td&gt;&lt;input type=&#34;radio&#34; name=&#34;gendar&#34;&gt;女&lt;/td&gt;
+</span></span><span class="line"><span class="cl">            &lt;td&gt;&lt;input type=&#34;radio&#34; name=&#34;gendar&#34;&gt;其他&lt;/td&gt;
+</span></span><span class="line"><span class="cl">        &lt;/tr&gt;
+</span></span><span class="line"><span class="cl">        &lt;tr&gt;
+</span></span><span class="line"><span class="cl">            &lt;td&gt;&lt;label for=&#34;submit&#34;&gt;提交:&lt;/label&gt;&lt;/td&gt;
+</span></span><span class="line"><span class="cl">            &lt;td&gt;&lt;input type=&#34;submit&#34; value=&#34;提交&#34;&gt;&lt;/td&gt;
+</span></span><span class="line"><span class="cl">        &lt;/tr&gt;
+</span></span><span class="line"><span class="cl">    &lt;/table&gt;
+</span></span><span class="line"><span class="cl">&lt;/form&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><form action="#" border="0">
+    <div class="table-wrapper"><table>
+        <tr>
+            <td><label for="username">用户名：</label></td>
+            <td><input type="text" id="username" placeholder="请输入用户名"></td>
+        </tr>
+        <tr>
+            <td><label for="password">密码：</label></td>
+            <td><input type="password" id="password" placeholder="请输入密码"></td>
+        </tr>
+        <tr>
+            <td><label for="hobby">爱好:</label></td>
+            <td><input type="checkbox" name="hobby">篮球</td>
+            <td><input type="checkbox" name="hobby">足球</td>
+            <td><input type="checkbox" name="hobby">乒乓球</td>
+        </tr>
+        <tr>
+            <td><label for="gendar">性别:</label></td>
+            <td><input type="radio" name="gendar">男</td>
+            <td><input type="radio" name="gendar">女</td>
+            <td><input type="radio" name="gendar">其他</td>
+        </tr>
+        <tr>
+            <td><label for="submit">提交:</label></td>
+            <td><input type="submit" value="提交"></td>
+        </tr>
+    </table></div>
+</form>
+<p>实际应为这样 markdwon和html表现略有不同<br>
+<span style="color:red">本网页采用markdown html共同编写 会有显示区别</span>
+<img src="/p/web5_%E8%A1%A8%E5%8D%95/image.png"
+	width="558"
+	height="217"
+	srcset="/p/web5_%E8%A1%A8%E5%8D%95/image_hu_87dc1281b072984e.png 480w, /p/web5_%E8%A1%A8%E5%8D%95/image_hu_589539b6077a85f2.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="257"
+		data-flex-basis="617px"
+	
+></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>本文采用 CC BY-NC-SA 4.0 协议授权，转载请注明出处。</span>
+    </section>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+             May 23, 2025 13:08 &#43;0800
+        </span>
+    </section></footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title"></h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/web4_%E5%9D%97%E4%B8%8E%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0/">
+        
+        
+            <div class="article-image">
+                <img src="/p/web4_%E5%9D%97%E4%B8%8E%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0/PixPin_2025-05-21_16-04-10-1.7aacfeb5006dd1b9eee0e85b7877a56d_hu_f09b6be3db439dae.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Web4_块与行内元素"
+                        
+                        data-hash="md5-eqz&#43;tQBt0bnu4OhbeHelbQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Web4_块与行内元素</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/web2_%E6%96%87%E6%9C%AC%E6%A0%87%E7%AD%BE/">
+        
+        
+            <div class="article-image">
+                <img src="/p/web2_%E6%96%87%E6%9C%AC%E6%A0%87%E7%AD%BE/PixPin_2025-05-21_16-04-10-1.7aacfeb5006dd1b9eee0e85b7877a56d_hu_f09b6be3db439dae.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Web2_文本标签"
+                        
+                        data-hash="md5-eqz&#43;tQBt0bnu4OhbeHelbQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Web2_文本标签</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/web1_%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+        
+        
+            <div class="article-image">
+                <img src="/p/web1_%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/PixPin_2025-05-21_16-04-10-1.7aacfeb5006dd1b9eee0e85b7877a56d_hu_f09b6be3db439dae.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Web1_环境搭建"
+                        
+                        data-hash="md5-eqz&#43;tQBt0bnu4OhbeHelbQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Web1_环境搭建</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/web3_%E6%A0%87%E7%AD%BE%E5%B1%9E%E6%80%A7/">
+        
+        
+            <div class="article-image">
+                <img src="/p/web3_%E6%A0%87%E7%AD%BE%E5%B1%9E%E6%80%A7/PixPin_2025-05-21_16-04-10-1.7aacfeb5006dd1b9eee0e85b7877a56d_hu_f09b6be3db439dae.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Web3_标签属性"
+                        
+                        data-hash="md5-eqz&#43;tQBt0bnu4OhbeHelbQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Web3_标签属性</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/">
+        
+        
+            <div class="article-image">
+                <img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/imagetop-1.42f93d4685c20b95b3a27ab240531eac_hu_7e00985351aa1a4e.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 计算机网络_实验3"
+                        
+                        data-hash="md5-Qvk9RoXCC5WzonqyQFMerA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">计算机网络_实验3</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script src="https://utteranc.es/client.js" 
+        repo="2332ly/2332ly.github.io"
+        issue-term="pathname"
+        
+        crossorigin="anonymous"
+        async
+        >
+</script>
+
+<style>
+    .utterances {
+        max-width: unset;
+    }
+</style>
+
+<script>
+    let utterancesLoaded = false;
+
+    function setUtterancesTheme(theme) {
+        let utterances = document.querySelector('.utterances iframe');
+        if (utterances) {
+            utterances.contentWindow.postMessage(
+                {
+                    type: 'set-theme',
+                    theme: `github-${theme}`
+                },
+                'https://utteranc.es'
+            );
+        }
+    }
+
+    addEventListener('message', event => {
+        if (event.origin !== 'https://utteranc.es') return;
+
+        
+        utterancesLoaded = true;
+        setUtterancesTheme(document.documentElement.dataset.scheme)
+    });
+
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (!utterancesLoaded) return;
+        setUtterancesTheme(e.detail)
+    })
+</script>
+
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2025 Example Person
+    </section>
+    
+    <section class="powerby">
+        
+            2332ly <br/>
+         <br />
+        
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+<style>
+   
+  #TableOfContents ul,
+  #TableOfContents ol {
+    list-style: none;  
+    padding-left: 1em;  
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;  
+    overflow: hidden;  
+    max-height: 0;  
+    opacity: 0;  
+  }
+
+   
+  #TableOfContents > ul,
+  #TableOfContents > ol {
+    padding-left: 0;  
+    max-height: fit-content;  
+    opacity: 1;  
+  }
+
+   
+  #TableOfContents ul.open,
+  #TableOfContents ol.open {
+    max-height: 500px;  
+    opacity: 1;
+  }
+
+   
+  .active-class {
+    font-weight: bold;  
+    color: #007bff;  
+  }
+</style>
+
+<script>
+  function initTocFolding() {
+    const toc = document.querySelector(".widget--toc");
+    if (!toc) {
+      return; 
+    }
+
+    
+    toc.classList.add("toc-enabled");
+
+    let lastActiveLi = null; 
+
+    function updateTocVisibility() {
+      
+      document.querySelectorAll("#TableOfContents .open").forEach((ul) => {
+        ul.classList.remove("open");
+      });
+
+      const currentLi = document.querySelector(".active-class");
+
+      if (!currentLi || currentLi === lastActiveLi) {
+        
+        return;
+      }
+
+      lastActiveLi = currentLi; 
+
+      
+      const directChildUl = currentLi.querySelector("ul, ol");
+      if (directChildUl) {
+        directChildUl.classList.add("open");
+      }
+
+      
+      let parentUl = currentLi.parentElement;
+      while (parentUl && (parentUl.localName === "ul" || parentUl.localName === "ol") && parentUl.id !== "TableOfContents") {
+        parentUl.classList.add("open");
+        parentUl = parentUl.parentElement.parentElement; 
+      }
+    }
+
+    
+    let scrollTimeout;
+    window.addEventListener("scroll", () => {
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(updateTocVisibility, 100); 
+    });
+
+    
+    updateTocVisibility();
+  }
+
+  document.addEventListener("DOMContentLoaded", initTocFolding);
+</script>
+
+<style>
+    #backTopBtn {
+         
+        opacity: 0;
+        visibility: hidden;
+         
+        position: fixed;
+        bottom: 30px;  
+        right: 30px;  
+        z-index: 99;  
+        cursor: pointer;  
+
+         
+        width: 55px;  
+        height: 55px;  
+        border-radius: 50%;  
+        border: none;  
+
+         
+        background-color: #ffffff;  
+        background-image: url(https://2332ly.github.io/icons/backTop.svg); 
+        background-size: 60%;  
+        background-repeat: no-repeat;
+        background-position: center;  
+
+         
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);  
+
+         
+        transition: opacity 0.3s ease-in-out,  
+                    visibility 0.3s ease-in-out,  
+                    transform 0.3s ease-in-out,  
+                    box-shadow 0.3s ease-in-out;  
+         
+        will-change: opacity, transform;
+    }
+
+     
+    #backTopBtn.show {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);  
+    }
+
+     
+    #backTopBtn:hover {
+        background-color: rgba(0, 0, 0, 0.7);  
+        transform: translateY(-5px);  
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);  
+    }
+
+    #backTopBtn:focus {
+        outline: none;  
+        box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5);  
+        transform: translateY(-5px);  
+    }
+
+     
+    @media (max-width: 768px) {
+        #backTopBtn {
+            bottom: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            background-size: 55%;
+        }
+    }
+</style>
+
+<script>
+    
+
+    function debounce(func, delay) {
+        let timeout;
+        return function() {
+            const context = this;
+            const args = arguments;
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func.apply(context, args), delay);
+        };
+    }
+
+    
+
+    function initScrollTop() {
+        
+        let btn = document.createElement("button");
+        btn.id = "backTopBtn";
+        btn.onclick = backToTop;
+        
+        btn.setAttribute("aria-label", "返回顶部");
+        
+        btn.setAttribute("tabindex", "-1");
+
+        
+        document.body.appendChild(btn);
+
+        
+        window.onscroll = debounce(function() {
+            
+            const scrollThreshold = 200;
+
+            if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+                
+                btn.classList.add("show");
+                
+                btn.removeAttribute("tabindex");
+            } else {
+                
+                btn.classList.remove("show");
+                
+                btn.setAttribute("tabindex", "-1");
+            }
+        }, 100); 
+    }
+
+    
+
+    function backToTop(){
+        
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    
+    document.addEventListener("DOMContentLoaded", initScrollTop);
+</script>
+
+<style>
+    .highlight {
+         
+        max-height: 400px;
+        overflow: hidden;
+    }
+
+    .code-show {
+        max-height: none !important;
+    }
+
+    .code-more-box {
+        width: 100%;
+        padding-top: 78px;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#fff));
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    .code-more-btn {
+        display: block;
+        margin: auto;
+        width: 44px;
+        height: 22px;
+        background: #f0f0f5;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding-top: 6px;
+        cursor: pointer;
+    }
+
+    .code-more-img {
+        cursor: pointer !important;
+        display: block;
+        margin: auto;
+        width: 22px;
+        height: 16px;
+    }
+</style>
+
+<script>
+  function initCodeMoreBox() {
+    let codeBlocks = document.querySelectorAll(".highlight");
+    if (!codeBlocks) {
+      return;
+    }
+    codeBlocks.forEach(codeBlock => {
+      
+      if (codeBlock.scrollHeight <= codeBlock.clientHeight) {
+        return;
+      }
+      
+      
+      let codeMoreBox = document.createElement('div');
+      codeMoreBox.classList.add('code-more-box');
+      
+      let codeMoreBtn = document.createElement('span');
+      codeMoreBtn.classList.add('code-more-btn');
+      codeMoreBtn.addEventListener('click', () => {
+        codeBlock.classList.add('code-show');
+        codeMoreBox.style.display = 'none';
+        
+        window.dispatchEvent(new Event('resize'))
+      })
+      
+      let img = document.createElement('img');
+      img.classList.add('code-more-img');
+      img.src = "https://2332ly.github.io/icons/codeMore.png"
+      
+      codeMoreBtn.appendChild(img);
+      codeMoreBox.appendChild(codeMoreBtn);
+      codeBlock.appendChild(codeMoreBox)
+    })
+  }
+  
+  initCodeMoreBox();
+</script>
+
+
+<script defer src="https://cn.vercount.one/js"></script>
+
+<script>
+    function showHideView() {
+        
+        let viewCounts = document.querySelectorAll("#viewCount");
+        if (viewCounts) {
+            
+            let article =  document.querySelector(".article-page");
+            if (!article) {
+                viewCounts.forEach(ele => {
+                    ele.style.display = 'none';
+                });
+            }
+        }
+    }
+    
+    showHideView();
+</script>
+
+    </body>
+</html>
