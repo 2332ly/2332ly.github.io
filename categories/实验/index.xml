@@ -7,13 +7,71 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Example Person</copyright>
-        <lastBuildDate>Thu, 22 May 2025 21:39:21 +0800</lastBuildDate><atom:link href="https://2332ly.github.io/categories/%E5%AE%9E%E9%AA%8C/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 24 May 2025 20:47:44 +0800</lastBuildDate><atom:link href="https://2332ly.github.io/categories/%E5%AE%9E%E9%AA%8C/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>计算机网络_实验2</title>
+        <link>https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C2/</link>
+        <pubDate>Fri, 23 May 2025 18:16:23 +0800</pubDate>
+        
+        <guid>https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C2/</guid>
+        <description>&lt;img src="https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C2/imagetop-1.png" alt="Featured image of post 计算机网络_实验2" /&gt;&lt;h1 id=&#34;实验2&#34;&gt;实验2
+&lt;/h1&gt;&lt;p&gt;&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C2/image.png&#34;
+	width=&#34;677&#34;
+	height=&#34;313&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C2/image_hu_e93e874c9f7bf1ae.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C2/image_hu_2a71af36129408a2.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;216&#34;
+		data-flex-basis=&#34;519px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;路由器基本配置&#34;&gt;路由器基本配置
+&lt;/h2&gt;&lt;h3 id=&#34;模型组建&#34;&gt;模型组建
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;路由器选择&lt;/strong&gt;&lt;br&gt;
+至少两条接口
+&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C2/image-6.png&#34;
+	width=&#34;660&#34;
+	height=&#34;656&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C2/image-6_hu_e4c6a544b62e1cb1.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C2/image-6_hu_2dc18e99136b8d49.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;100&#34;
+		data-flex-basis=&#34;241px&#34;
+	
+&gt;
+两台路由器 0/0连接pc 0/1相互连接
+&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C2/image-2.png&#34;
+	width=&#34;1231&#34;
+	height=&#34;960&#34;
+	srcset=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C2/image-2_hu_6652ab64c5c2dbec.png 480w, https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C2/image-2_hu_f85d12b6757c2e52.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;128&#34;
+		data-flex-basis=&#34;307px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;实验配置&#34;&gt;实验配置
+&lt;/h3&gt;&lt;h4 id=&#34;router1配置&#34;&gt;Router1配置
+&lt;/h4&gt;</description>
+        </item>
+        <item>
         <title>计算机网络_实验3</title>
         <link>https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/</link>
         <pubDate>Thu, 22 May 2025 20:17:43 +0800</pubDate>
         
         <guid>https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/</guid>
-        <description>&lt;img src="https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/imagetop-1.png" alt="Featured image of post 计算机网络_实验3" /&gt;&lt;h1 id=&#34;实验&#34;&gt;实验
+        <description>&lt;img src="https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/imagetop-1.png" alt="Featured image of post 计算机网络_实验3" /&gt;&lt;h1 id=&#34;实验3&#34;&gt;实验3
 &lt;/h1&gt;&lt;p&gt;&lt;strong&gt;本地电脑命令行即可&lt;/strong&gt;&lt;br&gt;
 win+r 输入cmd或powershell&lt;br&gt;
 推荐powershell&lt;/p&gt;
@@ -951,7 +1009,7 @@ ctrl+c强制停止&lt;br&gt;
         <pubDate>Wed, 21 May 2025 21:18:07 +0800</pubDate>
         
         <guid>https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/</guid>
-        <description>&lt;img src="https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/imagetop-1.png" alt="Featured image of post 计算机网络_实验1" /&gt;&lt;h1 id=&#34;实验&#34;&gt;实验
+        <description>&lt;img src="https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/imagetop-1.png" alt="Featured image of post 计算机网络_实验1" /&gt;&lt;h1 id=&#34;实验1&#34;&gt;实验1
 &lt;/h1&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;2025%e6%98%a5%e8%ae%a1%e7%ae%97%e6%9c%ba%e7%bd%91%e7%bb%9c%e5%ae%9e%e9%aa%8c%e6%8c%87%e5%af%bc%e4%b9%a6-1.doc&#34; &gt;下载-2025春计算机网络实验指导书-1&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;boson-netsim-10-本地安装&#34;&gt;Boson NetSim 10 本地安装
 &lt;/h2&gt;&lt;p&gt;下载地址&lt;br&gt;
@@ -1088,7 +1146,7 @@ C:\ProgramData\Boson Software\Boson Netsim10\mscon43demo.dll，两个位置，�
 		data-flex-basis=&#34;215px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h2 id=&#34;实验1&#34;&gt;实验1
+&lt;h2 id=&#34;局域网组建&#34;&gt;局域网组建
 &lt;/h2&gt;&lt;h3 id=&#34;模型组建&#34;&gt;模型组建
 &lt;/h3&gt;&lt;p&gt;局域网组建&lt;br&gt;
 &lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-8.png&#34;
@@ -1353,7 +1411,7 @@ ping pc2测试连接&lt;/p&gt;
 		data-flex-basis=&#34;297px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h2 id=&#34;实验2&#34;&gt;实验2
+&lt;h2 id=&#34;局域网拓展&#34;&gt;局域网拓展
 &lt;/h2&gt;&lt;h3 id=&#34;模型组建-1&#34;&gt;模型组建
 &lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-21.png&#34;
 	width=&#34;480&#34;
@@ -1517,7 +1575,7 @@ f0/2-&amp;gt;pc2
 		data-flex-basis=&#34;307px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h2 id=&#34;实验3&#34;&gt;实验3
+&lt;h2 id=&#34;虚拟vlan&#34;&gt;虚拟VLAN
 &lt;/h2&gt;&lt;h3 id=&#34;模型组件不变&#34;&gt;模型组件不变
 &lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://2332ly.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/image-28.png&#34;
 	width=&#34;778&#34;
