@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Example Person</copyright>
-        <lastBuildDate>Tue, 27 May 2025 21:51:55 +0800</lastBuildDate><atom:link href="https://2332ly.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 27 May 2025 21:53:34 +0800</lastBuildDate><atom:link href="https://2332ly.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>数据库_练习</title>
         <link>https://2332ly.github.io/p/%E6%95%B0%E6%8D%AE%E5%BA%93_%E7%BB%83%E4%B9%A0/</link>
         <pubDate>Tue, 27 May 2025 21:18:11 +0800</pubDate>
@@ -109,8 +109,8 @@ D. 家庭住址&lt;/p&gt;
 问题2： D&lt;br&gt;
 问题3： C &lt;br&gt;
 问题4： D&lt;/p&gt;
-&lt;h1 id=&#34;查询练习一&#34;&gt;#查询练习一：
-&lt;/h1&gt;&lt;p&gt;给定一个部门表Departments，包含字段DepartmentID（部门ID）和DepartmentName（部门名称）；一个员工表Employees，包含字段EmployeeID（员工ID）、LastName（姓）、FirstName（名）、Salary（薪资）、Departmen（部门ID），其中Departmen是外键，参照部门表的主键DepartmentID。写出以下需求的SQL语句，上传SQL语句和运行结果图。&lt;/p&gt;
+&lt;h2 id=&#34;查询练习一&#34;&gt;查询练习一：
+&lt;/h2&gt;&lt;p&gt;给定一个部门表Departments，包含字段DepartmentID（部门ID）和DepartmentName（部门名称）；一个员工表Employees，包含字段EmployeeID（员工ID）、LastName（姓）、FirstName（名）、Salary（薪资）、Departmen（部门ID），其中Departmen是外键，参照部门表的主键DepartmentID。写出以下需求的SQL语句，上传SQL语句和运行结果图。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
