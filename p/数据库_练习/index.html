@@ -1,0 +1,2286 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="关系数据理论练习： 1、属性集闭包计算：讲义第4章Page71【例7-54】，在纸上独立完成运算，拍照上传。 2、求最小覆盖：讲义第4章Page93【例1】，在纸上独立完成运算，拍照上传。 3、模式分解：讲义第4章Page132【例4-4】，在纸上独立完成运算，拍照上传。 ">
+<title>数据库_练习</title>
+
+<link rel='canonical' href='https://2332ly.github.io/p/%E6%95%B0%E6%8D%AE%E5%BA%93_%E7%BB%83%E4%B9%A0/'>
+
+<link rel="stylesheet" href="/scss/style.min.8352ba6de6830b3001742b054d4c6286e0f4a75496f72e0abe89c6f36b3beb7c.css"><meta property='og:title' content="数据库_练习">
+<meta property='og:description' content="关系数据理论练习： 1、属性集闭包计算：讲义第4章Page71【例7-54】，在纸上独立完成运算，拍照上传。 2、求最小覆盖：讲义第4章Page93【例1】，在纸上独立完成运算，拍照上传。 3、模式分解：讲义第4章Page132【例4-4】，在纸上独立完成运算，拍照上传。 ">
+<meta property='og:url' content='https://2332ly.github.io/p/%E6%95%B0%E6%8D%AE%E5%BA%93_%E7%BB%83%E4%B9%A0/'>
+<meta property='og:site_name' content='2332ly'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-05-27T21:18:11&#43;08:00'/><meta property='article:modified_time' content='2025-05-27T21:51:55&#43;08:00'/>
+<meta name="twitter:title" content="数据库_练习">
+<meta name="twitter:description" content="关系数据理论练习： 1、属性集闭包计算：讲义第4章Page71【例7-54】，在纸上独立完成运算，拍照上传。 2、求最小覆盖：讲义第4章Page93【例1】，在纸上独立完成运算，拍照上传。 3、模式分解：讲义第4章Page132【例4-4】，在纸上独立完成运算，拍照上传。 ">
+    <link rel="shortcut icon" href="/favicon.ico" />
+<style>
+    :root {
+        --article-font-family: "Noto Serif SC", var(--base-font-family);
+    }
+</style>
+
+<script>
+		(function () {
+		    const customFont = document.createElement('link');
+		    customFont.href = "https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap";
+		
+		    customFont.type = "text/css";
+		    customFont.rel = "stylesheet";
+		
+		    document.head.appendChild(customFont);
+		}());
+</script>
+
+<div id="particles-js"></div>
+
+<script src=https://2332ly.github.io/background/particles.min.js></script>
+<script>
+  particlesJS.load('particles-js', "https://2332ly.github.io/background/particlesjs-config.json", function() {
+    console.log('particles.js loaded - callback');
+  });
+</script>
+
+<style>
+  #particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+  }
+</style>
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/08_hu_b6524cc092652a8b.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🦌</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">2332ly</a></h1>
+            <h2 class="site-description">演示说明</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/2332ly'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友情链接</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+                    
+                        <li id="i18n-switch">  
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                            <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
+                                
+                                    <option value="https://2332ly.github.io/en/" >English</option>
+                                
+                                    <option value="https://2332ly.github.io/" selected>简体中文</option>
+                                
+                                    <option value="https://2332ly.github.io/ar/" >عربي</option>
+                                
+                            </select>
+                        </li>
+                    
+                
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span></span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title"></h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#关系数据理论练习">关系数据理论练习：</a></li>
+  </ol>
+
+  <ol>
+    <li><a href="#查询练习二">查询练习二：</a></li>
+    <li><a href="#存储过程和触发器练习">存储过程和触发器练习：</a></li>
+    <li><a href="#游标的练习">游标的练习：</a></li>
+    <li><a href="#并发事务的干扰问题">并发事务的干扰问题：</a></li>
+    <li><a href="#隔离级别练习">隔离级别练习：</a></li>
+    <li><a href="#封锁练习">封锁练习：</a></li>
+    <li><a href="#数据库备份与恢复练习">数据库备份与恢复练习：</a></li>
+    <li><a href="#后续选择略">后续选择略</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" >
+                数据库
+            </a>
+        
+            <a href="/categories/%E7%BB%83%E4%B9%A0/" >
+                练习
+            </a>
+        
+            <a href="/categories/%E6%95%99%E7%A8%8B/" >
+                教程
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/%E6%95%B0%E6%8D%AE%E5%BA%93_%E7%BB%83%E4%B9%A0/">数据库_练习</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2025-05-27</time>
+            </div>
+        
+
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="关系数据理论练习">关系数据理论练习：
+</h2><p>1、属性集闭包计算：讲义第4章Page71【例7-54】，在纸上独立完成运算，拍照上传。
+<img src="/p/%E6%95%B0%E6%8D%AE%E5%BA%93_%E7%BB%83%E4%B9%A0/PixPin_2025-05-27_10-56-09-1.png"
+	width="1509"
+	height="5938"
+	srcset="/p/%E6%95%B0%E6%8D%AE%E5%BA%93_%E7%BB%83%E4%B9%A0/PixPin_2025-05-27_10-56-09-1_hu_200879f1fd3903e0.png 480w, /p/%E6%95%B0%E6%8D%AE%E5%BA%93_%E7%BB%83%E4%B9%A0/PixPin_2025-05-27_10-56-09-1_hu_bac463b7bbcb2be5.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="25"
+		data-flex-basis="60px"
+	
+>
+2、求最小覆盖：讲义第4章Page93【例1】，在纸上独立完成运算，拍照上传。
+<img src="/p/%E6%95%B0%E6%8D%AE%E5%BA%93_%E7%BB%83%E4%B9%A0/PixPin_2025-05-27_10-56-43-1.png"
+	width="1473"
+	height="2541"
+	srcset="/p/%E6%95%B0%E6%8D%AE%E5%BA%93_%E7%BB%83%E4%B9%A0/PixPin_2025-05-27_10-56-43-1_hu_3aebe537b0a7e845.png 480w, /p/%E6%95%B0%E6%8D%AE%E5%BA%93_%E7%BB%83%E4%B9%A0/PixPin_2025-05-27_10-56-43-1_hu_6cabdecef99841ee.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="57"
+		data-flex-basis="139px"
+	
+>
+3、模式分解：讲义第4章Page132【例4-4】，在纸上独立完成运算，拍照上传。
+<img src="/p/%E6%95%B0%E6%8D%AE%E5%BA%93_%E7%BB%83%E4%B9%A0/PixPin_2025-05-27_10-57-17-1.png"
+	width="1473"
+	height="2391"
+	srcset="/p/%E6%95%B0%E6%8D%AE%E5%BA%93_%E7%BB%83%E4%B9%A0/PixPin_2025-05-27_10-57-17-1_hu_c02ac71498623b7f.png 480w, /p/%E6%95%B0%E6%8D%AE%E5%BA%93_%E7%BB%83%E4%B9%A0/PixPin_2025-05-27_10-57-17-1_hu_71095d7d9e4edafb.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="61"
+		data-flex-basis="147px"
+	
+></p>
+<p>##数据定义练习：</p>
+<p>某医院住院部信息系统中由病人表R（住院号，姓名，性别，科室号，病房，家庭住址），“住院号”唯一标识表R中的每一个元组，“性别”的取值只能为M或F，“家庭住址”包括省、市、街道、邮编，要求科室号参照科室关系D中的科室号；科室关系D（科室号，科室名，负责人，联系电话），“科室号”唯一标识关系D中的每一个元组。</p>
+<p>a. 创建关系R的SQL语句如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">CREATE TABLE R (
+</span></span><span class="line"><span class="cl">    住院号 CHAR(8) ________,
+</span></span><span class="line"><span class="cl">    姓名 CHAR(10),
+</span></span><span class="line"><span class="cl">    性别 CHAR(1) ________,
+</span></span><span class="line"><span class="cl">    科室号 CHAR(4),
+</span></span><span class="line"><span class="cl">    家庭住址 ADDR, //ADDR为用户定义的类
+</span></span><span class="line"><span class="cl">    ____________
+</span></span><span class="line"><span class="cl">);
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>b. 表R中复合属性是__________。（15年第40~43题）
+问题1：
+A. PRIMARY KEY
+B. REFERENCES D（科室号）
+C. NOT NULL
+D. REFERENCES D（科室名）</p>
+<p>问题2：
+A. IN（M，F）
+B. CHECK（‘M’，‘F’）
+C. LIKE（‘M’，‘F’）
+D. CHECK（性别 IN（‘M’，‘F’））</p>
+<p>问题3：
+A. PRIMARY KEY（科室号）NOT NULL UNIQUE
+B. PRIMARY KEY（科室名）UNIQUE
+C. FOREIGN KEY（科室号）REFERENCES D（科室号）
+D. FOREIGN KEY（科室号）REFERENCES D（科室名）</p>
+<p>问题4：
+A. 住院号
+B. 姓名
+C. 病房
+D. 家庭住址</p>
+<p>问题1： A<br>
+问题2： D<br>
+问题3： C <br>
+问题4： D</p>
+<h1 id="查询练习一">#查询练习一：
+</h1><p>给定一个部门表Departments，包含字段DepartmentID（部门ID）和DepartmentName（部门名称）；一个员工表Employees，包含字段EmployeeID（员工ID）、LastName（姓）、FirstName（名）、Salary（薪资）、Departmen（部门ID），其中Departmen是外键，参照部门表的主键DepartmentID。写出以下需求的SQL语句，上传SQL语句和运行结果图。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">-- 创建部门表
+</span></span><span class="line"><span class="cl">CREATE TABLE 部门表 (
+</span></span><span class="line"><span class="cl">    部门ID INT PRIMARY KEY,
+</span></span><span class="line"><span class="cl">    部门名称 NVARCHAR(50) NOT NULL
+</span></span><span class="line"><span class="cl">);
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">-- 插入部门数据
+</span></span><span class="line"><span class="cl">INSERT INTO 部门表 (部门ID, 部门名称) VALUES
+</span></span><span class="line"><span class="cl">(1, N&#39;销售部&#39;),
+</span></span><span class="line"><span class="cl">(2, N&#39;市场部&#39;),
+</span></span><span class="line"><span class="cl">(3, N&#39;研发部&#39;),
+</span></span><span class="line"><span class="cl">(4, N&#39;人力资源部&#39;);
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">-- 创建员工表
+</span></span><span class="line"><span class="cl">CREATE TABLE 员工表 (
+</span></span><span class="line"><span class="cl">    员工ID INT PRIMARY KEY,
+</span></span><span class="line"><span class="cl">    姓 NVARCHAR(50) NOT NULL,
+</span></span><span class="line"><span class="cl">    名 NVARCHAR(50) NOT NULL,
+</span></span><span class="line"><span class="cl">    薪资 DECIMAL(10, 2) NOT NULL,
+</span></span><span class="line"><span class="cl">    部门ID INT,
+</span></span><span class="line"><span class="cl">    FOREIGN KEY (部门ID) REFERENCES 部门表(部门ID)
+</span></span><span class="line"><span class="cl">);
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">-- 插入员工数据
+</span></span><span class="line"><span class="cl">INSERT INTO 员工表 (员工ID, 姓, 名, 薪资, 部门ID) VALUES
+</span></span><span class="line"><span class="cl">(101, N&#39;张&#39;, N&#39;三&#39;, 6000.00, 1),
+</span></span><span class="line"><span class="cl">(102, N&#39;李&#39;, N&#39;四&#39;, 4500.00, 1),
+</span></span><span class="line"><span class="cl">(103, N&#39;王&#39;, N&#39;五&#39;, 7000.00, 2),
+</span></span><span class="line"><span class="cl">(104, N&#39;赵&#39;, N&#39;六&#39;, 5500.00, 2),
+</span></span><span class="line"><span class="cl">(105, N&#39;钱&#39;, N&#39;七&#39;, 8000.00, 3),
+</span></span><span class="line"><span class="cl">(106, N&#39;孙&#39;, N&#39;八&#39;, 5000.00, 3),
+</span></span><span class="line"><span class="cl">(107, N&#39;周&#39;, N&#39;九&#39;, 4000.00, 4),
+</span></span><span class="line"><span class="cl">(108, N&#39;吴&#39;, N&#39;十&#39;, 6500.00, 1);
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>1、编写一个SQL查询，列出所有月薪超过5000的员工的姓名和薪资。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">SELECT 姓, 名, 薪资
+</span></span><span class="line"><span class="cl">FROM 员工表
+</span></span><span class="line"><span class="cl">WHERE 薪资 &gt; 5000;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>2、编写一个SQL查询，用以计算每个部门的平均薪资。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">SELECT D.部门名称, AVG(E.薪资) AS 平均薪资
+</span></span><span class="line"><span class="cl">FROM 部门表 AS D
+</span></span><span class="line"><span class="cl">JOIN 员工表 AS E ON D.部门ID = E.部门ID
+</span></span><span class="line"><span class="cl">GROUP BY D.部门名称;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>3、编写一个SQL查询，找出薪资高于所在部门平均薪资的所有员工的姓名。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">SELECT E.姓, E.名, E.薪资, D.部门名称
+</span></span><span class="line"><span class="cl">FROM 员工表 AS E
+</span></span><span class="line"><span class="cl">JOIN 部门表 AS D ON E.部门ID = D.部门ID
+</span></span><span class="line"><span class="cl">WHERE E.薪资 &gt; (SELECT AVG(薪资) FROM 员工表 WHERE 部门ID = E.部门ID);
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>4、编写一个SQL命令，将所有员工的薪资提高10%，但只限于那些部门平均薪资低于6000的部门。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">UPDATE 员工表
+</span></span><span class="line"><span class="cl">SET 薪资 = 薪资 * 1.10
+</span></span><span class="line"><span class="cl">WHERE 部门ID IN (
+</span></span><span class="line"><span class="cl">    SELECT 部门ID
+</span></span><span class="line"><span class="cl">    FROM 员工表
+</span></span><span class="line"><span class="cl">    GROUP BY 部门ID
+</span></span><span class="line"><span class="cl">    HAVING AVG(薪资) &lt; 6000
+</span></span><span class="line"><span class="cl">);
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>5、编写一个SQL查询，列出所有部门以及各部门的员工人数。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">SELECT D.部门名称, COUNT(E.员工ID) AS 员工人数
+</span></span><span class="line"><span class="cl">FROM 部门表 AS D
+</span></span><span class="line"><span class="cl">LEFT JOIN 员工表 AS E ON D.部门ID = E.部门ID
+</span></span><span class="line"><span class="cl">GROUP BY D.部门名称;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="查询练习二">查询练习二：
+</h2><p>设教学数据库 Education 有三个关系</p>
+<ul>
+<li>
+<p>学生关系 S（SNO，SNAME，AGE，SEX，SDEPT）</p>
+</li>
+<li>
+<p>学习关系 SC（SNO，CNO，GRADE）</p>
+</li>
+<li>
+<p>课程关系 C（CNO，CNAME，CDEPT，TNAME）</p>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">-- 创建学生表
+</span></span><span class="line"><span class="cl">CREATE TABLE 学生表 (
+</span></span><span class="line"><span class="cl">    学号 CHAR(10) PRIMARY KEY,
+</span></span><span class="line"><span class="cl">    姓名 NVARCHAR(50) NOT NULL,
+</span></span><span class="line"><span class="cl">    年龄 INT,
+</span></span><span class="line"><span class="cl">    性别 CHAR(1),
+</span></span><span class="line"><span class="cl">    系别 NVARCHAR(50)
+</span></span><span class="line"><span class="cl">);
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">-- 插入学生数据
+</span></span><span class="line"><span class="cl">INSERT INTO 学生表 (学号, 姓名, 年龄, 性别, 系别) VALUES
+</span></span><span class="line"><span class="cl">(&#39;S001&#39;, N&#39;小明&#39;, 20, &#39;M&#39;, N&#39;计算机系&#39;),
+</span></span><span class="line"><span class="cl">(&#39;S002&#39;, N&#39;小红&#39;, 21, &#39;F&#39;, N&#39;软件工程系&#39;),
+</span></span><span class="line"><span class="cl">(&#39;S003&#39;, N&#39;小刚&#39;, 19, &#39;M&#39;, N&#39;计算机系&#39;),
+</span></span><span class="line"><span class="cl">(&#39;S004&#39;, N&#39;小丽&#39;, 22, &#39;F&#39;, N&#39;自动化系&#39;),
+</span></span><span class="line"><span class="cl">(&#39;S005&#39;, N&#39;小强&#39;, 20, &#39;M&#39;, N&#39;计算机系&#39;);
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">-- 创建课程表
+</span></span><span class="line"><span class="cl">CREATE TABLE 课程表 (
+</span></span><span class="line"><span class="cl">    课程号 CHAR(10) PRIMARY KEY,
+</span></span><span class="line"><span class="cl">    课程名 NVARCHAR(50) NOT NULL,
+</span></span><span class="line"><span class="cl">    开课系 NVARCHAR(50),
+</span></span><span class="line"><span class="cl">    教师名 NVARCHAR(50)
+</span></span><span class="line"><span class="cl">);
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">-- 插入课程数据
+</span></span><span class="line"><span class="cl">INSERT INTO 课程表 (课程号, 课程名, 开课系, 教师名) VALUES
+</span></span><span class="line"><span class="cl">(&#39;C1&#39;, N&#39;数据库原理&#39;, N&#39;计算机系&#39;, N&#39;王老师&#39;),
+</span></span><span class="line"><span class="cl">(&#39;C2&#39;, N&#39;数据结构&#39;, N&#39;计算机系&#39;, N&#39;李老师&#39;),
+</span></span><span class="line"><span class="cl">(&#39;C3&#39;, N&#39;操作系统&#39;, N&#39;软件工程系&#39;, N&#39;张老师&#39;),
+</span></span><span class="line"><span class="cl">(&#39;C4&#39;, N&#39;高等数学&#39;, N&#39;数学系&#39;, N&#39;赵老师&#39;),
+</span></span><span class="line"><span class="cl">(&#39;C5&#39;, N&#39;DS&#39;, N&#39;计算机系&#39;, N&#39;陈老师&#39;);
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">-- 创建学习表
+</span></span><span class="line"><span class="cl">CREATE TABLE 学习表 (
+</span></span><span class="line"><span class="cl">    学号 CHAR(10),
+</span></span><span class="line"><span class="cl">    课程号 CHAR(10),
+</span></span><span class="line"><span class="cl">    成绩 INT,
+</span></span><span class="line"><span class="cl">    PRIMARY KEY (学号, 课程号),
+</span></span><span class="line"><span class="cl">    FOREIGN KEY (学号) REFERENCES 学生表(学号),
+</span></span><span class="line"><span class="cl">    FOREIGN KEY (课程号) REFERENCES 课程表(课程号)
+</span></span><span class="line"><span class="cl">);
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">-- 插入学习数据
+</span></span><span class="line"><span class="cl">INSERT INTO 学习表 (学号, 课程号, 成绩) VALUES
+</span></span><span class="line"><span class="cl">(&#39;S001&#39;, &#39;C1&#39;, 85),
+</span></span><span class="line"><span class="cl">(&#39;S001&#39;, &#39;C2&#39;, 90),
+</span></span><span class="line"><span class="cl">(&#39;S002&#39;, &#39;C1&#39;, 78),
+</span></span><span class="line"><span class="cl">(&#39;S002&#39;, &#39;C3&#39;, 88),
+</span></span><span class="line"><span class="cl">(&#39;S003&#39;, &#39;C2&#39;, 75),
+</span></span><span class="line"><span class="cl">(&#39;S003&#39;, &#39;C4&#39;, 80),
+</span></span><span class="line"><span class="cl">(&#39;S004&#39;, &#39;C1&#39;, 92),
+</span></span><span class="line"><span class="cl">(&#39;S004&#39;, &#39;C3&#39;, 85),
+</span></span><span class="line"><span class="cl">(&#39;S005&#39;, &#39;C2&#39;, 88),
+</span></span><span class="line"><span class="cl">(&#39;S005&#39;, &#39;C4&#39;, 95),
+</span></span><span class="line"><span class="cl">(&#39;S001&#39;, &#39;C5&#39;, 80); -- S001 选修了 &#39;DS&#39;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>写出以下需求的SQL语句，上传SQL语句和运行结果图。</p>
+<p>1、检索学习课程号为 C2 的学生学号与姓名；</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">SELECT S.学号, S.姓名
+</span></span><span class="line"><span class="cl">FROM 学生表 AS S
+</span></span><span class="line"><span class="cl">JOIN 学习表 AS SC ON S.学号 = SC.学号
+</span></span><span class="line"><span class="cl">WHERE SC.课程号 = &#39;C2&#39;;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>2、检索选修课程名为“DS”的学生学号与姓名；</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">SELECT S.学号, S.姓名
+</span></span><span class="line"><span class="cl">FROM 学生表 AS S
+</span></span><span class="line"><span class="cl">JOIN 学习表 AS SC ON S.学号 = SC.学号
+</span></span><span class="line"><span class="cl">JOIN 课程表 AS C ON SC.课程号 = C.课程号
+</span></span><span class="line"><span class="cl">WHERE C.课程名 = &#39;DS&#39;;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>3、检索至少选修课程号为 C2 和 C4 的学生学号。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">SELECT 学号
+</span></span><span class="line"><span class="cl">FROM 学习表
+</span></span><span class="line"><span class="cl">WHERE 课程号 = &#39;C2&#39;
+</span></span><span class="line"><span class="cl">INTERSECT
+</span></span><span class="line"><span class="cl">SELECT 学号
+</span></span><span class="line"><span class="cl">FROM 学习表
+</span></span><span class="line"><span class="cl">WHERE 课程号 = &#39;C4&#39;;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="存储过程和触发器练习">存储过程和触发器练习：
+</h2><p>某企业网上书城系统的部分关系模式如下：</p>
+<p>书籍信息表：books（book_no, book_name, press_no, ISBN, price, sale_type, all_nums），其中属性含义分别为：书籍编码、书籍名称、出版商编码、ISBN、销售价格、销售分类、当前库存数量；<br>
+书籍销售订单表：orders（order_no, book_no, book_nums, book_price, order_date, amount），其中属性分别为：订单编码、书籍编码、书籍数量、书籍价格、订单日期和总金额。<br>
+书籍再购额度表：booklimit（book_no, sale_type, limit_amount），其中属性含义分别为：书籍编码、销售分类、再购额度；<br>
+书籍最低库存表：bookminlevel（book_no, level），其中属性含义分别为：书籍编码、书籍最低库存数量；<br>
+书籍采购表：bookorders（book_no, order_amount），其中属性含义分别为：书籍编码和采购数量。<br>
+有关关系模式的说明如下：<br>
+（1）下划线标出的属性是表的主码。<br>
+（2）根据书籍销售情况来确定书籍的销售分类：销售数量小于1万的为普通类型，其值为0；1万及以上的为热销类型，其值为1。<br>
+（3）系统具备书籍自动补货功能，涉及到的关系模式有：书籍再购额度表、书籍最低库存表、书籍采购表。其业务逻辑是：当某书籍库存小于其最低库存数量时，根据书籍的销售分类以及书籍再购额度表中的再购额度，生成书籍采购表中的采购订单，完成自动补货操作。<br>
+【问题1】<br>
+系统定期扫描书籍销售订单表，根据书籍总的销售情况来确定书籍的销售类别。下面是系统中设置某书籍销售类别的存储过程，结束时需显示提交返回。请不全空缺处的代码。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">CREATE</span> <span class="n">PROCEDURE</span> <span class="n">UpdateBookSaleType</span> <span class="p">(</span><span class="n">IN</span> <span class="n">bno</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">20</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">DECLARE</span>
+</span></span><span class="line"><span class="cl">    <span class="n">all_nums</span> <span class="n">number</span><span class="p">(</span><span class="mi">6</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">BEGIN</span>
+</span></span><span class="line"><span class="cl">    <span class="n">SELECT</span> <span class="n">____</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="n">____</span> <span class="p">(</span><span class="n">book_nums</span><span class="p">)</span> <span class="n">INTO</span> <span class="n">all_nums</span> <span class="n">FROM</span> <span class="n">orders</span>
+</span></span><span class="line"><span class="cl">    <span class="n">WHERE</span> <span class="n">book_no</span><span class="o">=</span><span class="n">____</span><span class="p">(</span><span class="n">b</span><span class="p">)</span><span class="n">____</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">IF</span> <span class="n">all_nums</span><span class="o">&lt;=</span><span class="n">____</span><span class="p">(</span><span class="n">c</span><span class="p">)</span><span class="n">____</span> <span class="n">THEN</span>
+</span></span><span class="line"><span class="cl">        <span class="n">UPDATE</span> <span class="n">books</span> <span class="n">SET</span> <span class="n">sale_type</span><span class="o">=</span><span class="mi">0</span> <span class="n">WHERE</span> <span class="n">book_no</span><span class="o">=</span><span class="n">bno</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ELSE</span>
+</span></span><span class="line"><span class="cl">        <span class="n">UPDATE</span> <span class="n">books</span> <span class="n">SET</span> <span class="n">sale_type</span><span class="o">=</span><span class="n">____</span><span class="p">(</span><span class="n">d</span><span class="p">)</span><span class="n">____</span> <span class="n">WHERE</span> <span class="n">book_no</span><span class="o">=</span><span class="n">bno</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">END</span> <span class="n">IF</span>
+</span></span><span class="line"><span class="cl"><span class="n">END</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>(a) SUM (计算总销售数量)</li>
+<li>(b) bno (根据传入的书籍编码进行筛选)</li>
+<li>(c) 10000 (销售数量小于1万为普通类型)</li>
+<li>(d) 1 (1万及以上为热销类型)
+【问题2】
+下面是系统中自动补货功能对应的触发器，请补全空缺处的代码。</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">CREATE TRIGGER BookOrdersTrigger ____(f)____ update
+</span></span><span class="line"><span class="cl">    of ____ (g)____ on books
+</span></span><span class="line"><span class="cl">    ____(h)____
+</span></span><span class="line"><span class="cl">    WHEN ____(i)____ &lt; (SELECT level FROM bookminlevel
+</span></span><span class="line"><span class="cl">                         WHERE bookminlevel.book_no=OLD.book_no)
+</span></span><span class="line"><span class="cl">    AND ____(j)____ &gt;= (SELECT level FROM bookminlevel
+</span></span><span class="line"><span class="cl">                        WHERE bookminlevel.book_no=OLD.book_no)
+</span></span><span class="line"><span class="cl">BEGIN
+</span></span><span class="line"><span class="cl">    INSERT INTO ____(k)____
+</span></span><span class="line"><span class="cl">    (SELECT book_no, limit_amount
+</span></span><span class="line"><span class="cl">     FROM booklimit as TMP
+</span></span><span class="line"><span class="cl">     WHERE TMP.book_no=OLD.book_no
+</span></span><span class="line"><span class="cl">     AND TMP.sale_type=OLD.sale_type);
+</span></span><span class="line"><span class="cl">END
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>(f) AFTER (在更新操作之后触发)</li>
+<li>(g) all_nums (当books表的all_nums字段更新时触发)</li>
+<li>(h) FOR EACH ROW (对于每一行受影响的行都执行触发器)</li>
+<li>(i) NEW.all_nums (更新后的库存数量)</li>
+<li>(j) OLD.all_nums (更新前的库存数量)</li>
+<li>(k) bookorders (插入到书籍采购表)</li>
+</ul>
+<h2 id="游标的练习">游标的练习：
+</h2><p>1、讲义第8章Page47的【例8-2】，练习游标，上传编写的SQL语句和运行结果截图。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">-- **创建仓库表 (如果不存在，请先运行此段)**
+</span></span><span class="line"><span class="cl">-- 注意：在实际运行中，请确保您有权限创建表，并且数据库已正确选择。
+</span></span><span class="line"><span class="cl">IF OBJECT_ID(N&#39;仓库表&#39;, N&#39;U&#39;) IS NOT NULL
+</span></span><span class="line"><span class="cl">    DROP TABLE 仓库表;
+</span></span><span class="line"><span class="cl">GO
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">CREATE TABLE 仓库表 (
+</span></span><span class="line"><span class="cl">    仓库号 VARCHAR(10) PRIMARY KEY,
+</span></span><span class="line"><span class="cl">    所在城市 NVARCHAR(100), -- 使用 NVARCHAR 兼容中文
+</span></span><span class="line"><span class="cl">    仓库面积 INT
+</span></span><span class="line"><span class="cl">);
+</span></span><span class="line"><span class="cl">GO
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">-- **插入示例数据（根据图中仓库列表提供的数据）**
+</span></span><span class="line"><span class="cl">INSERT INTO 仓库表 (仓库号, 所在城市, 仓库面积) VALUES
+</span></span><span class="line"><span class="cl">(&#39;WH1&#39;, N&#39;北京&#39;, 500),
+</span></span><span class="line"><span class="cl">(&#39;WH2&#39;, N&#39;上海&#39;, 370),
+</span></span><span class="line"><span class="cl">(&#39;WH3&#39;, N&#39;广州&#39;, 300),
+</span></span><span class="line"><span class="cl">(&#39;WH4&#39;, N&#39;武汉&#39;, 400),
+</span></span><span class="line"><span class="cl">(&#39;WH5&#39;, N&#39;成都&#39;, 450),
+</span></span><span class="line"><span class="cl">(&#39;WH6&#39;, N&#39;北京&#39;, 650);
+</span></span><span class="line"><span class="cl">GO
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">-- **游标操作代码 (与图中提供的示例完全一致)**
+</span></span><span class="line"><span class="cl">-- 从游标wh_cursor读当前记录到变量
+</span></span><span class="line"><span class="cl">DECLARE wh_cursor CURSOR FOR 
+</span></span><span class="line"><span class="cl">    SELECT 仓库号, 所在城市, 仓库面积 FROM 仓库表;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">OPEN wh_cursor;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">-- 声明变量
+</span></span><span class="line"><span class="cl">DECLARE @whno VARCHAR(10), @city NVARCHAR(100), @area INT;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">FETCH NEXT FROM wh_cursor INTO @whno, @city, @area;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">WHILE @@FETCH_STATUS = 0
+</span></span><span class="line"><span class="cl">BEGIN
+</span></span><span class="line"><span class="cl">    PRINT @whno + &#39; &#39; + @city + &#39; &#39; + STR(@area, 4);
+</span></span><span class="line"><span class="cl">    FETCH NEXT FROM wh_cursor INTO @whno, @city, @area;
+</span></span><span class="line"><span class="cl">END
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">-- 关闭游标
+</span></span><span class="line"><span class="cl">CLOSE wh_cursor;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">-- 释放游标
+</span></span><span class="line"><span class="cl">DEALLOCATE wh_cursor;
+</span></span><span class="line"><span class="cl">GO
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="并发事务的干扰问题">并发事务的干扰问题：
+</h2><p>系统中有三个事务T1、T2、T3分别对数据R1和R2进行操作，其中R1和R2的初值R1=120、R2=50，假设事务T1、T2、T3操作的情况如下图所示，图中T1和T2间并发操作（ ）问题，T2与T3间并发操作（ ）问题。（12年第45~46题）</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>时间</th>
+          <th>T1</th>
+          <th>T2</th>
+          <th>T3</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>t1</td>
+          <td>Read(R1);</td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>t2</td>
+          <td>Read(R2);</td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>t3</td>
+          <td>X = R1 + R2;</td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>t4</td>
+          <td></td>
+          <td>Read(R1);</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>t5</td>
+          <td></td>
+          <td>Read(R2);</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>t6</td>
+          <td></td>
+          <td></td>
+          <td>Read(R2);</td>
+      </tr>
+      <tr>
+          <td>t8</td>
+          <td></td>
+          <td>Write(R2);</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>t9</td>
+          <td>Read(R1);</td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>t10</td>
+          <td>Read(R2);</td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>t11</td>
+          <td>X = R1 + R2;</td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>t12</td>
+          <td>演算X</td>
+          <td></td>
+          <td>R2 = R2 + 80;</td>
+      </tr>
+      <tr>
+          <td>t13</td>
+          <td></td>
+          <td></td>
+          <td>Write(R2);</td>
+      </tr>
+  </tbody>
+</table></div>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">问题1： B
+</span></span><span class="line"><span class="cl">T1在t1和t2读取R1和R2，计算X。
+</span></span><span class="line"><span class="cl">T2在t4-t8修改了R2并写入。
+</span></span><span class="line"><span class="cl">T1在t9和t10再次读取R1和R2。由于T2的修改，T1第二次读R2时，R2的值已经改变（R2=R1+R2），导致T1两次读取R2的结果不一致，这是不可重复读问题。
+</span></span><span class="line"><span class="cl">问题2： C
+</span></span><span class="line"><span class="cl">T2在t5读取R2 (初始值50)。  
+</span></span><span class="line"><span class="cl">T3在t6读取R2 (初始值50)。  
+</span></span><span class="line"><span class="cl">T2在t7计算R2=R1+R2 (120+50=170)，并在t8写入R2=170。  
+</span></span><span class="line"><span class="cl">T3在t12计算R2=R2+80 (50+80=130)，并在t13写入R2=130。   
+</span></span><span class="line"><span class="cl">T3的写入覆盖了T2的写入，导致T2的修改丢失。  
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="隔离级别练习">隔离级别练习：
+</h2><p>事务T1中有两次查询学生表中的男生人数，在这两次查询执行中间，事务T2对学生表中加入了一条男生记录，导致T1两次查询的结果不一致，此类问题属于（ ），为解决这一问题，应采用的隔离级别是（ ）。（14年第54~55题）<br>
+问题1：<br>
+A. 不可重复读<br>
+B. 读脏数据<br>
+C. 丢失修改<br>
+D. 幻象读<br>
+问题2：<br>
+A. Read Uncommitted<br>
+B. Read Committed<br>
+C. Repeatable Read<br>
+D. Serializable<br>
+问题1： D. 幻象读<br>
+问题2： D. Serializable</p>
+<h2 id="封锁练习">封锁练习：
+</h2><p>若事务T1对数据D1已加排它锁，事务T2对数据D2已加共享锁，那么事务T2对数据D1（ ）；事务T1对数据D2（ ）。（13年第45~46题）   <br>
+问题1：
+A. 加共享锁成功，加排它锁失败 <br>
+B. 加排它锁成功，加共享锁失败<br>
+C. 加共享锁、排它锁都成功<br>
+D. 加共享锁、排它锁都失败<br>
+问题2：<br>
+A. 加共享锁成功，加排它锁失败<br>
+B. 加排它锁成功，加共享锁失败<br>
+C. 加共享锁、排它锁都成功<br>
+D. 加共享锁、排它锁都失败</p>
+<p>问题1： D. 加共享锁、排它锁都失败<br>
+问题2： C. 加共享锁、排它锁都成功</p>
+<h2 id="数据库备份与恢复练习">数据库备份与恢复练习：
+</h2><p>A、完整 (10：00)→日志 (11：00)→日志 (13：00)→日志 (15：00)→差异 (16：00)</p>
+<ol>
+<li>准备工作：创建数据库和表</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">-- 使用 master 数据库
+</span></span><span class="line"><span class="cl">USE master;
+</span></span><span class="line"><span class="cl">GO
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">-- 如果数据库已存在，先删除它以便重新开始
+</span></span><span class="line"><span class="cl">IF DB_ID(N&#39;学生管理数据库&#39;) IS NOT NULL
+</span></span><span class="line"><span class="cl">    DROP DATABASE 学生管理数据库;
+</span></span><span class="line"><span class="cl">GO
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">-- 创建新的数据库
+</span></span><span class="line"><span class="cl">CREATE DATABASE 学生管理数据库;
+</span></span><span class="line"><span class="cl">GO
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">-- 切换到新创建的数据库
+</span></span><span class="line"><span class="cl">USE 学生管理数据库;
+</span></span><span class="line"><span class="cl">GO
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">-- 创建学生信息表
+</span></span><span class="line"><span class="cl">CREATE TABLE 学生信息 (
+</span></span><span class="line"><span class="cl">    学号 INT PRIMARY KEY IDENTITY(1,1),
+</span></span><span class="line"><span class="cl">    姓氏 NVARCHAR(50) NOT NULL,
+</span></span><span class="line"><span class="cl">    名字 NVARCHAR(50) NOT NULL,
+</span></span><span class="line"><span class="cl">    出生日期 DATE,
+</span></span><span class="line"><span class="cl">    入学日期 DATE DEFAULT GETDATE()
+</span></span><span class="line"><span class="cl">);
+</span></span><span class="line"><span class="cl">GO
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">-- 插入一些初始学生数据
+</span></span><span class="line"><span class="cl">INSERT INTO 学生信息 (姓氏, 名字, 出生日期) VALUES
+</span></span><span class="line"><span class="cl">(N&#39;张&#39;, N&#39;三&#39;, &#39;2000-01-15&#39;),
+</span></span><span class="line"><span class="cl">(N&#39;李&#39;, N&#39;四&#39;, &#39;2001-03-20&#39;),
+</span></span><span class="line"><span class="cl">(N&#39;王&#39;, N&#39;五&#39;, &#39;1999-07-10&#39;);
+</span></span><span class="line"><span class="cl">GO
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">-- 查看当前学生数据
+</span></span><span class="line"><span class="cl">SELECT * FROM 学生信息;
+</span></span><span class="line"><span class="cl">GO
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="2">
+<li>进行完整备份 (Full Backup)
+假设这是在 10:00 进行的。</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">USE master; -- 备份操作通常在 master 数据库中执行
+</span></span><span class="line"><span class="cl">GO
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">-- 执行完整备份
+</span></span><span class="line"><span class="cl">BACKUP DATABASE 学生管理数据库
+</span></span><span class="line"><span class="cl">TO DISK = N&#39;D:\sql\gen\MSSQL16.MSSQLSERVER\MSSQL\Backup\学生管理数据库_完整_20250527_100000.bak&#39; -- **已更新路径**
+</span></span><span class="line"><span class="cl">WITH NOFORMAT, NOINIT, NAME = N&#39;学生管理数据库完整备份_10点&#39;, SKIP, NOREWIND, NOUNLOAD, STATS = 10;
+</span></span><span class="line"><span class="cl">GO
+</span></span><span class="line"><span class="cl">PRINT &#39;完整备份完成，时间：10:00&#39;;
+</span></span><span class="line"><span class="cl">GO
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="3">
+<li>插入一些新数据 (模拟数据库变化)</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">USE 学生管理数据库;
+</span></span><span class="line"><span class="cl">GO
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">INSERT INTO 学生信息 (姓氏, 名字, 出生日期) VALUES
+</span></span><span class="line"><span class="cl">(N&#39;赵&#39;, N&#39;六&#39;, &#39;2002-05-25&#39;);
+</span></span><span class="line"><span class="cl">GO
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">SELECT * FROM 学生信息; -- 确认新数据
+</span></span><span class="line"><span class="cl">GO
+</span></span><span class="line"><span class="cl">PRINT &#39;10:30 插入新数据完成&#39;;
+</span></span><span class="line"><span class="cl">GO
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="4">
+<li>进行第一次事务日志备份 (Log Backup)</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">USE master;
+</span></span><span class="line"><span class="cl">GO
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">-- 执行第一次事务日志备份
+</span></span><span class="line"><span class="cl">BACKUP LOG 学生管理数据库
+</span></span><span class="line"><span class="cl">TO DISK = N&#39;D:\sql\gen\MSSQL16.MSSQLSERVER\MSSQL\Backup\学生管理数据库_日志_20250527_110000.trn&#39; -- **已更新路径**
+</span></span><span class="line"><span class="cl">WITH NOFORMAT, NOINIT, NAME = N&#39;学生管理数据库日志备份_11点&#39;, SKIP, NOREWIND, NOUNLOAD, STATS = 10;
+</span></span><span class="line"><span class="cl">GO
+</span></span><span class="line"><span class="cl">PRINT &#39;日志备份完成，时间：11:00&#39;;
+</span></span><span class="line"><span class="cl">GO
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="5">
+<li>再次插入一些新数据 (模拟更多数据库变化)</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">USE 学生管理数据库;
+</span></span><span class="line"><span class="cl">GO
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">INSERT INTO 学生信息 (姓氏, 名字, 出生日期) VALUES
+</span></span><span class="line"><span class="cl">(N&#39;钱&#39;, N&#39;七&#39;, &#39;2003-09-01&#39;);
+</span></span><span class="line"><span class="cl">GO
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">SELECT * FROM 学生信息; -- 确认新数据
+</span></span><span class="line"><span class="cl">GO
+</span></span><span class="line"><span class="cl">PRINT &#39;12:00 插入新数据完成&#39;;
+</span></span><span class="line"><span class="cl">GO
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="6">
+<li>进行第二次事务日志备份 (Log Backup)</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">USE master;
+</span></span><span class="line"><span class="cl">GO
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">-- 执行第二次事务日志备份
+</span></span><span class="line"><span class="cl">BACKUP LOG 学生管理数据库
+</span></span><span class="line"><span class="cl">TO DISK = N&#39;D:\sql\gen\MSSQL16.MSSQLSERVER\MSSQL\Backup\学生管理数据库_日志_20250527_130000.trn&#39; -- **已更新路径**
+</span></span><span class="line"><span class="cl">WITH NOFORMAT, NOINIT, NAME = N&#39;学生管理数据库日志备份_13点&#39;, SKIP, NOREWIND, NOUNLOAD, STATS = 10;
+</span></span><span class="line"><span class="cl">GO
+</span></span><span class="line"><span class="cl">PRINT &#39;日志备份完成，时间：13:00&#39;;
+</span></span><span class="line"><span class="cl">GO
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="7">
+<li>进行差异备份 (Differential Backup)</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">USE master;
+</span></span><span class="line"><span class="cl">GO
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">-- 执行差异备份
+</span></span><span class="line"><span class="cl">BACKUP DATABASE 学生管理数据库
+</span></span><span class="line"><span class="cl">TO DISK = N&#39;D:\sql\gen\MSSQL16.MSSQLSERVER\MSSQL\Backup\学生管理数据库_差异_20250527_160000.bak&#39; -- **已更新路径**
+</span></span><span class="line"><span class="cl">WITH DIFFERENTIAL, NOFORMAT, NOINIT, NAME = N&#39;学生管理数据库差异备份_16点&#39;, SKIP, NOREWIND, NOUNLOAD, STATS = 10;
+</span></span><span class="line"><span class="cl">GO
+</span></span><span class="line"><span class="cl">PRINT &#39;差异备份完成，时间：16:00&#39;;
+</span></span><span class="line"><span class="cl">GO
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="8">
+<li>进行破坏性操作 (模拟数据丢失或损坏)</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">USE 学生管理数据库;
+</span></span><span class="line"><span class="cl">GO
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">TRUNCATE TABLE 学生信息; -- 清空表
+</span></span><span class="line"><span class="cl">GO
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">SELECT * FROM 学生信息; -- 确认表已空
+</span></span><span class="line"><span class="cl">GO
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">PRINT &#39;已清空学生信息表，模拟数据丢失。&#39;;
+</span></span><span class="line"><span class="cl">GO
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="9">
+<li>Q1 恢复到 16:00</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">USE master;
+</span></span><span class="line"><span class="cl">GO
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">-- 确保数据库处于离线或删除状态，才能进行恢复
+</span></span><span class="line"><span class="cl">-- 在这里，我们通常会先尝试将数据库置为离线，如果失败（例如数据库不存在），则跳过
+</span></span><span class="line"><span class="cl">IF DB_ID(N&#39;学生管理数据库&#39;) IS NOT NULL
+</span></span><span class="line"><span class="cl">BEGIN
+</span></span><span class="line"><span class="cl">    ALTER DATABASE 学生管理数据库 SET OFFLINE WITH ROLLBACK IMMEDIATE;
+</span></span><span class="line"><span class="cl">    PRINT &#39;数据库 学生管理数据库 已置为离线。&#39;;
+</span></span><span class="line"><span class="cl">END;
+</span></span><span class="line"><span class="cl">-- 或者如果您之前直接删除了数据库，则无需以上 ALTER DATABASE 语句。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">-- 1. 恢复完整备份 (10:00)
+</span></span><span class="line"><span class="cl">RESTORE DATABASE 学生管理数据库
+</span></span><span class="line"><span class="cl">FROM DISK = N&#39;D:\sql\gen\MSSQL16.MSSQLSERVER\MSSQL\Backup\学生管理数据库_完整_20250527_100000.bak&#39;
+</span></span><span class="line"><span class="cl">WITH NORECOVERY,
+</span></span><span class="line"><span class="cl">REPLACE, -- **新增：强制覆盖现有数据库**
+</span></span><span class="line"><span class="cl">MOVE N&#39;学生管理数据库&#39; TO N&#39;D:\sql\gen\MSSQL16.MSSQLSERVER\MSSQL\DATA\学生管理数据库.mdf&#39;,
+</span></span><span class="line"><span class="cl">MOVE N&#39;学生管理数据库_log&#39; TO N&#39;D:\sql\gen\MSSQL16.MSSQLSERVER\MSSQL\DATA\学生管理数据库_log.ldf&#39;;
+</span></span><span class="line"><span class="cl">GO
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">PRINT &#39;完整备份恢复完成 (NORECOVERY)。&#39;;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">-- 2. 恢复差异备份 (16:00)
+</span></span><span class="line"><span class="cl">RESTORE DATABASE 学生管理数据库
+</span></span><span class="line"><span class="cl">FROM DISK = N&#39;D:\sql\gen\MSSQL16.MSSQLSERVER\MSSQL\Backup\学生管理数据库_差异_20250527_160000.bak&#39;
+</span></span><span class="line"><span class="cl">WITH RECOVERY;
+</span></span><span class="line"><span class="cl">GO
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">PRINT &#39;差异备份恢复完成 (RECOVERY)，数据库已联机到 16:00 的状态。&#39;;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">-- 验证恢复结果
+</span></span><span class="line"><span class="cl">USE 学生管理数据库;
+</span></span><span class="line"><span class="cl">GO
+</span></span><span class="line"><span class="cl">SELECT * FROM 学生信息;
+</span></span><span class="line"><span class="cl">GO
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">USE master;
+</span></span><span class="line"><span class="cl">GO
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">-- 再次模拟数据库被破坏或清空，以便重新进行恢复
+</span></span><span class="line"><span class="cl">IF DB_ID(N&#39;学生管理数据库&#39;) IS NOT NULL
+</span></span><span class="line"><span class="cl">BEGIN
+</span></span><span class="line"><span class="cl">    ALTER DATABASE 学生管理数据库 SET OFFLINE WITH ROLLBACK IMMEDIATE;
+</span></span><span class="line"><span class="cl">    PRINT &#39;数据库 学生管理数据库 已置为离线。&#39;;
+</span></span><span class="line"><span class="cl">END;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">-- 1. 恢复完整备份 (10:00)
+</span></span><span class="line"><span class="cl">RESTORE DATABASE 学生管理数据库
+</span></span><span class="line"><span class="cl">FROM DISK = N&#39;D:\sql\gen\MSSQL16.MSSQLSERVER\MSSQL\Backup\学生管理数据库_完整_20250527_100000.bak&#39;
+</span></span><span class="line"><span class="cl">WITH NORECOVERY,
+</span></span><span class="line"><span class="cl">REPLACE, -- **新增：强制覆盖现有数据库**
+</span></span><span class="line"><span class="cl">MOVE N&#39;学生管理数据库&#39; TO N&#39;D:\sql\gen\MSSQL16.MSSQLSERVER\MSSQL\DATA\学生管理数据库.mdf&#39;,
+</span></span><span class="line"><span class="cl">MOVE N&#39;学生管理数据库_log&#39; TO N&#39;D:\sql\gen\MSSQL16.MSSQLSERVER\MSSQL\DATA\学生管理数据库_log.ldf&#39;;
+</span></span><span class="line"><span class="cl">GO
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">PRINT &#39;完整备份恢复完成 (NORECOVERY)。&#39;;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">-- 2. 恢复 11:00 的日志备份
+</span></span><span class="line"><span class="cl">RESTORE LOG 学生管理数据库
+</span></span><span class="line"><span class="cl">FROM DISK = N&#39;D:\sql\gen\MSSQL16.MSSQLSERVER\MSSQL\Backup\学生管理数据库_日志_20250527_110000.trn&#39;
+</span></span><span class="line"><span class="cl">WITH NORECOVERY;
+</span></span><span class="line"><span class="cl">GO
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">PRINT &#39;日志备份 11:00 恢复完成 (NORECOVERY)。&#39;;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">-- 3. 恢复 13:00 的日志备份，停止在 12:00
+</span></span><span class="line"><span class="cl">RESTORE LOG 学生管理数据库
+</span></span><span class="line"><span class="cl">FROM DISK = N&#39;D:\sql\gen\MSSQL16.MSSQLSERVER\MSSQL\Backup\学生管理数据库_日志_20250527_130000.trn&#39;
+</span></span><span class="line"><span class="cl">WITH RECOVERY, STOPAT = &#39;2025-05-27 12:00:00.000&#39;;
+</span></span><span class="line"><span class="cl">GO
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">PRINT &#39;日志备份 13:00 恢复完成并停止在 12:00，数据库已联机。&#39;;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">-- 验证恢复结果
+</span></span><span class="line"><span class="cl">USE 学生管理数据库;
+</span></span><span class="line"><span class="cl">GO
+</span></span><span class="line"><span class="cl">SELECT * FROM 学生信息;
+</span></span><span class="line"><span class="cl">GO
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="后续选择略">后续选择略
+</h2>
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>本文采用 CC BY-NC-SA 4.0 协议授权，转载请注明出处。</span>
+    </section>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+             May 27, 2025 21:51 &#43;0800
+        </span>
+    </section></footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title"></h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C2/">
+        
+        
+            <div class="article-image">
+                <img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C2/imagetop-1.42f93d4685c20b95b3a27ab240531eac_hu_7e00985351aa1a4e.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 计算机网络_实验2"
+                        
+                        data-hash="md5-Qvk9RoXCC5WzonqyQFMerA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">计算机网络_实验2</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/web5_%E8%A1%A8%E5%8D%95/">
+        
+        
+            <div class="article-image">
+                <img src="/p/web5_%E8%A1%A8%E5%8D%95/PixPin_2025-05-21_16-04-10-1-1.7aacfeb5006dd1b9eee0e85b7877a56d_hu_f09b6be3db439dae.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Web5_表单"
+                        
+                        data-hash="md5-eqz&#43;tQBt0bnu4OhbeHelbQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Web5_表单</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/">
+        
+        
+            <div class="article-image">
+                <img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C3/imagetop-1.42f93d4685c20b95b3a27ab240531eac_hu_7e00985351aa1a4e.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 计算机网络_实验3"
+                        
+                        data-hash="md5-Qvk9RoXCC5WzonqyQFMerA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">计算机网络_实验3</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/">
+        
+        
+            <div class="article-image">
+                <img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C_%E5%AE%9E%E9%AA%8C1/imagetop-1.42f93d4685c20b95b3a27ab240531eac_hu_7e00985351aa1a4e.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 计算机网络_实验1"
+                        
+                        data-hash="md5-Qvk9RoXCC5WzonqyQFMerA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">计算机网络_实验1</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/web4_%E5%9D%97%E4%B8%8E%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0/">
+        
+        
+            <div class="article-image">
+                <img src="/p/web4_%E5%9D%97%E4%B8%8E%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0/PixPin_2025-05-21_16-04-10-1.7aacfeb5006dd1b9eee0e85b7877a56d_hu_f09b6be3db439dae.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Web4_块与行内元素"
+                        
+                        data-hash="md5-eqz&#43;tQBt0bnu4OhbeHelbQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Web4_块与行内元素</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script src="https://utteranc.es/client.js" 
+        repo="2332ly/2332ly.github.io"
+        issue-term="pathname"
+        
+        crossorigin="anonymous"
+        async
+        >
+</script>
+
+<style>
+    .utterances {
+        max-width: unset;
+    }
+</style>
+
+<script>
+    let utterancesLoaded = false;
+
+    function setUtterancesTheme(theme) {
+        let utterances = document.querySelector('.utterances iframe');
+        if (utterances) {
+            utterances.contentWindow.postMessage(
+                {
+                    type: 'set-theme',
+                    theme: `github-${theme}`
+                },
+                'https://utteranc.es'
+            );
+        }
+    }
+
+    addEventListener('message', event => {
+        if (event.origin !== 'https://utteranc.es') return;
+
+        
+        utterancesLoaded = true;
+        setUtterancesTheme(document.documentElement.dataset.scheme)
+    });
+
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (!utterancesLoaded) return;
+        setUtterancesTheme(e.detail)
+    })
+</script>
+
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2025 Example Person
+    </section>
+    
+    <section class="powerby">
+        
+            2332ly <br/>
+         <br />
+        
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+<style>
+   
+  #TableOfContents ul,
+  #TableOfContents ol {
+    list-style: none;  
+    padding-left: 1em;  
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;  
+    overflow: hidden;  
+    max-height: 0;  
+    opacity: 0;  
+  }
+
+   
+  #TableOfContents > ul,
+  #TableOfContents > ol {
+    padding-left: 0;  
+    max-height: fit-content;  
+    opacity: 1;  
+  }
+
+   
+  #TableOfContents ul.open,
+  #TableOfContents ol.open {
+    max-height: 500px;  
+    opacity: 1;
+  }
+
+   
+  .active-class {
+    font-weight: bold;  
+    color: #007bff;  
+  }
+</style>
+
+<script>
+  function initTocFolding() {
+    const toc = document.querySelector(".widget--toc");
+    if (!toc) {
+      return; 
+    }
+
+    
+    toc.classList.add("toc-enabled");
+
+    let lastActiveLi = null; 
+
+    function updateTocVisibility() {
+      
+      document.querySelectorAll("#TableOfContents .open").forEach((ul) => {
+        ul.classList.remove("open");
+      });
+
+      const currentLi = document.querySelector(".active-class");
+
+      if (!currentLi || currentLi === lastActiveLi) {
+        
+        return;
+      }
+
+      lastActiveLi = currentLi; 
+
+      
+      const directChildUl = currentLi.querySelector("ul, ol");
+      if (directChildUl) {
+        directChildUl.classList.add("open");
+      }
+
+      
+      let parentUl = currentLi.parentElement;
+      while (parentUl && (parentUl.localName === "ul" || parentUl.localName === "ol") && parentUl.id !== "TableOfContents") {
+        parentUl.classList.add("open");
+        parentUl = parentUl.parentElement.parentElement; 
+      }
+    }
+
+    
+    let scrollTimeout;
+    window.addEventListener("scroll", () => {
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(updateTocVisibility, 100); 
+    });
+
+    
+    updateTocVisibility();
+  }
+
+  document.addEventListener("DOMContentLoaded", initTocFolding);
+</script>
+
+<style>
+    #backTopBtn {
+         
+        opacity: 0;
+        visibility: hidden;
+         
+        position: fixed;
+        bottom: 30px;  
+        right: 30px;  
+        z-index: 99;  
+        cursor: pointer;  
+
+         
+        width: 55px;  
+        height: 55px;  
+        border-radius: 50%;  
+        border: none;  
+
+         
+        background-color: #ffffff;  
+        background-image: url(https://2332ly.github.io/icons/backTop.svg); 
+        background-size: 60%;  
+        background-repeat: no-repeat;
+        background-position: center;  
+
+         
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);  
+
+         
+        transition: opacity 0.3s ease-in-out,  
+                    visibility 0.3s ease-in-out,  
+                    transform 0.3s ease-in-out,  
+                    box-shadow 0.3s ease-in-out;  
+         
+        will-change: opacity, transform;
+    }
+
+     
+    #backTopBtn.show {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);  
+    }
+
+     
+    #backTopBtn:hover {
+        background-color: rgba(0, 0, 0, 0.7);  
+        transform: translateY(-5px);  
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);  
+    }
+
+    #backTopBtn:focus {
+        outline: none;  
+        box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5);  
+        transform: translateY(-5px);  
+    }
+
+     
+    @media (max-width: 768px) {
+        #backTopBtn {
+            bottom: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            background-size: 55%;
+        }
+    }
+</style>
+
+<script>
+    
+
+    function debounce(func, delay) {
+        let timeout;
+        return function() {
+            const context = this;
+            const args = arguments;
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func.apply(context, args), delay);
+        };
+    }
+
+    
+
+    function initScrollTop() {
+        
+        let btn = document.createElement("button");
+        btn.id = "backTopBtn";
+        btn.onclick = backToTop;
+        
+        btn.setAttribute("aria-label", "返回顶部");
+        
+        btn.setAttribute("tabindex", "-1");
+
+        
+        document.body.appendChild(btn);
+
+        
+        window.onscroll = debounce(function() {
+            
+            const scrollThreshold = 200;
+
+            if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+                
+                btn.classList.add("show");
+                
+                btn.removeAttribute("tabindex");
+            } else {
+                
+                btn.classList.remove("show");
+                
+                btn.setAttribute("tabindex", "-1");
+            }
+        }, 100); 
+    }
+
+    
+
+    function backToTop(){
+        
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    
+    document.addEventListener("DOMContentLoaded", initScrollTop);
+</script>
+
+<style>
+    .highlight {
+         
+        max-height: 400px;
+        overflow: hidden;
+    }
+
+    .code-show {
+        max-height: none !important;
+    }
+
+    .code-more-box {
+        width: 100%;
+        padding-top: 78px;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#fff));
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    .code-more-btn {
+        display: block;
+        margin: auto;
+        width: 44px;
+        height: 22px;
+        background: #f0f0f5;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding-top: 6px;
+        cursor: pointer;
+    }
+
+    .code-more-img {
+        cursor: pointer !important;
+        display: block;
+        margin: auto;
+        width: 22px;
+        height: 16px;
+    }
+</style>
+
+<script>
+  function initCodeMoreBox() {
+    let codeBlocks = document.querySelectorAll(".highlight");
+    if (!codeBlocks) {
+      return;
+    }
+    codeBlocks.forEach(codeBlock => {
+      
+      if (codeBlock.scrollHeight <= codeBlock.clientHeight) {
+        return;
+      }
+      
+      
+      let codeMoreBox = document.createElement('div');
+      codeMoreBox.classList.add('code-more-box');
+      
+      let codeMoreBtn = document.createElement('span');
+      codeMoreBtn.classList.add('code-more-btn');
+      codeMoreBtn.addEventListener('click', () => {
+        codeBlock.classList.add('code-show');
+        codeMoreBox.style.display = 'none';
+        
+        window.dispatchEvent(new Event('resize'))
+      })
+      
+      let img = document.createElement('img');
+      img.classList.add('code-more-img');
+      img.src = "https://2332ly.github.io/icons/codeMore.png"
+      
+      codeMoreBtn.appendChild(img);
+      codeMoreBox.appendChild(codeMoreBtn);
+      codeBlock.appendChild(codeMoreBox)
+    })
+  }
+  
+  initCodeMoreBox();
+</script>
+
+
+<script defer src="https://cn.vercount.one/js"></script>
+
+<script>
+    function showHideView() {
+        
+        let viewCounts = document.querySelectorAll("#viewCount");
+        if (viewCounts) {
+            
+            let article =  document.querySelector(".article-page");
+            if (!article) {
+                viewCounts.forEach(ele => {
+                    ele.style.display = 'none';
+                });
+            }
+        }
+    }
+    
+    showHideView();
+</script>
+
+    </body>
+</html>
